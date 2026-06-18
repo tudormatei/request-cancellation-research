@@ -1,0 +1,5 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/t-rem-sweep_20260512_200018.log
+Started at: Tue May 12 08:00:18 PM CEST 2026
+
+Pre-flight: 0.67, 1.04, 1.50
+✗ load 0.67 > 0.5 — wait before starting

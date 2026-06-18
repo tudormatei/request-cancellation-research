@@ -1,0 +1,19 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq3/logs/e3a_20260527_190120.log
+Started at: Wed May 27 07:01:20 PM CEST 2026
+
+▶ E3a — cross-check (wave2_delay ≈ ghost_holdtime)
+  Both frameworks run concurrently (different ports: 8081/8083)
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+aspnet ready
+
+E3a cross-check | framework=aspnet | N=10 | cancel_at=6.0s | runs=1
+────────────────────────────────────────────────────────────
+Traceback (most recent call last):
+  File "/home/tudor/dev/request-cancellation-research/tests/sq3/e3_collect.py", line 231, in <module>
+    main()
+  File "/home/tudor/dev/request-cancellation-research/tests/sq3/e3_collect.py", line 220, in main
+    run_e3a(fw, args.runs)
+  File "/home/tudor/dev/request-cancellation-research/tests/sq3/e3_collect.py", line 87, in run_e3a
+    fire_concurrent(url, N=N, cancel_after=CANCEL_AT_S)
+TypeError: fire_concurrent() got an unexpected keyword argument 'N'

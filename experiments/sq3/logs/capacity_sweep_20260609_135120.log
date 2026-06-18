@@ -1,0 +1,146 @@
+[13:51:20] === E3 capacity sweep start (duration=120s/cell, ~72 min) ===
+thesis_spring_webflux
+[13:51:22] recreate aspnet POOL_SIZE=10
+ Container thesis_aspnet Recreate 
+ Container thesis_aspnet Recreated 
+ Container thesis_aspnet Starting 
+ Container thesis_aspnet Started 
+[13:51:58] probe aspnet  pool=10 X=1.5
+
+probe aspnet | pool=10 X=1.5 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 6 ; peak = 6 ; pool = 10
+[13:54:17] probe aspnet  pool=10 X=2.5
+
+probe aspnet | pool=10 X=2.5 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 7 ; peak = 7 ; pool = 10
+[13:56:36] probe aspnet  pool=10 X=3.5
+
+probe aspnet | pool=10 X=3.5 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 9 ; peak = 9 ; pool = 10
+thesis_aspnet
+[13:58:54] recreate webflux POOL_SIZE=10
+ Container thesis_spring_webflux Recreate 
+ Container thesis_spring_webflux Recreated 
+ Container thesis_spring_webflux Starting 
+ Container thesis_spring_webflux Started 
+[13:59:35] probe webflux pool=10 X=0.4
+
+probe webflux | pool=10 X=0.4 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 7 ; peak = 7 ; pool = 10
+[14:01:54] probe webflux pool=10 X=0.6
+
+probe webflux | pool=10 X=0.6 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 7 ; peak = 7 ; pool = 10
+[14:04:14] probe webflux pool=10 X=0.8
+
+probe webflux | pool=10 X=0.8 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 7 ; peak = 7 ; pool = 10
+thesis_spring_webflux
+[14:06:35] recreate aspnet POOL_SIZE=20
+ Container thesis_aspnet Recreate 
+ Container thesis_aspnet Recreated 
+ Container thesis_aspnet Starting 
+ Container thesis_aspnet Started 
+[14:07:11] probe aspnet  pool=20 X=3
+
+probe aspnet | pool=20 X=3.0 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 8 ; peak = 8 ; pool = 20
+[14:09:30] probe aspnet  pool=20 X=5
+
+probe aspnet | pool=20 X=5.0 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 14 ; peak = 14 ; pool = 20
+[14:11:49] probe aspnet  pool=20 X=7
+
+probe aspnet | pool=20 X=7.0 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 18 ; peak = 18 ; pool = 20
+thesis_aspnet
+[14:14:08] recreate webflux POOL_SIZE=20
+ Container thesis_spring_webflux Recreate 
+ Container thesis_spring_webflux Recreated 
+ Container thesis_spring_webflux Starting 
+ Container thesis_spring_webflux Started 
+[14:14:49] probe webflux pool=20 X=0.8
+
+probe webflux | pool=20 X=0.8 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 7 ; peak = 7 ; pool = 20
+[14:17:07] probe webflux pool=20 X=1.2
+
+probe webflux | pool=20 X=1.2 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 9 ; peak = 9 ; pool = 20
+[14:19:27] probe webflux pool=20 X=1.6
+
+probe webflux | pool=20 X=1.6 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 11 ; peak = 11 ; pool = 20
+thesis_spring_webflux
+[14:21:48] recreate aspnet POOL_SIZE=30
+ Container thesis_aspnet Recreate 
+ Container thesis_aspnet Recreated 
+ Container thesis_aspnet Starting 
+ Container thesis_aspnet Started 
+[14:22:24] probe aspnet  pool=30 X=4.5
+
+probe aspnet | pool=30 X=4.5 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 12 ; peak = 12 ; pool = 30
+[14:24:43] probe aspnet  pool=30 X=7.5
+
+probe aspnet | pool=30 X=7.5 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 19 ; peak = 19 ; pool = 30
+[14:27:02] probe aspnet  pool=30 X=10.5
+
+probe aspnet | pool=30 X=10.5 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 30 ; peak = 30 ; pool = 30
+thesis_aspnet
+[14:29:21] recreate webflux POOL_SIZE=30
+ Container thesis_spring_webflux Recreate 
+ Container thesis_spring_webflux Recreated 
+ Container thesis_spring_webflux Starting 
+ Container thesis_spring_webflux Started 
+[14:30:02] probe webflux pool=30 X=1.2
+
+probe webflux | pool=30 X=1.2 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 9 ; peak = 9 ; pool = 30
+[14:32:20] probe webflux pool=30 X=1.8
+
+probe webflux | pool=30 X=1.8 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 12 ; peak = 12 ; pool = 30
+[14:34:39] probe webflux pool=30 X=2.4
+
+probe webflux | pool=30 X=2.4 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 17 ; peak = 17 ; pool = 30
+thesis_spring_webflux
+[14:37:00] recreate aspnet POOL_SIZE=40
+ Container thesis_aspnet Recreate 
+ Container thesis_aspnet Recreated 
+ Container thesis_aspnet Starting 
+ Container thesis_aspnet Started 
+[14:37:36] probe aspnet  pool=40 X=6
+
+probe aspnet | pool=40 X=6.0 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 16 ; peak = 16 ; pool = 40
+[14:39:55] probe aspnet  pool=40 X=10
+
+probe aspnet | pool=40 X=10.0 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 25 ; peak = 25 ; pool = 40
+[14:42:13] probe aspnet  pool=40 X=14
+
+probe aspnet | pool=40 X=14.0 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 35 ; peak = 35 ; pool = 40
+thesis_aspnet
+[14:44:32] recreate webflux POOL_SIZE=40
+ Container thesis_spring_webflux Recreate 
+ Container thesis_spring_webflux Recreated 
+ Container thesis_spring_webflux Starting 
+ Container thesis_spring_webflux Started 
+[14:45:13] probe webflux pool=40 X=1.6
+
+probe webflux | pool=40 X=1.6 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 11 ; peak = 11 ; pool = 40
+[14:47:32] probe webflux pool=40 X=2.4
+
+probe webflux | pool=40 X=2.4 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 17 ; peak = 17 ; pool = 40
+[14:49:51] probe webflux pool=40 X=3.2
+
+probe webflux | pool=40 X=3.2 Y=0.8 cancel@0.5 | duration=120s
+  steady-state (2nd half) median total_conns = 22 ; peak = 22 ; pool = 40
+[14:52:10] === sweep complete -> /home/tudor/dev/request-cancellation-research/experiments/sq3/e3c/e3_capacity_probe.csv ===

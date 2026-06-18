@@ -1,0 +1,530 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/c-dense_20260513_193811.log
+Started at: Wed May 13 07:38:11 PM CEST 2026
+
+Pre-flight: 0.01, 0.61, 1.66
+✓ load OK
+▶ E1a c-dense (C=4, K=100ms, cpus=4.0, cpuset=0,1,2,3, 50 runs/cell)
+  Predicted N_10 ≈ 380  (= 95 × C)
+=== c-dense C=4 K=100 N=280 ===
+threadpool min_worker=4 max_worker=280 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=280 | T=280 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=280 | T=280 | K=100ms
+    run 1/50: 280 req  280 cancelled  L1=253ms
+    run 2/50: 280 req  280 cancelled  L1=280ms
+    run 3/50: 280 req  280 cancelled  L1=294ms
+    run 4/50: 280 req  280 cancelled  L1=293ms
+    run 5/50: 280 req  280 cancelled  L1=282ms
+    run 6/50: 280 req  280 cancelled  L1=251ms
+    run 7/50: 280 req  280 cancelled  L1=228ms
+    run 8/50: 280 req  280 cancelled  L1=274ms
+    run 9/50: 280 req  280 cancelled  L1=260ms
+    run 10/50: 280 req  280 cancelled  L1=288ms
+    run 11/50: 280 req  280 cancelled  L1=286ms
+    run 12/50: 280 req  280 cancelled  L1=244ms
+    run 13/50: 280 req  280 cancelled  L1=242ms
+    run 14/50: 280 req  280 cancelled  L1=279ms
+    run 15/50: 280 req  280 cancelled  L1=291ms
+    run 16/50: 280 req  280 cancelled  L1=291ms
+    run 17/50: 280 req  280 cancelled  L1=285ms
+    run 18/50: 280 req  280 cancelled  L1=280ms
+    run 19/50: 280 req  280 cancelled  L1=288ms
+    run 20/50: 280 req  280 cancelled  L1=289ms
+    run 21/50: 280 req  280 cancelled  L1=288ms
+    run 22/50: 280 req  280 cancelled  L1=281ms
+    run 23/50: 280 req  280 cancelled  L1=277ms
+    run 24/50: 280 req  280 cancelled  L1=292ms
+    run 25/50: 280 req  280 cancelled  L1=291ms
+    run 26/50: 280 req  280 cancelled  L1=287ms
+    run 27/50: 280 req  280 cancelled  L1=289ms
+    run 28/50: 280 req  280 cancelled  L1=291ms
+    run 29/50: 280 req  280 cancelled  L1=289ms
+    run 30/50: 280 req  280 cancelled  L1=287ms
+    run 31/50: 280 req  280 cancelled  L1=294ms
+    run 32/50: 280 req  280 cancelled  L1=291ms
+    run 33/50: 280 req  280 cancelled  L1=288ms
+    run 34/50: 280 req  280 cancelled  L1=320ms
+    run 35/50: 280 req  280 cancelled  L1=255ms
+    run 36/50: 280 req  280 cancelled  L1=286ms
+    run 37/50: 280 req  280 cancelled  L1=258ms
+    run 38/50: 280 req  280 cancelled  L1=252ms
+    run 39/50: 280 req  280 cancelled  L1=250ms
+    run 40/50: 280 req  280 cancelled  L1=281ms
+    run 41/50: 280 req  280 cancelled  L1=287ms
+    run 42/50: 280 req  280 cancelled  L1=289ms
+    run 43/50: 280 req  280 cancelled  L1=294ms
+    run 44/50: 280 req  280 cancelled  L1=294ms
+    run 45/50: 280 req  280 cancelled  L1=292ms
+    run 46/50: 280 req  280 cancelled  L1=269ms
+    run 47/50: 280 req  280 cancelled  L1=287ms
+    run 48/50: 280 req  280 cancelled  L1=281ms
+    run 49/50: 280 req  280 cancelled  L1=287ms
+    run 50/50: 280 req  280 cancelled  L1=230ms
+  → rate=1.0  written to e1a_cliff_C_dense.csv
+=== c-dense C=4 K=100 N=320 ===
+threadpool min_worker=4 max_worker=320 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=320 | T=320 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=320 | T=320 | K=100ms
+    run 1/50: 320 req  320 cancelled  L1=286ms
+    run 2/50: 320 req  320 cancelled  L1=244ms
+    run 3/50: 320 req  320 cancelled  L1=244ms
+    run 4/50: 320 req  320 cancelled  L1=286ms
+    run 5/50: 320 req  320 cancelled  L1=207ms
+    run 6/50: 320 req  320 cancelled  L1=288ms
+    run 7/50: 320 req  320 cancelled  L1=283ms
+    run 8/50: 320 req  320 cancelled  L1=286ms
+    run 9/50: 320 req  320 cancelled  L1=280ms
+    run 10/50: 320 req  320 cancelled  L1=260ms
+    run 11/50: 320 req  320 cancelled  L1=281ms
+    run 12/50: 320 req  320 cancelled  L1=236ms
+    run 13/50: 320 req  320 cancelled  L1=266ms
+    run 14/50: 320 req  320 cancelled  L1=245ms
+    run 15/50: 320 req  320 cancelled  L1=825ms
+    run 16/50: 320 req  320 cancelled  L1=436ms
+    run 17/50: 320 req  320 cancelled  L1=231ms
+    run 18/50: 320 req  320 cancelled  L1=283ms
+    run 19/50: 320 req  320 cancelled  L1=285ms
+    run 20/50: 320 req  320 cancelled  L1=292ms
+    run 21/50: 320 req  320 cancelled  L1=291ms
+    run 22/50: 320 req  320 cancelled  L1=289ms
+    run 23/50: 320 req  320 cancelled  L1=290ms
+    run 24/50: 320 req  320 cancelled  L1=290ms
+    run 25/50: 320 req  320 cancelled  L1=285ms
+    run 26/50: 320 req  320 cancelled  L1=290ms
+    run 27/50: 320 req  320 cancelled  L1=284ms
+    run 28/50: 320 req  320 cancelled  L1=283ms
+    run 29/50: 320 req  320 cancelled  L1=275ms
+    run 30/50: 320 req  320 cancelled  L1=287ms
+    run 31/50: 320 req  320 cancelled  L1=282ms
+    run 32/50: 320 req  320 cancelled  L1=282ms
+    run 33/50: 320 req  320 cancelled  L1=289ms
+    run 34/50: 320 req  320 cancelled  L1=280ms
+    run 35/50: 320 req  320 cancelled  L1=1024ms
+    run 36/50: 320 req  320 cancelled  L1=1031ms
+    run 37/50: 320 req  320 cancelled  L1=250ms
+    run 38/50: 320 req  320 cancelled  L1=232ms
+    run 39/50: 320 req  320 cancelled  L1=282ms
+    run 40/50: 320 req  320 cancelled  L1=268ms
+    run 41/50: 320 req  320 cancelled  L1=278ms
+    run 42/50: 320 req  320 cancelled  L1=259ms
+    run 43/50: 320 req  320 cancelled  L1=249ms
+    run 44/50: 320 req  320 cancelled  L1=633ms
+    run 45/50: 320 req  320 cancelled  L1=252ms
+    run 46/50: 320 req  320 cancelled  L1=527ms
+    run 47/50: 320 req  320 cancelled  L1=260ms
+    run 48/50: 320 req  320 cancelled  L1=241ms
+    run 49/50: 320 req  320 cancelled  L1=270ms
+    run 50/50: 320 req  320 cancelled  L1=286ms
+  → rate=1.0  written to e1a_cliff_C_dense.csv
+=== c-dense C=4 K=100 N=350 ===
+threadpool min_worker=4 max_worker=350 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=350 | T=350 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=350 | T=350 | K=100ms
+    run 1/50: 350 req  350 cancelled  L1=255ms
+    run 2/50: 350 req  350 cancelled  L1=294ms
+    run 3/50: 350 req  350 cancelled  L1=277ms
+    run 4/50: 350 req  350 cancelled  L1=283ms
+    run 5/50: 350 req  350 cancelled  L1=255ms
+    run 6/50: 350 req  350 cancelled  L1=206ms
+    run 7/50: 350 req  350 cancelled  L1=228ms
+    run 8/50: 350 req  350 cancelled  L1=250ms
+    run 9/50: 350 req  350 cancelled  L1=263ms
+    run 10/50: 350 req  350 cancelled  L1=250ms
+    run 11/50: 350 req  350 cancelled  L1=266ms
+    run 12/50: 350 req  350 cancelled  L1=741ms
+    run 13/50: 350 req  350 cancelled  L1=253ms
+    run 14/50: 350 req  350 cancelled  L1=270ms
+    run 15/50: 350 req  350 cancelled  L1=283ms
+    run 16/50: 350 req  350 cancelled  L1=290ms
+    run 17/50: 350 req  350 cancelled  L1=249ms
+    run 18/50: 350 req  350 cancelled  L1=252ms
+    run 19/50: 350 req  350 cancelled  L1=291ms
+    run 20/50: 350 req  350 cancelled  L1=260ms
+    run 21/50: 350 req  350 cancelled  L1=252ms
+    run 22/50: 350 req  350 cancelled  L1=287ms
+    run 23/50: 350 req  350 cancelled  L1=280ms
+    run 24/50: 350 req  350 cancelled  L1=636ms
+    run 25/50: 350 req  350 cancelled  L1=646ms
+    run 26/50: 350 req  350 cancelled  L1=252ms
+    run 27/50: 350 req  350 cancelled  L1=256ms
+    run 28/50: 350 req  350 cancelled  L1=274ms
+    run 29/50: 350 req  350 cancelled  L1=232ms
+    run 30/50: 350 req  350 cancelled  L1=282ms
+    run 31/50: 350 req  350 cancelled  L1=349ms
+    run 32/50: 350 req  350 cancelled  L1=737ms
+    run 33/50: 350 req  350 cancelled  L1=281ms
+    run 34/50: 350 req  350 cancelled  L1=271ms
+    run 35/50: 350 req  350 cancelled  L1=283ms
+    run 36/50: 350 req  350 cancelled  L1=284ms
+    run 37/50: 350 req  350 cancelled  L1=291ms
+    run 38/50: 350 req  350 cancelled  L1=256ms
+    run 39/50: 350 req  350 cancelled  L1=260ms
+    run 40/50: 350 req  350 cancelled  L1=1430ms
+    run 41/50: 350 req  350 cancelled  L1=1436ms
+    run 42/50: 350 req  350 cancelled  L1=935ms
+    run 43/50: 350 req  350 cancelled  L1=1324ms
+    run 44/50: 350 req  350 cancelled  L1=354ms
+    run 45/50: 350 req  350 cancelled  L1=328ms
+    run 46/50: 350 req  350 cancelled  L1=283ms
+    run 47/50: 350 req  350 cancelled  L1=282ms
+    run 48/50: 350 req  350 cancelled  L1=274ms
+    run 49/50: 350 req  350 cancelled  L1=271ms
+    run 50/50: 350 req  350 cancelled  L1=642ms
+  → rate=1.0  written to e1a_cliff_C_dense.csv
+=== c-dense C=4 K=100 N=380 ===
+threadpool min_worker=4 max_worker=380 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=380 | T=380 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=380 | T=380 | K=100ms
+    run 1/50: 380 req  380 cancelled  L1=285ms
+    run 2/50: 380 req  380 cancelled  L1=281ms
+    run 3/50: 380 req  380 cancelled  L1=275ms
+    run 4/50: 380 req  380 cancelled  L1=279ms
+    run 5/50: 380 req  380 cancelled  L1=285ms
+    run 6/50: 380 req  380 cancelled  L1=235ms
+    run 7/50: 380 req  380 cancelled  L1=255ms
+    run 8/50: 380 req  380 cancelled  L1=285ms
+    run 9/50: 380 req  380 cancelled  L1=279ms
+    run 10/50: 380 req  380 cancelled  L1=285ms
+    run 11/50: 380 req  380 cancelled  L1=284ms
+    run 12/50: 380 req  380 cancelled  L1=276ms
+    run 13/50: 380 req  380 cancelled  L1=278ms
+    run 14/50: 380 req  380 cancelled  L1=278ms
+    run 15/50: 380 req  380 cancelled  L1=288ms
+    run 16/50: 380 req  380 cancelled  L1=287ms
+    run 17/50: 380 req  380 cancelled  L1=293ms
+    run 18/50: 380 req  380 cancelled  L1=289ms
+    run 19/50: 380 req  380 cancelled  L1=286ms
+    run 20/50: 380 req  380 cancelled  L1=276ms
+    run 21/50: 380 req  380 cancelled  L1=290ms
+    run 22/50: 380 req  380 cancelled  L1=288ms
+    run 23/50: 380 req  380 cancelled  L1=277ms
+    run 24/50: 380 req  380 cancelled  L1=282ms
+    run 25/50: 380 req  0 cancelled  L1=n/a
+    run 26/50: 369 req  0 cancelled  L1=n/a
+    run 27/50: 380 req  380 cancelled  L1=1929ms
+    run 28/50: 380 req  380 cancelled  L1=290ms
+    run 29/50: 380 req  380 cancelled  L1=283ms
+    run 30/50: 380 req  380 cancelled  L1=273ms
+    run 31/50: 380 req  380 cancelled  L1=279ms
+    run 32/50: 380 req  380 cancelled  L1=284ms
+    run 33/50: 380 req  380 cancelled  L1=280ms
+    run 34/50: 380 req  380 cancelled  L1=272ms
+    run 35/50: 380 req  380 cancelled  L1=1922ms
+    run 36/50: 380 req  380 cancelled  L1=1660ms
+    run 37/50: 380 req  380 cancelled  L1=1344ms
+    run 38/50: 380 req  380 cancelled  L1=242ms
+    run 39/50: 380 req  380 cancelled  L1=209ms
+    run 40/50: 380 req  380 cancelled  L1=213ms
+    run 41/50: 380 req  380 cancelled  L1=283ms
+    run 42/50: 380 req  380 cancelled  L1=282ms
+    run 43/50: 380 req  380 cancelled  L1=281ms
+    run 44/50: 380 req  380 cancelled  L1=244ms
+    run 45/50: 380 req  380 cancelled  L1=273ms
+    run 46/50: 380 req  380 cancelled  L1=241ms
+    run 47/50: 380 req  380 cancelled  L1=251ms
+    run 48/50: 380 req  380 cancelled  L1=1734ms
+    run 49/50: 380 req  380 cancelled  L1=1171ms
+    run 50/50: 380 req  380 cancelled  L1=246ms
+  → rate=0.9606  written to e1a_cliff_C_dense.csv
+=== c-dense C=4 K=100 N=410 ===
+threadpool min_worker=4 max_worker=410 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=410 | T=410 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=410 | T=410 | K=100ms
+    run 1/50: 410 req  410 cancelled  L1=605ms
+    run 2/50: 410 req  410 cancelled  L1=280ms
+    run 3/50: 410 req  410 cancelled  L1=278ms
+    run 4/50: 410 req  410 cancelled  L1=228ms
+    run 5/50: 410 req  410 cancelled  L1=245ms
+    run 6/50: 410 req  410 cancelled  L1=289ms
+    run 7/50: 410 req  410 cancelled  L1=279ms
+    run 8/50: 410 req  410 cancelled  L1=292ms
+    run 9/50: 410 req  410 cancelled  L1=232ms
+    run 10/50: 410 req  410 cancelled  L1=234ms
+    run 11/50: 410 req  410 cancelled  L1=281ms
+    run 12/50: 410 req  410 cancelled  L1=260ms
+    run 13/50: 410 req  410 cancelled  L1=286ms
+    run 14/50: 410 req  410 cancelled  L1=278ms
+    run 15/50: 410 req  410 cancelled  L1=357ms
+    run 16/50: 410 req  410 cancelled  L1=274ms
+    run 17/50: 410 req  410 cancelled  L1=273ms
+    run 18/50: 410 req  410 cancelled  L1=283ms
+    run 19/50: 410 req  410 cancelled  L1=248ms
+    run 20/50: 410 req  410 cancelled  L1=462ms
+    run 21/50: 410 req  410 cancelled  L1=858ms
+    run 22/50: 410 req  410 cancelled  L1=540ms
+    run 23/50: 410 req  410 cancelled  L1=232ms
+    run 24/50: 410 req  410 cancelled  L1=1137ms
+    run 25/50: 410 req  410 cancelled  L1=456ms
+    run 26/50: 410 req  410 cancelled  L1=1630ms
+    run 27/50: 410 req  410 cancelled  L1=1054ms
+    run 28/50: 410 req  410 cancelled  L1=265ms
+    run 29/50: 410 req  410 cancelled  L1=231ms
+    run 30/50: 410 req  410 cancelled  L1=229ms
+    run 31/50: 410 req  410 cancelled  L1=454ms
+    run 32/50: 410 req  410 cancelled  L1=356ms
+    run 33/50: 410 req  410 cancelled  L1=249ms
+    run 34/50: 410 req  410 cancelled  L1=281ms
+    run 35/50: 410 req  410 cancelled  L1=208ms
+    run 36/50: 410 req  410 cancelled  L1=269ms
+    run 37/50: 410 req  410 cancelled  L1=279ms
+    run 38/50: 410 req  410 cancelled  L1=268ms
+    run 39/50: 410 req  410 cancelled  L1=279ms
+    run 40/50: 410 req  410 cancelled  L1=272ms
+    run 41/50: 410 req  410 cancelled  L1=289ms
+    run 42/50: 410 req  410 cancelled  L1=281ms
+    run 43/50: 410 req  410 cancelled  L1=283ms
+    run 44/50: 410 req  410 cancelled  L1=287ms
+    run 45/50: 410 req  410 cancelled  L1=275ms
+    run 46/50: 329 req  0 cancelled  L1=n/a
+    run 47/50: 410 req  410 cancelled  L1=1745ms
+    run 48/50: 410 req  410 cancelled  L1=1647ms
+    run 49/50: 410 req  410 cancelled  L1=360ms
+    run 50/50: 410 req  410 cancelled  L1=256ms
+  → rate=0.9839  written to e1a_cliff_C_dense.csv
+=== c-dense C=4 K=100 N=440 ===
+threadpool min_worker=4 max_worker=440 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=440 | T=440 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=440 | T=440 | K=100ms
+    run 1/50: 440 req  440 cancelled  L1=641ms
+    run 2/50: 440 req  440 cancelled  L1=279ms
+    run 3/50: 440 req  440 cancelled  L1=285ms
+    run 4/50: 440 req  440 cancelled  L1=233ms
+    run 5/50: 440 req  440 cancelled  L1=277ms
+    run 6/50: 440 req  440 cancelled  L1=287ms
+    run 7/50: 440 req  440 cancelled  L1=287ms
+    run 8/50: 440 req  440 cancelled  L1=238ms
+    run 9/50: 440 req  440 cancelled  L1=283ms
+    run 10/50: 440 req  440 cancelled  L1=278ms
+    run 11/50: 440 req  440 cancelled  L1=230ms
+    run 12/50: 440 req  440 cancelled  L1=251ms
+    run 13/50: 440 req  440 cancelled  L1=1346ms
+    run 14/50: 440 req  440 cancelled  L1=1333ms
+    run 15/50: 440 req  440 cancelled  L1=345ms
+    run 16/50: 440 req  440 cancelled  L1=456ms
+    run 17/50: 440 req  440 cancelled  L1=280ms
+    run 18/50: 440 req  440 cancelled  L1=281ms
+    run 19/50: 440 req  440 cancelled  L1=1458ms
+    run 20/50: 440 req  440 cancelled  L1=849ms
+    run 21/50: 440 req  440 cancelled  L1=444ms
+    run 22/50: 440 req  440 cancelled  L1=637ms
+    run 23/50: 440 req  440 cancelled  L1=252ms
+    run 24/50: 440 req  440 cancelled  L1=253ms
+    run 25/50: 440 req  440 cancelled  L1=272ms
+    run 26/50: 440 req  440 cancelled  L1=261ms
+    run 27/50: 440 req  440 cancelled  L1=277ms
+    run 28/50: 440 req  440 cancelled  L1=283ms
+    run 29/50: 440 req  440 cancelled  L1=279ms
+    run 30/50: 440 req  440 cancelled  L1=277ms
+    run 31/50: 440 req  440 cancelled  L1=277ms
+    run 32/50: 440 req  440 cancelled  L1=278ms
+    run 33/50: 440 req  440 cancelled  L1=363ms
+    run 34/50: 415 req  0 cancelled  L1=n/a
+    run 35/50: 401 req  0 cancelled  L1=n/a
+    run 36/50: 440 req  0 cancelled  L1=n/a
+    run 37/50: 440 req  440 cancelled  L1=280ms
+    run 38/50: 440 req  440 cancelled  L1=232ms
+    run 39/50: 440 req  440 cancelled  L1=215ms
+    run 40/50: 440 req  440 cancelled  L1=247ms
+    run 41/50: 440 req  440 cancelled  L1=267ms
+    run 42/50: 440 req  440 cancelled  L1=277ms
+    run 43/50: 437 req  0 cancelled  L1=n/a
+    run 44/50: 440 req  440 cancelled  L1=874ms
+    run 45/50: 440 req  440 cancelled  L1=1157ms
+    run 46/50: 440 req  440 cancelled  L1=1263ms
+    run 47/50: 440 req  440 cancelled  L1=273ms
+    run 48/50: 440 req  440 cancelled  L1=275ms
+    run 49/50: 440 req  440 cancelled  L1=277ms
+    run 50/50: 440 req  440 cancelled  L1=287ms
+  → rate=0.9228  written to e1a_cliff_C_dense.csv
+=== c-dense C=4 K=100 N=480 ===
+threadpool min_worker=4 max_worker=480 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=480 | T=480 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=480 | T=480 | K=100ms
+    run 1/50: 434 req  0 cancelled  L1=n/a
+    run 2/50: 480 req  480 cancelled  L1=287ms
+    run 3/50: 480 req  480 cancelled  L1=285ms
+    run 4/50: 480 req  480 cancelled  L1=224ms
+    run 5/50: 480 req  480 cancelled  L1=252ms
+    run 6/50: 480 req  480 cancelled  L1=256ms
+    run 7/50: 480 req  480 cancelled  L1=244ms
+    run 8/50: 480 req  480 cancelled  L1=293ms
+    run 9/50: 480 req  480 cancelled  L1=202ms
+    run 10/50: 480 req  480 cancelled  L1=276ms
+    run 11/50: 480 req  480 cancelled  L1=291ms
+    run 12/50: 480 req  480 cancelled  L1=276ms
+    run 13/50: 480 req  480 cancelled  L1=232ms
+    run 14/50: 480 req  480 cancelled  L1=1283ms
+    run 15/50: 480 req  480 cancelled  L1=253ms
+    run 16/50: 480 req  480 cancelled  L1=422ms
+    run 17/50: 480 req  480 cancelled  L1=288ms
+    run 18/50: 480 req  480 cancelled  L1=243ms
+    run 19/50: 480 req  480 cancelled  L1=226ms
+    run 20/50: 480 req  480 cancelled  L1=273ms
+    run 21/50: 480 req  480 cancelled  L1=256ms
+    run 22/50: 480 req  480 cancelled  L1=270ms
+    run 23/50: 480 req  480 cancelled  L1=237ms
+    run 24/50: 480 req  480 cancelled  L1=281ms
+    run 25/50: 480 req  480 cancelled  L1=279ms
+    run 26/50: 480 req  480 cancelled  L1=278ms
+    run 27/50: 480 req  480 cancelled  L1=240ms
+    run 28/50: 480 req  480 cancelled  L1=273ms
+    run 29/50: 480 req  480 cancelled  L1=278ms
+    run 30/50: 480 req  480 cancelled  L1=268ms
+    run 31/50: 480 req  480 cancelled  L1=276ms
+    run 32/50: 480 req  480 cancelled  L1=280ms
+    run 33/50: 421 req  0 cancelled  L1=n/a
+    run 34/50: 370 req  0 cancelled  L1=n/a
+    run 35/50: 437 req  0 cancelled  L1=n/a
+    run 36/50: 480 req  480 cancelled  L1=277ms
+    run 37/50: 454 req  0 cancelled  L1=n/a
+    run 38/50: 480 req  480 cancelled  L1=1461ms
+    run 39/50: 480 req  480 cancelled  L1=221ms
+    run 40/50: 480 req  480 cancelled  L1=269ms
+    run 41/50: 480 req  480 cancelled  L1=1750ms
+    run 42/50: 480 req  480 cancelled  L1=1148ms
+    run 43/50: 480 req  480 cancelled  L1=1548ms
+    run 44/50: 480 req  480 cancelled  L1=282ms
+    run 45/50: 480 req  480 cancelled  L1=278ms
+    run 46/50: 480 req  480 cancelled  L1=680ms
+    run 47/50: 462 req  0 cancelled  L1=n/a
+    run 48/50: 480 req  480 cancelled  L1=1859ms
+    run 49/50: 480 req  480 cancelled  L1=321ms
+    run 50/50: 480 req  480 cancelled  L1=287ms
+  → rate=0.8912  written to e1a_cliff_C_dense.csv
+=== c-dense C=4 K=100 N=520 ===
+threadpool min_worker=4 max_worker=520 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=520 | T=520 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=520 | T=520 | K=100ms
+    run 1/50: 520 req  520 cancelled  L1=1702ms
+    run 2/50: 520 req  520 cancelled  L1=289ms
+    run 3/50: 520 req  520 cancelled  L1=278ms
+    run 4/50: 520 req  520 cancelled  L1=282ms
+    run 5/50: 520 req  520 cancelled  L1=250ms
+    run 6/50: 520 req  520 cancelled  L1=220ms
+    run 7/50: 520 req  520 cancelled  L1=280ms
+    run 8/50: 520 req  520 cancelled  L1=276ms
+    run 9/50: 520 req  520 cancelled  L1=272ms
+    run 10/50: 520 req  520 cancelled  L1=229ms
+    run 11/50: 500 req  0 cancelled  L1=n/a
+    run 12/50: 520 req  520 cancelled  L1=1742ms
+    run 13/50: 520 req  520 cancelled  L1=248ms
+    run 14/50: 520 req  520 cancelled  L1=241ms
+    run 15/50: 520 req  520 cancelled  L1=1268ms
+    run 16/50: 520 req  520 cancelled  L1=1094ms
+    run 17/50: 520 req  520 cancelled  L1=276ms
+    run 18/50: 520 req  520 cancelled  L1=279ms
+    run 19/50: 520 req  520 cancelled  L1=288ms
+    run 20/50: 520 req  520 cancelled  L1=272ms
+    run 21/50: 520 req  520 cancelled  L1=285ms
+    run 22/50: 520 req  520 cancelled  L1=277ms
+    run 23/50: 520 req  520 cancelled  L1=264ms
+    run 24/50: 520 req  520 cancelled  L1=287ms
+    run 25/50: 520 req  520 cancelled  L1=282ms
+    run 26/50: 437 req  0 cancelled  L1=n/a
+    run 27/50: 491 req  0 cancelled  L1=n/a
+    run 28/50: 511 req  0 cancelled  L1=n/a
+    run 29/50: 514 req  0 cancelled  L1=n/a
+    run 30/50: 520 req  520 cancelled  L1=1079ms
+    run 31/50: 520 req  520 cancelled  L1=662ms
+    run 32/50: 520 req  520 cancelled  L1=246ms
+    run 33/50: 520 req  520 cancelled  L1=273ms
+    run 34/50: 520 req  520 cancelled  L1=267ms
+    run 35/50: 520 req  520 cancelled  L1=278ms
+    run 36/50: 520 req  520 cancelled  L1=1175ms
+    run 37/50: 520 req  520 cancelled  L1=290ms
+    run 38/50: 520 req  520 cancelled  L1=964ms
+    run 39/50: 520 req  520 cancelled  L1=273ms
+    run 40/50: 520 req  520 cancelled  L1=279ms
+    run 41/50: 520 req  520 cancelled  L1=281ms
+    run 42/50: 520 req  520 cancelled  L1=276ms
+    run 43/50: 462 req  0 cancelled  L1=n/a
+    run 44/50: 507 req  0 cancelled  L1=n/a
+    run 45/50: 520 req  520 cancelled  L1=271ms
+    run 46/50: 520 req  520 cancelled  L1=256ms
+    run 47/50: 520 req  520 cancelled  L1=243ms
+    run 48/50: 520 req  520 cancelled  L1=272ms
+    run 49/50: 520 req  520 cancelled  L1=284ms
+    run 50/50: 520 req  520 cancelled  L1=276ms
+  → rate=0.8673  written to e1a_cliff_C_dense.csv
+=== c-dense L1 check C=4 K=100 N=4 ===
+threadpool min_worker=4 max_worker=4 logical_cpus=4
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=c-dense | N=4 | T=4 | K=100ms | C=4
+scenario=cpu | cancel_after=5.0s | runs=20
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=4 | T=4 | K=100ms
+    run 1/20: 4 req  4 cancelled  L1=264ms
+    run 2/20: 4 req  4 cancelled  L1=202ms
+    run 3/20: 4 req  4 cancelled  L1=100ms
+    run 4/20: 4 req  4 cancelled  L1=100ms
+    run 5/20: 4 req  4 cancelled  L1=6ms
+    run 6/20: 4 req  4 cancelled  L1=100ms
+    run 7/20: 4 req  4 cancelled  L1=3ms
+    run 8/20: 4 req  4 cancelled  L1=101ms
+    run 9/20: 4 req  4 cancelled  L1=3ms
+    run 10/20: 4 req  4 cancelled  L1=100ms
+    run 11/20: 4 req  4 cancelled  L1=1ms
+    run 12/20: 4 req  4 cancelled  L1=100ms
+    run 13/20: 4 req  4 cancelled  L1=100ms
+    run 14/20: 4 req  4 cancelled  L1=100ms
+    run 15/20: 4 req  4 cancelled  L1=100ms
+    run 16/20: 4 req  4 cancelled  L1=5ms
+    run 17/20: 4 req  4 cancelled  L1=1ms
+    run 18/20: 4 req  4 cancelled  L1=1ms
+    run 19/20: 4 req  4 cancelled  L1=6ms
+    run 20/20: 4 req  4 cancelled  L1=101ms
+  → rate=1.0  written to e1a_cliff_C_dense.csv
+
+════════════════════════════════════════════════════════════════════
+E1a c-dense complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

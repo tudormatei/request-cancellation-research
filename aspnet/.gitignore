@@ -1,0 +1,16 @@
+src/bin/
+src/obj/
+
+*.user
+*.suo
+.vs/
+.idea/
+*.DotSettings.user
+
+out/
+publish/
+
+*.log
+
+.DS_Store
+Thumbs.db

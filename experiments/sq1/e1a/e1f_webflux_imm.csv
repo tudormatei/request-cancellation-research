@@ -1,0 +1,4 @@
+framework,scenario,N,T,yield_interval_ms,cancel_after_ms,cores,cpu_duration_s,n_requests,n_cancelled,cancel_rate,L1_mean,L1_sd,L1_median,L1_min,L1_max,L2_mean,L2_sd,L2_median,L2_min,L2_max,waste_mean,waste_sd,waste_median,waste_min,waste_max
+webflux,cpu,1,1,100,5000,1,15,20,0,0.0,,,,,,,,,,,,,,,
+webflux,cpu,8,8,100,5000,1,15,52,0,0.0,,,,,,,,,,,,,,,
+webflux,cpu,32,32,100,5000,1,15,60,0,0.0,,,,,,,,,,,,,,,

@@ -1,0 +1,5 @@
+framework,scenario,N,T,yield_interval_ms,cancel_after_ms,n_requests,n_cancelled,cancel_rate,L1_mean,L1_sd,L1_median,L1_min,L1_max,L2_mean,L2_sd,L2_median,L2_min,L2_max,waste_mean,waste_sd,waste_median,waste_min,waste_max
+aspnet,cpu,1,4,100,5000,8,8,1.0,115,123.213,103.0,3,300,0,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0.0
+aspnet,cpu,1,4,100,5000,6,6,1.0,51.333,122.314,1.0,1,301,0,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0.0
+aspnet,cpu,1,2,100,5000,5,5,1.0,96.8,132.916,2,1,274,0.2,0.447,0,0,1,0.0,0.0,0.0,0.0,0.0
+aspnet,cpu,1,1,100,5000,5,5,1.0,217.4,35.004,202,201,280,0.2,0.447,0,0,1,0.0,0.0,0.0,0.0,0.0

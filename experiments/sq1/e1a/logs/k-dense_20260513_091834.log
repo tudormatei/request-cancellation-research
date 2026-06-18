@@ -1,0 +1,5 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/k-dense_20260513_091834.log
+Started at: Wed May 13 09:18:34 AM CEST 2026
+
+Pre-flight: 0.51, 1.21, 1.05
+✗ load 0.51 > 0.5 — wait before starting

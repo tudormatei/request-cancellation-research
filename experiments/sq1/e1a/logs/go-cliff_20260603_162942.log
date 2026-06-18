@@ -1,0 +1,1005 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/go-cliff_20260603_162942.log
+Started at: Wed  3 Jun 16:29:42 CEST 2026
+
+▶ A2 Go cliff N-sweep (C=1)
+── K=200ms ──
+  [gate] quiet (load=0.23) — running cell
+=== go K=200 N=30 ===
+go-service ready yield_interval_ms=200 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=30 | T=30 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=30 | T=30 | K=200ms
+    run 1/50: 30 req  30 cancelled  L1=594ms
+    run 2/50: 30 req  30 cancelled  L1=608ms
+    run 3/50: 30 req  30 cancelled  L1=594ms
+    run 4/50: 30 req  30 cancelled  L1=558ms
+    run 5/50: 30 req  30 cancelled  L1=600ms
+    run 6/50: 30 req  30 cancelled  L1=588ms
+    run 7/50: 30 req  30 cancelled  L1=587ms
+    run 8/50: 30 req  30 cancelled  L1=600ms
+    run 9/50: 30 req  30 cancelled  L1=587ms
+    run 10/50: 30 req  30 cancelled  L1=587ms
+    run 11/50: 30 req  30 cancelled  L1=600ms
+    run 12/50: 30 req  30 cancelled  L1=583ms
+    run 13/50: 30 req  30 cancelled  L1=584ms
+    run 14/50: 30 req  30 cancelled  L1=597ms
+    run 15/50: 30 req  30 cancelled  L1=586ms
+    run 16/50: 30 req  30 cancelled  L1=584ms
+    run 17/50: 30 req  30 cancelled  L1=594ms
+    run 18/50: 30 req  30 cancelled  L1=586ms
+    run 19/50: 30 req  30 cancelled  L1=583ms
+    run 20/50: 30 req  30 cancelled  L1=593ms
+    run 21/50: 30 req  30 cancelled  L1=585ms
+    run 22/50: 30 req  30 cancelled  L1=603ms
+    run 23/50: 30 req  30 cancelled  L1=592ms
+    run 24/50: 30 req  30 cancelled  L1=587ms
+    run 25/50: 30 req  30 cancelled  L1=603ms
+    run 26/50: 30 req  30 cancelled  L1=590ms
+    run 27/50: 30 req  30 cancelled  L1=584ms
+    run 28/50: 30 req  30 cancelled  L1=604ms
+    run 29/50: 30 req  30 cancelled  L1=584ms
+    run 30/50: 30 req  30 cancelled  L1=603ms
+    run 31/50: 30 req  30 cancelled  L1=590ms
+    run 32/50: 30 req  30 cancelled  L1=584ms
+    run 33/50: 30 req  30 cancelled  L1=602ms
+    run 34/50: 30 req  30 cancelled  L1=590ms
+    run 35/50: 30 req  30 cancelled  L1=584ms
+    run 36/50: 30 req  30 cancelled  L1=603ms
+    run 37/50: 30 req  30 cancelled  L1=603ms
+    run 38/50: 30 req  30 cancelled  L1=589ms
+    run 39/50: 30 req  30 cancelled  L1=584ms
+    run 40/50: 30 req  30 cancelled  L1=600ms
+    run 41/50: 30 req  30 cancelled  L1=589ms
+    run 42/50: 30 req  30 cancelled  L1=585ms
+    run 43/50: 30 req  30 cancelled  L1=602ms
+    run 44/50: 30 req  30 cancelled  L1=585ms
+    run 45/50: 30 req  30 cancelled  L1=586ms
+    run 46/50: 30 req  30 cancelled  L1=584ms
+    run 47/50: 30 req  30 cancelled  L1=600ms
+    run 48/50: 30 req  30 cancelled  L1=587ms
+    run 49/50: 30 req  30 cancelled  L1=586ms
+    run 50/50: 30 req  30 cancelled  L1=606ms
+  → rate=1.0  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.58 (0s)
+  [gate] quiet (load=0.29) — running cell
+=== go K=200 N=55 ===
+go-service ready yield_interval_ms=200 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=55 | T=55 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=55 | T=55 | K=200ms
+    run 1/50: 55 req  55 cancelled  L1=1110ms
+    run 2/50: 55 req  55 cancelled  L1=1106ms
+    run 3/50: 55 req  55 cancelled  L1=1089ms
+    run 4/50: 55 req  55 cancelled  L1=1107ms
+    run 5/50: 55 req  55 cancelled  L1=1106ms
+    run 6/50: 55 req  55 cancelled  L1=1103ms
+    run 7/50: 55 req  55 cancelled  L1=1095ms
+    run 8/50: 55 req  55 cancelled  L1=1110ms
+    run 9/50: 55 req  55 cancelled  L1=1107ms
+    run 10/50: 55 req  55 cancelled  L1=1089ms
+    run 11/50: 55 req  55 cancelled  L1=1108ms
+    run 12/50: 55 req  55 cancelled  L1=1106ms
+    run 13/50: 55 req  55 cancelled  L1=1102ms
+    run 14/50: 55 req  55 cancelled  L1=1087ms
+    run 15/50: 55 req  55 cancelled  L1=1088ms
+    run 16/50: 55 req  55 cancelled  L1=1109ms
+    run 17/50: 55 req  55 cancelled  L1=1089ms
+    run 18/50: 55 req  55 cancelled  L1=1109ms
+    run 19/50: 55 req  55 cancelled  L1=1103ms
+    run 20/50: 55 req  55 cancelled  L1=1105ms
+    run 21/50: 55 req  55 cancelled  L1=1109ms
+    run 22/50: 55 req  55 cancelled  L1=1109ms
+    run 23/50: 55 req  55 cancelled  L1=1106ms
+    run 24/50: 55 req  55 cancelled  L1=1106ms
+    run 25/50: 55 req  55 cancelled  L1=1089ms
+    run 26/50: 55 req  55 cancelled  L1=1095ms
+    run 27/50: 55 req  55 cancelled  L1=1108ms
+    run 28/50: 55 req  55 cancelled  L1=1107ms
+    run 29/50: 55 req  55 cancelled  L1=1089ms
+    run 30/50: 55 req  55 cancelled  L1=1102ms
+    run 31/50: 55 req  55 cancelled  L1=1088ms
+    run 32/50: 55 req  55 cancelled  L1=1087ms
+    run 33/50: 55 req  55 cancelled  L1=1109ms
+    run 34/50: 55 req  55 cancelled  L1=1102ms
+    run 35/50: 55 req  55 cancelled  L1=1087ms
+    run 36/50: 55 req  55 cancelled  L1=1107ms
+    run 37/50: 55 req  55 cancelled  L1=1105ms
+    run 38/50: 55 req  55 cancelled  L1=1088ms
+    run 39/50: 55 req  55 cancelled  L1=1116ms
+    run 40/50: 55 req  55 cancelled  L1=1100ms
+    run 41/50: 55 req  55 cancelled  L1=1090ms
+    run 42/50: 55 req  55 cancelled  L1=1106ms
+    run 43/50: 55 req  55 cancelled  L1=1087ms
+    run 44/50: 55 req  55 cancelled  L1=1089ms
+    run 45/50: 55 req  55 cancelled  L1=1117ms
+    run 46/50: 55 req  55 cancelled  L1=1107ms
+    run 47/50: 55 req  55 cancelled  L1=1096ms
+    run 48/50: 55 req  55 cancelled  L1=1110ms
+    run 49/50: 55 req  55 cancelled  L1=1106ms
+    run 50/50: 55 req  55 cancelled  L1=1090ms
+  → rate=1.0  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=1.04 (0s)
+  [gate] quiet (load=0.30) — running cell
+=== go K=200 N=90 ===
+go-service ready yield_interval_ms=200 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=90 | T=90 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=90 | T=90 | K=200ms
+    run 1/50: 90 req  90 cancelled  L1=1785ms
+    run 2/50: 90 req  90 cancelled  L1=1768ms
+    run 3/50: 90 req  90 cancelled  L1=1780ms
+    run 4/50: 90 req  90 cancelled  L1=1789ms
+    run 5/50: 90 req  90 cancelled  L1=1782ms
+    run 6/50: 90 req  90 cancelled  L1=1785ms
+    run 7/50: 90 req  90 cancelled  L1=1759ms
+    run 8/50: 90 req  90 cancelled  L1=1786ms
+    run 9/50: 90 req  90 cancelled  L1=1758ms
+    run 10/50: 90 req  90 cancelled  L1=1783ms
+    run 11/50: 90 req  90 cancelled  L1=1791ms
+    run 12/50: 90 req  90 cancelled  L1=1783ms
+    run 13/50: 90 req  90 cancelled  L1=1788ms
+    run 14/50: 90 req  90 cancelled  L1=1796ms
+    run 15/50: 90 req  90 cancelled  L1=1784ms
+    run 16/50: 90 req  90 cancelled  L1=1764ms
+    run 17/50: 90 req  90 cancelled  L1=1796ms
+    run 18/50: 90 req  90 cancelled  L1=1788ms
+    run 19/50: 90 req  90 cancelled  L1=1760ms
+    run 20/50: 90 req  90 cancelled  L1=1766ms
+    run 21/50: 90 req  90 cancelled  L1=1780ms
+    run 22/50: 90 req  90 cancelled  L1=1784ms
+    run 23/50: 90 req  90 cancelled  L1=1797ms
+    run 24/50: 90 req  90 cancelled  L1=1785ms
+    run 25/50: 90 req  90 cancelled  L1=1787ms
+    run 26/50: 90 req  90 cancelled  L1=1762ms
+    run 27/50: 90 req  90 cancelled  L1=1787ms
+    run 28/50: 90 req  90 cancelled  L1=1759ms
+    run 29/50: 90 req  90 cancelled  L1=1784ms
+    run 30/50: 90 req  90 cancelled  L1=1792ms
+    run 31/50: 90 req  90 cancelled  L1=1810ms
+    run 32/50: 90 req  90 cancelled  L1=1788ms
+    run 33/50: 90 req  90 cancelled  L1=1782ms
+    run 34/50: 90 req  90 cancelled  L1=1787ms
+    run 35/50: 90 req  90 cancelled  L1=1778ms
+    run 36/50: 90 req  90 cancelled  L1=1779ms
+    run 37/50: 90 req  90 cancelled  L1=1791ms
+    run 38/50: 90 req  90 cancelled  L1=1762ms
+    run 39/50: 90 req  90 cancelled  L1=1789ms
+    run 40/50: 90 req  90 cancelled  L1=1760ms
+    run 41/50: 90 req  90 cancelled  L1=1810ms
+    run 42/50: 90 req  90 cancelled  L1=1778ms
+    run 43/50: 90 req  90 cancelled  L1=1783ms
+    run 44/50: 90 req  90 cancelled  L1=1788ms
+    run 45/50: 90 req  90 cancelled  L1=1781ms
+    run 46/50: 90 req  90 cancelled  L1=1786ms
+    run 47/50: 90 req  90 cancelled  L1=1758ms
+    run 48/50: 90 req  90 cancelled  L1=1786ms
+    run 49/50: 90 req  90 cancelled  L1=1781ms
+    run 50/50: 90 req  90 cancelled  L1=1784ms
+  → rate=1.0  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.61 (0s)
+  [gate] quiet (load=0.25) — running cell
+=== go K=200 N=150 ===
+go-service ready yield_interval_ms=200 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=150 | T=150 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=150 | T=150 | K=200ms
+    run 1/50: 150 req  0 cancelled  L1=1011ms
+    run 2/50: 150 req  18 cancelled  L1=280ms
+    run 3/50: 150 req  18 cancelled  L1=281ms
+    run 4/50: 150 req  17 cancelled  L1=301ms
+    run 5/50: 150 req  17 cancelled  L1=300ms
+    run 6/50: 150 req  17 cancelled  L1=300ms
+    run 7/50: 150 req  17 cancelled  L1=300ms
+    run 8/50: 150 req  17 cancelled  L1=279ms
+    run 9/50: 150 req  17 cancelled  L1=301ms
+    run 10/50: 150 req  17 cancelled  L1=302ms
+    run 11/50: 150 req  17 cancelled  L1=299ms
+    run 12/50: 150 req  18 cancelled  L1=303ms
+    run 13/50: 150 req  18 cancelled  L1=300ms
+    run 14/50: 150 req  18 cancelled  L1=299ms
+    run 15/50: 150 req  18 cancelled  L1=300ms
+    run 16/50: 150 req  18 cancelled  L1=295ms
+    run 17/50: 150 req  19 cancelled  L1=280ms
+    run 18/50: 150 req  18 cancelled  L1=297ms
+    run 19/50: 150 req  18 cancelled  L1=291ms
+    run 20/50: 150 req  18 cancelled  L1=285ms
+    run 21/50: 150 req  18 cancelled  L1=268ms
+    run 22/50: 150 req  18 cancelled  L1=280ms
+    run 23/50: 150 req  18 cancelled  L1=279ms
+    run 24/50: 150 req  18 cancelled  L1=279ms
+    run 25/50: 150 req  17 cancelled  L1=303ms
+    run 26/50: 150 req  18 cancelled  L1=278ms
+    run 27/50: 150 req  18 cancelled  L1=278ms
+    run 28/50: 150 req  18 cancelled  L1=278ms
+    run 29/50: 150 req  17 cancelled  L1=300ms
+    run 30/50: 150 req  18 cancelled  L1=259ms
+    run 31/50: 150 req  17 cancelled  L1=300ms
+    run 32/50: 150 req  17 cancelled  L1=300ms
+    run 33/50: 150 req  17 cancelled  L1=301ms
+    run 34/50: 150 req  17 cancelled  L1=301ms
+    run 35/50: 150 req  17 cancelled  L1=300ms
+    run 36/50: 150 req  16 cancelled  L1=320ms
+    run 37/50: 150 req  17 cancelled  L1=301ms
+    run 38/50: 150 req  17 cancelled  L1=300ms
+    run 39/50: 150 req  17 cancelled  L1=301ms
+    run 40/50: 150 req  17 cancelled  L1=300ms
+    run 41/50: 150 req  17 cancelled  L1=299ms
+    run 42/50: 150 req  16 cancelled  L1=319ms
+    run 43/50: 150 req  17 cancelled  L1=280ms
+    run 44/50: 150 req  18 cancelled  L1=301ms
+    run 45/50: 150 req  18 cancelled  L1=299ms
+    run 46/50: 150 req  18 cancelled  L1=299ms
+    run 47/50: 150 req  18 cancelled  L1=301ms
+    run 48/50: 150 req  18 cancelled  L1=292ms
+    run 49/50: 150 req  18 cancelled  L1=290ms
+    run 50/50: 150 req  18 cancelled  L1=286ms
+  → rate=0.1144  written to e1g_go_cliff.csv
+── K=100ms ──
+  [gate] waiting for quiet… load=0.50 (0s)
+  [gate] quiet (load=0.23) — running cell
+=== go K=100 N=50 ===
+go-service ready yield_interval_ms=100 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=50 | T=50 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=50 | T=50 | K=100ms
+    run 1/50: 50 req  50 cancelled  L1=1010ms
+    run 2/50: 50 req  50 cancelled  L1=1008ms
+    run 3/50: 50 req  50 cancelled  L1=1006ms
+    run 4/50: 50 req  50 cancelled  L1=1021ms
+    run 5/50: 50 req  50 cancelled  L1=1004ms
+    run 6/50: 50 req  50 cancelled  L1=1006ms
+    run 7/50: 50 req  50 cancelled  L1=1009ms
+    run 8/50: 50 req  50 cancelled  L1=1008ms
+    run 9/50: 50 req  50 cancelled  L1=1009ms
+    run 10/50: 50 req  50 cancelled  L1=1006ms
+    run 11/50: 50 req  50 cancelled  L1=1009ms
+    run 12/50: 50 req  50 cancelled  L1=1019ms
+    run 13/50: 50 req  50 cancelled  L1=1000ms
+    run 14/50: 50 req  50 cancelled  L1=1007ms
+    run 15/50: 50 req  50 cancelled  L1=1009ms
+    run 16/50: 50 req  50 cancelled  L1=1021ms
+    run 17/50: 50 req  50 cancelled  L1=1006ms
+    run 18/50: 50 req  50 cancelled  L1=1019ms
+    run 19/50: 50 req  50 cancelled  L1=1005ms
+    run 20/50: 50 req  50 cancelled  L1=1011ms
+    run 21/50: 50 req  50 cancelled  L1=1013ms
+    run 22/50: 50 req  50 cancelled  L1=1010ms
+    run 23/50: 50 req  50 cancelled  L1=993ms
+    run 24/50: 50 req  50 cancelled  L1=1009ms
+    run 25/50: 50 req  50 cancelled  L1=1003ms
+    run 26/50: 50 req  50 cancelled  L1=1006ms
+    run 27/50: 50 req  50 cancelled  L1=1010ms
+    run 28/50: 50 req  50 cancelled  L1=1017ms
+    run 29/50: 50 req  50 cancelled  L1=1002ms
+    run 30/50: 50 req  50 cancelled  L1=1008ms
+    run 31/50: 50 req  50 cancelled  L1=1008ms
+    run 32/50: 50 req  50 cancelled  L1=1005ms
+    run 33/50: 50 req  50 cancelled  L1=1008ms
+    run 34/50: 50 req  50 cancelled  L1=1015ms
+    run 35/50: 50 req  50 cancelled  L1=1000ms
+    run 36/50: 50 req  50 cancelled  L1=988ms
+    run 37/50: 50 req  50 cancelled  L1=1005ms
+    run 38/50: 50 req  50 cancelled  L1=1008ms
+    run 39/50: 50 req  50 cancelled  L1=1018ms
+    run 40/50: 50 req  50 cancelled  L1=1014ms
+    run 41/50: 50 req  50 cancelled  L1=986ms
+    run 42/50: 50 req  50 cancelled  L1=1008ms
+    run 43/50: 50 req  50 cancelled  L1=1009ms
+    run 44/50: 50 req  50 cancelled  L1=1007ms
+    run 45/50: 50 req  50 cancelled  L1=1021ms
+    run 46/50: 50 req  50 cancelled  L1=1003ms
+    run 47/50: 50 req  50 cancelled  L1=1006ms
+    run 48/50: 50 req  50 cancelled  L1=986ms
+    run 49/50: 50 req  50 cancelled  L1=1006ms
+    run 50/50: 50 req  50 cancelled  L1=1006ms
+  → rate=1.0  written to e1g_go_cliff.csv
+  [gate] quiet (load=0.35) — running cell
+=== go K=100 N=95 ===
+go-service ready yield_interval_ms=100 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=95 | T=95 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=95 | T=95 | K=100ms
+    run 1/50: 95 req  95 cancelled  L1=1892ms
+    run 2/50: 95 req  95 cancelled  L1=1864ms
+    run 3/50: 95 req  95 cancelled  L1=1886ms
+    run 4/50: 95 req  95 cancelled  L1=1911ms
+    run 5/50: 95 req  95 cancelled  L1=1867ms
+    run 6/50: 95 req  95 cancelled  L1=1868ms
+    run 7/50: 95 req  95 cancelled  L1=1895ms
+    run 8/50: 95 req  95 cancelled  L1=1881ms
+    run 9/50: 95 req  95 cancelled  L1=1882ms
+    run 10/50: 95 req  95 cancelled  L1=1872ms
+    run 11/50: 95 req  95 cancelled  L1=1864ms
+    run 12/50: 95 req  95 cancelled  L1=1865ms
+    run 13/50: 95 req  95 cancelled  L1=1887ms
+    run 14/50: 95 req  95 cancelled  L1=1887ms
+    run 15/50: 95 req  95 cancelled  L1=1891ms
+    run 16/50: 95 req  95 cancelled  L1=1891ms
+    run 17/50: 95 req  95 cancelled  L1=1891ms
+    run 18/50: 95 req  95 cancelled  L1=1860ms
+    run 19/50: 95 req  95 cancelled  L1=1882ms
+    run 20/50: 95 req  95 cancelled  L1=1882ms
+    run 21/50: 95 req  95 cancelled  L1=1884ms
+    run 22/50: 95 req  95 cancelled  L1=1886ms
+    run 23/50: 95 req  95 cancelled  L1=1867ms
+    run 24/50: 95 req  95 cancelled  L1=1888ms
+    run 25/50: 95 req  95 cancelled  L1=1889ms
+    run 26/50: 95 req  95 cancelled  L1=1901ms
+    run 27/50: 95 req  95 cancelled  L1=1890ms
+    run 28/50: 95 req  95 cancelled  L1=1890ms
+    run 29/50: 95 req  95 cancelled  L1=1901ms
+    run 30/50: 95 req  95 cancelled  L1=1898ms
+    run 31/50: 95 req  95 cancelled  L1=1883ms
+    run 32/50: 95 req  95 cancelled  L1=1864ms
+    run 33/50: 95 req  95 cancelled  L1=1885ms
+    run 34/50: 95 req  95 cancelled  L1=1886ms
+    run 35/50: 95 req  95 cancelled  L1=1895ms
+    run 36/50: 95 req  95 cancelled  L1=1888ms
+    run 37/50: 95 req  95 cancelled  L1=1889ms
+    run 38/50: 95 req  95 cancelled  L1=1892ms
+    run 39/50: 95 req  95 cancelled  L1=1902ms
+    run 40/50: 95 req  95 cancelled  L1=1891ms
+    run 41/50: 95 req  95 cancelled  L1=1880ms
+    run 42/50: 95 req  95 cancelled  L1=1881ms
+    run 43/50: 95 req  95 cancelled  L1=1911ms
+    run 44/50: 95 req  95 cancelled  L1=1884ms
+    run 45/50: 95 req  95 cancelled  L1=1885ms
+    run 46/50: 95 req  95 cancelled  L1=1866ms
+    run 47/50: 95 req  95 cancelled  L1=1867ms
+    run 48/50: 95 req  95 cancelled  L1=1888ms
+    run 49/50: 95 req  95 cancelled  L1=1893ms
+    run 50/50: 95 req  95 cancelled  L1=1872ms
+  → rate=1.0  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.50 (0s)
+  [gate] quiet (load=0.34) — running cell
+=== go K=100 N=150 ===
+go-service ready yield_interval_ms=100 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=150 | T=150 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=150 | T=150 | K=100ms
+    run 1/50: 150 req  0 cancelled  L1=1170ms
+    run 2/50: 150 req  17 cancelled  L1=298ms
+    run 3/50: 150 req  16 cancelled  L1=320ms
+    run 4/50: 150 req  18 cancelled  L1=300ms
+    run 5/50: 150 req  18 cancelled  L1=299ms
+    run 6/50: 150 req  18 cancelled  L1=288ms
+    run 7/50: 150 req  18 cancelled  L1=280ms
+    run 8/50: 150 req  18 cancelled  L1=259ms
+    run 9/50: 150 req  17 cancelled  L1=297ms
+    run 10/50: 150 req  17 cancelled  L1=298ms
+    run 11/50: 150 req  17 cancelled  L1=301ms
+    run 12/50: 150 req  17 cancelled  L1=299ms
+    run 13/50: 150 req  17 cancelled  L1=301ms
+    run 14/50: 150 req  18 cancelled  L1=300ms
+    run 15/50: 150 req  18 cancelled  L1=298ms
+    run 16/50: 150 req  18 cancelled  L1=291ms
+    run 17/50: 150 req  18 cancelled  L1=270ms
+    run 18/50: 150 req  17 cancelled  L1=300ms
+    run 19/50: 150 req  17 cancelled  L1=299ms
+    run 20/50: 150 req  17 cancelled  L1=301ms
+    run 21/50: 150 req  17 cancelled  L1=300ms
+    run 22/50: 150 req  18 cancelled  L1=300ms
+    run 23/50: 150 req  18 cancelled  L1=297ms
+    run 24/50: 150 req  18 cancelled  L1=289ms
+    run 25/50: 150 req  18 cancelled  L1=279ms
+    run 26/50: 150 req  18 cancelled  L1=258ms
+    run 27/50: 150 req  17 cancelled  L1=300ms
+    run 28/50: 150 req  17 cancelled  L1=299ms
+    run 29/50: 150 req  17 cancelled  L1=298ms
+    run 30/50: 150 req  17 cancelled  L1=300ms
+    run 31/50: 150 req  17 cancelled  L1=280ms
+    run 32/50: 150 req  18 cancelled  L1=290ms
+    run 33/50: 150 req  18 cancelled  L1=280ms
+    run 34/50: 150 req  18 cancelled  L1=280ms
+    run 35/50: 150 req  17 cancelled  L1=280ms
+    run 36/50: 150 req  17 cancelled  L1=300ms
+    run 37/50: 150 req  17 cancelled  L1=299ms
+    run 38/50: 150 req  18 cancelled  L1=300ms
+    run 39/50: 150 req  18 cancelled  L1=300ms
+    run 40/50: 150 req  18 cancelled  L1=276ms
+    run 41/50: 150 req  18 cancelled  L1=278ms
+    run 42/50: 150 req  17 cancelled  L1=300ms
+    run 43/50: 150 req  17 cancelled  L1=300ms
+    run 44/50: 150 req  17 cancelled  L1=300ms
+    run 45/50: 150 req  17 cancelled  L1=299ms
+    run 46/50: 150 req  17 cancelled  L1=302ms
+    run 47/50: 150 req  18 cancelled  L1=300ms
+    run 48/50: 150 req  18 cancelled  L1=294ms
+    run 49/50: 150 req  18 cancelled  L1=274ms
+    run 50/50: 150 req  18 cancelled  L1=284ms
+  → rate=0.1143  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.75 (0s)
+  [gate] quiet (load=0.25) — running cell
+=== go K=100 N=200 ===
+go-service ready yield_interval_ms=100 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=200 | T=200 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=200 | T=200 | K=100ms
+    run 1/50: 200 req  0 cancelled  L1=n/a
+    run 2/50: 200 req  68 cancelled  L1=272ms
+    run 3/50: 200 req  67 cancelled  L1=336ms
+    run 4/50: 200 req  68 cancelled  L1=296ms
+    run 5/50: 200 req  67 cancelled  L1=304ms
+    run 6/50: 200 req  68 cancelled  L1=313ms
+    run 7/50: 200 req  68 cancelled  L1=303ms
+    run 8/50: 200 req  66 cancelled  L1=330ms
+    run 9/50: 200 req  68 cancelled  L1=295ms
+    run 10/50: 200 req  68 cancelled  L1=306ms
+    run 11/50: 200 req  68 cancelled  L1=298ms
+    run 12/50: 200 req  67 cancelled  L1=304ms
+    run 13/50: 200 req  68 cancelled  L1=311ms
+    run 14/50: 200 req  68 cancelled  L1=298ms
+    run 15/50: 200 req  68 cancelled  L1=314ms
+    run 16/50: 200 req  68 cancelled  L1=295ms
+    run 17/50: 200 req  67 cancelled  L1=305ms
+    run 18/50: 200 req  68 cancelled  L1=313ms
+    run 19/50: 200 req  68 cancelled  L1=280ms
+    run 20/50: 200 req  67 cancelled  L1=307ms
+    run 21/50: 200 req  68 cancelled  L1=292ms
+    run 22/50: 200 req  68 cancelled  L1=302ms
+    run 23/50: 200 req  67 cancelled  L1=333ms
+    run 24/50: 200 req  68 cancelled  L1=298ms
+    run 25/50: 200 req  67 cancelled  L1=307ms
+    run 26/50: 200 req  68 cancelled  L1=312ms
+    run 27/50: 200 req  68 cancelled  L1=300ms
+    run 28/50: 200 req  67 cancelled  L1=333ms
+    run 29/50: 200 req  68 cancelled  L1=300ms
+    run 30/50: 200 req  67 cancelled  L1=307ms
+    run 31/50: 200 req  68 cancelled  L1=314ms
+    run 32/50: 200 req  68 cancelled  L1=301ms
+    run 33/50: 200 req  68 cancelled  L1=313ms
+    run 34/50: 200 req  68 cancelled  L1=300ms
+    run 35/50: 200 req  67 cancelled  L1=308ms
+    run 36/50: 200 req  68 cancelled  L1=295ms
+    run 37/50: 200 req  68 cancelled  L1=298ms
+    run 38/50: 200 req  67 cancelled  L1=307ms
+    run 39/50: 200 req  68 cancelled  L1=314ms
+    run 40/50: 200 req  68 cancelled  L1=300ms
+    run 41/50: 200 req  67 cancelled  L1=334ms
+    run 42/50: 200 req  68 cancelled  L1=297ms
+    run 43/50: 200 req  68 cancelled  L1=304ms
+    run 44/50: 200 req  67 cancelled  L1=333ms
+    run 45/50: 200 req  68 cancelled  L1=276ms
+    run 46/50: 200 req  67 cancelled  L1=306ms
+    run 47/50: 200 req  68 cancelled  L1=314ms
+    run 48/50: 200 req  68 cancelled  L1=300ms
+    run 49/50: 200 req  67 cancelled  L1=309ms
+    run 50/50: 200 req  68 cancelled  L1=297ms
+  → rate=0.3315  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.65 (0s)
+  [gate] quiet (load=0.22) — running cell
+=== go K=100 N=300 ===
+go-service ready yield_interval_ms=100 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=300 | T=300 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=300 | T=300 | K=100ms
+    run 1/50: 293 req  0 cancelled  L1=1492ms
+    run 2/50: 300 req  0 cancelled  L1=318ms
+    run 3/50: 300 req  0 cancelled  L1=304ms
+    run 4/50: 300 req  0 cancelled  L1=319ms
+    run 5/50: 300 req  0 cancelled  L1=302ms
+    run 6/50: 300 req  0 cancelled  L1=305ms
+    run 7/50: 300 req  0 cancelled  L1=311ms
+    run 8/50: 300 req  0 cancelled  L1=306ms
+    run 9/50: 300 req  0 cancelled  L1=309ms
+    run 10/50: 300 req  0 cancelled  L1=315ms
+    run 11/50: 300 req  0 cancelled  L1=317ms
+    run 12/50: 300 req  0 cancelled  L1=303ms
+    run 13/50: 300 req  0 cancelled  L1=320ms
+    run 14/50: 300 req  0 cancelled  L1=303ms
+    run 15/50: 300 req  0 cancelled  L1=306ms
+    run 16/50: 300 req  0 cancelled  L1=312ms
+    run 17/50: 300 req  0 cancelled  L1=305ms
+    run 18/50: 300 req  0 cancelled  L1=313ms
+    run 19/50: 300 req  0 cancelled  L1=315ms
+    run 20/50: 300 req  0 cancelled  L1=319ms
+    run 21/50: 300 req  0 cancelled  L1=322ms
+    run 22/50: 300 req  0 cancelled  L1=305ms
+    run 23/50: 300 req  0 cancelled  L1=310ms
+    run 24/50: 300 req  0 cancelled  L1=315ms
+    run 25/50: 300 req  0 cancelled  L1=319ms
+    run 26/50: 300 req  0 cancelled  L1=336ms
+    run 27/50: 300 req  0 cancelled  L1=320ms
+    run 28/50: 300 req  0 cancelled  L1=302ms
+    run 29/50: 300 req  0 cancelled  L1=308ms
+    run 30/50: 300 req  0 cancelled  L1=321ms
+    run 31/50: 300 req  0 cancelled  L1=308ms
+    run 32/50: 300 req  0 cancelled  L1=312ms
+    run 33/50: 300 req  0 cancelled  L1=337ms
+    run 34/50: 300 req  0 cancelled  L1=322ms
+    run 35/50: 300 req  0 cancelled  L1=305ms
+    run 36/50: 300 req  0 cancelled  L1=312ms
+    run 37/50: 300 req  0 cancelled  L1=315ms
+    run 38/50: 300 req  0 cancelled  L1=303ms
+    run 39/50: 300 req  0 cancelled  L1=307ms
+    run 40/50: 300 req  0 cancelled  L1=312ms
+    run 41/50: 300 req  0 cancelled  L1=316ms
+    run 42/50: 300 req  0 cancelled  L1=312ms
+    run 43/50: 300 req  0 cancelled  L1=317ms
+    run 44/50: 300 req  0 cancelled  L1=320ms
+    run 45/50: 300 req  0 cancelled  L1=304ms
+    run 46/50: 300 req  0 cancelled  L1=309ms
+    run 47/50: 300 req  0 cancelled  L1=313ms
+    run 48/50: 300 req  0 cancelled  L1=316ms
+    run 49/50: 300 req  0 cancelled  L1=286ms
+    run 50/50: 300 req  0 cancelled  L1=315ms
+  → rate=0.0  written to e1g_go_cliff.csv
+── K=50ms ──
+  [gate] waiting for quiet… load=0.60 (0s)
+  [gate] quiet (load=0.23) — running cell
+=== go K=50 N=100 ===
+go-service ready yield_interval_ms=50 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=100 | T=100 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=100 | T=100 | K=50ms
+    run 1/50: 100 req  0 cancelled  L1=1990ms
+    run 2/50: 100 req  0 cancelled  L1=1991ms
+    run 3/50: 100 req  99 cancelled  L1=1990ms
+    run 4/50: 100 req  99 cancelled  L1=1986ms
+    run 5/50: 100 req  99 cancelled  L1=1991ms
+    run 6/50: 100 req  98 cancelled  L1=2005ms
+    run 7/50: 100 req  99 cancelled  L1=1976ms
+    run 8/50: 100 req  0 cancelled  L1=1996ms
+    run 9/50: 100 req  5 cancelled  L1=2001ms
+    run 10/50: 100 req  99 cancelled  L1=1989ms
+    run 11/50: 100 req  99 cancelled  L1=1986ms
+    run 12/50: 100 req  99 cancelled  L1=1991ms
+    run 13/50: 100 req  14 cancelled  L1=2000ms
+    run 14/50: 100 req  99 cancelled  L1=1989ms
+    run 15/50: 100 req  99 cancelled  L1=1969ms
+    run 16/50: 100 req  99 cancelled  L1=1995ms
+    run 17/50: 100 req  99 cancelled  L1=1994ms
+    run 18/50: 100 req  99 cancelled  L1=1988ms
+    run 19/50: 100 req  99 cancelled  L1=1992ms
+    run 20/50: 100 req  99 cancelled  L1=1990ms
+    run 21/50: 100 req  5 cancelled  L1=1997ms
+    run 22/50: 100 req  24 cancelled  L1=2004ms
+    run 23/50: 100 req  99 cancelled  L1=1990ms
+    run 24/50: 100 req  0 cancelled  L1=1979ms
+    run 25/50: 100 req  0 cancelled  L1=1991ms
+    run 26/50: 100 req  99 cancelled  L1=1991ms
+    run 27/50: 100 req  99 cancelled  L1=1986ms
+    run 28/50: 100 req  99 cancelled  L1=1980ms
+    run 29/50: 100 req  99 cancelled  L1=1991ms
+    run 30/50: 100 req  30 cancelled  L1=2001ms
+    run 31/50: 100 req  99 cancelled  L1=1986ms
+    run 32/50: 100 req  0 cancelled  L1=1992ms
+    run 33/50: 100 req  0 cancelled  L1=1987ms
+    run 34/50: 100 req  100 cancelled  L1=1965ms
+    run 35/50: 100 req  99 cancelled  L1=1991ms
+    run 36/50: 100 req  99 cancelled  L1=1991ms
+    run 37/50: 100 req  0 cancelled  L1=1994ms
+    run 38/50: 100 req  100 cancelled  L1=1963ms
+    run 39/50: 100 req  21 cancelled  L1=1999ms
+    run 40/50: 100 req  51 cancelled  L1=1992ms
+    run 41/50: 100 req  99 cancelled  L1=1984ms
+    run 42/50: 100 req  0 cancelled  L1=1996ms
+    run 43/50: 100 req  33 cancelled  L1=1999ms
+    run 44/50: 100 req  100 cancelled  L1=1965ms
+    run 45/50: 100 req  29 cancelled  L1=2003ms
+    run 46/50: 100 req  0 cancelled  L1=n/a
+    run 47/50: 100 req  9 cancelled  L1=2000ms
+    run 48/50: 100 req  99 cancelled  L1=1991ms
+    run 49/50: 100 req  99 cancelled  L1=1990ms
+    run 50/50: 100 req  99 cancelled  L1=1989ms
+  → rate=0.6386  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.60 (0s)
+  [gate] quiet (load=0.36) — running cell
+=== go K=50 N=175 ===
+go-service ready yield_interval_ms=50 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=175 | T=175 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=175 | T=175 | K=50ms
+    run 1/50: 175 req  0 cancelled  L1=1813ms
+    run 2/50: 175 req  43 cancelled  L1=287ms
+    run 3/50: 175 req  42 cancelled  L1=302ms
+    run 4/50: 175 req  42 cancelled  L1=307ms
+    run 5/50: 175 req  43 cancelled  L1=287ms
+    run 6/50: 175 req  43 cancelled  L1=271ms
+    run 7/50: 175 req  42 cancelled  L1=309ms
+    run 8/50: 175 req  43 cancelled  L1=291ms
+    run 9/50: 175 req  43 cancelled  L1=292ms
+    run 10/50: 175 req  43 cancelled  L1=293ms
+    run 11/50: 175 req  43 cancelled  L1=297ms
+    run 12/50: 175 req  42 cancelled  L1=300ms
+    run 13/50: 175 req  42 cancelled  L1=299ms
+    run 14/50: 175 req  42 cancelled  L1=285ms
+    run 15/50: 175 req  42 cancelled  L1=304ms
+    run 16/50: 175 req  43 cancelled  L1=285ms
+    run 17/50: 175 req  43 cancelled  L1=287ms
+    run 18/50: 175 req  43 cancelled  L1=290ms
+    run 19/50: 175 req  43 cancelled  L1=300ms
+    run 20/50: 175 req  43 cancelled  L1=301ms
+    run 21/50: 175 req  42 cancelled  L1=300ms
+    run 22/50: 175 req  42 cancelled  L1=281ms
+    run 23/50: 175 req  42 cancelled  L1=299ms
+    run 24/50: 175 req  42 cancelled  L1=301ms
+    run 25/50: 175 req  42 cancelled  L1=307ms
+    run 26/50: 175 req  43 cancelled  L1=286ms
+    run 27/50: 175 req  43 cancelled  L1=296ms
+    run 28/50: 175 req  43 cancelled  L1=298ms
+    run 29/50: 175 req  43 cancelled  L1=297ms
+    run 30/50: 175 req  42 cancelled  L1=280ms
+    run 31/50: 175 req  43 cancelled  L1=299ms
+    run 32/50: 175 req  43 cancelled  L1=300ms
+    run 33/50: 175 req  42 cancelled  L1=300ms
+    run 34/50: 175 req  42 cancelled  L1=301ms
+    run 35/50: 175 req  43 cancelled  L1=288ms
+    run 36/50: 175 req  43 cancelled  L1=290ms
+    run 37/50: 175 req  43 cancelled  L1=293ms
+    run 38/50: 175 req  43 cancelled  L1=278ms
+    run 39/50: 175 req  43 cancelled  L1=291ms
+    run 40/50: 175 req  43 cancelled  L1=293ms
+    run 41/50: 175 req  43 cancelled  L1=291ms
+    run 42/50: 175 req  43 cancelled  L1=297ms
+    run 43/50: 175 req  43 cancelled  L1=301ms
+    run 44/50: 175 req  43 cancelled  L1=299ms
+    run 45/50: 175 req  42 cancelled  L1=300ms
+    run 46/50: 175 req  42 cancelled  L1=299ms
+    run 47/50: 175 req  42 cancelled  L1=286ms
+    run 48/50: 175 req  42 cancelled  L1=306ms
+    run 49/50: 175 req  43 cancelled  L1=288ms
+    run 50/50: 175 req  43 cancelled  L1=287ms
+  → rate=0.2386  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.45 (0s)
+  [gate] quiet (load=0.25) — running cell
+=== go K=50 N=250 ===
+go-service ready yield_interval_ms=50 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=250 | T=250 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=250 | T=250 | K=50ms
+    run 1/50: 250 req  0 cancelled  L1=n/a
+    run 2/50: 250 req  1 cancelled  L1=318ms
+    run 3/50: 250 req  1 cancelled  L1=318ms
+    run 4/50: 250 req  1 cancelled  L1=312ms
+    run 5/50: 250 req  1 cancelled  L1=310ms
+    run 6/50: 250 req  1 cancelled  L1=311ms
+    run 7/50: 250 req  1 cancelled  L1=308ms
+    run 8/50: 250 req  2 cancelled  L1=306ms
+    run 9/50: 250 req  2 cancelled  L1=302ms
+    run 10/50: 250 req  2 cancelled  L1=307ms
+    run 11/50: 250 req  2 cancelled  L1=305ms
+    run 12/50: 250 req  1 cancelled  L1=299ms
+    run 13/50: 250 req  1 cancelled  L1=317ms
+    run 14/50: 250 req  1 cancelled  L1=295ms
+    run 15/50: 250 req  1 cancelled  L1=319ms
+    run 16/50: 250 req  1 cancelled  L1=316ms
+    run 17/50: 250 req  1 cancelled  L1=316ms
+    run 18/50: 250 req  1 cancelled  L1=312ms
+    run 19/50: 250 req  1 cancelled  L1=316ms
+    run 20/50: 250 req  1 cancelled  L1=313ms
+    run 21/50: 250 req  1 cancelled  L1=310ms
+    run 22/50: 250 req  2 cancelled  L1=308ms
+    run 23/50: 250 req  1 cancelled  L1=318ms
+    run 24/50: 250 req  1 cancelled  L1=316ms
+    run 25/50: 250 req  1 cancelled  L1=313ms
+    run 26/50: 250 req  1 cancelled  L1=312ms
+    run 27/50: 250 req  1 cancelled  L1=310ms
+    run 28/50: 250 req  2 cancelled  L1=307ms
+    run 29/50: 250 req  2 cancelled  L1=303ms
+    run 30/50: 250 req  1 cancelled  L1=300ms
+    run 31/50: 250 req  1 cancelled  L1=311ms
+    run 32/50: 250 req  2 cancelled  L1=308ms
+    run 33/50: 250 req  2 cancelled  L1=305ms
+    run 34/50: 250 req  1 cancelled  L1=310ms
+    run 35/50: 250 req  2 cancelled  L1=307ms
+    run 36/50: 250 req  2 cancelled  L1=305ms
+    run 37/50: 250 req  1 cancelled  L1=297ms
+    run 38/50: 250 req  1 cancelled  L1=317ms
+    run 39/50: 250 req  1 cancelled  L1=300ms
+    run 40/50: 250 req  1 cancelled  L1=317ms
+    run 41/50: 250 req  1 cancelled  L1=315ms
+    run 42/50: 250 req  1 cancelled  L1=316ms
+    run 43/50: 250 req  1 cancelled  L1=324ms
+    run 44/50: 250 req  1 cancelled  L1=320ms
+    run 45/50: 250 req  1 cancelled  L1=316ms
+    run 46/50: 250 req  1 cancelled  L1=314ms
+    run 47/50: 250 req  2 cancelled  L1=309ms
+    run 48/50: 250 req  1 cancelled  L1=313ms
+    run 49/50: 250 req  1 cancelled  L1=310ms
+    run 50/50: 250 req  2 cancelled  L1=307ms
+  → rate=0.005  written to e1g_go_cliff.csv
+  [gate] waiting for quiet… load=0.53 (0s)
+  [gate] quiet (load=0.24) — running cell
+=== go K=50 N=350 ===
+go-service ready yield_interval_ms=50 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=350 | T=350 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=350 | T=350 | K=50ms
+    run 1/50: 313 req  0 cancelled  L1=234ms
+    run 2/50: 348 req  0 cancelled  L1=316ms
+    run 3/50: 348 req  0 cancelled  L1=314ms
+    run 4/50: 347 req  0 cancelled  L1=306ms
+    run 5/50: 348 req  0 cancelled  L1=313ms
+    run 6/50: 347 req  0 cancelled  L1=318ms
+    run 7/50: 348 req  0 cancelled  L1=298ms
+    run 8/50: 348 req  0 cancelled  L1=315ms
+    run 9/50: 347 req  0 cancelled  L1=301ms
+    run 10/50: 348 req  0 cancelled  L1=310ms
+    run 11/50: 347 req  0 cancelled  L1=320ms
+    run 12/50: 347 req  0 cancelled  L1=302ms
+    run 13/50: 348 req  0 cancelled  L1=313ms
+    run 14/50: 347 req  0 cancelled  L1=320ms
+    run 15/50: 348 req  0 cancelled  L1=310ms
+    run 16/50: 348 req  0 cancelled  L1=319ms
+    run 17/50: 347 req  0 cancelled  L1=303ms
+    run 18/50: 348 req  0 cancelled  L1=316ms
+    run 19/50: 347 req  0 cancelled  L1=302ms
+    run 20/50: 348 req  0 cancelled  L1=318ms
+    run 21/50: 347 req  0 cancelled  L1=305ms
+    run 22/50: 348 req  0 cancelled  L1=315ms
+    run 23/50: 347 req  0 cancelled  L1=302ms
+    run 24/50: 348 req  0 cancelled  L1=315ms
+    run 25/50: 347 req  0 cancelled  L1=320ms
+    run 26/50: 348 req  0 cancelled  L1=308ms
+    run 27/50: 348 req  0 cancelled  L1=297ms
+    run 28/50: 348 req  0 cancelled  L1=316ms
+    run 29/50: 347 req  0 cancelled  L1=303ms
+    run 30/50: 348 req  0 cancelled  L1=314ms
+    run 31/50: 347 req  0 cancelled  L1=322ms
+    run 32/50: 348 req  0 cancelled  L1=310ms
+    run 33/50: 348 req  0 cancelled  L1=338ms
+    run 34/50: 347 req  0 cancelled  L1=306ms
+    run 35/50: 348 req  0 cancelled  L1=315ms
+    run 36/50: 348 req  0 cancelled  L1=306ms
+    run 37/50: 348 req  0 cancelled  L1=317ms
+    run 38/50: 347 req  0 cancelled  L1=304ms
+    run 39/50: 348 req  0 cancelled  L1=310ms
+    run 40/50: 347 req  0 cancelled  L1=319ms
+    run 41/50: 348 req  0 cancelled  L1=306ms
+    run 42/50: 348 req  0 cancelled  L1=317ms
+    run 43/50: 347 req  0 cancelled  L1=302ms
+    run 44/50: 348 req  0 cancelled  L1=311ms
+    run 45/50: 347 req  0 cancelled  L1=319ms
+    run 46/50: 348 req  0 cancelled  L1=309ms
+    run 47/50: 348 req  0 cancelled  L1=318ms
+    run 48/50: 347 req  0 cancelled  L1=322ms
+    run 49/50: 348 req  0 cancelled  L1=312ms
+    run 50/50: 347 req  0 cancelled  L1=319ms
+  → rate=0.0  written to e1g_go_cliff.csv
+── Go latency probe (N=1 across K) ──
+  [gate] waiting for quiet… load=0.84 (0s)
+  [gate] quiet (load=0.31) — running cell
+=== go-lat K=25 N=1 ===
+go-service ready yield_interval_ms=25 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=1 | T=1 | K=25ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=30
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=1 | T=1 | K=25ms
+    run 1/30: 1 req  1 cancelled  L1=3ms
+    run 2/30: 1 req  1 cancelled  L1=1ms
+    run 3/30: 1 req  1 cancelled  L1=1ms
+    run 4/30: 1 req  1 cancelled  L1=3ms
+    run 5/30: 1 req  1 cancelled  L1=3ms
+    run 6/30: 1 req  1 cancelled  L1=1ms
+    run 7/30: 1 req  1 cancelled  L1=1ms
+    run 8/30: 1 req  1 cancelled  L1=3ms
+    run 9/30: 1 req  1 cancelled  L1=1ms
+    run 10/30: 1 req  1 cancelled  L1=3ms
+    run 11/30: 1 req  1 cancelled  L1=3ms
+    run 12/30: 1 req  1 cancelled  L1=0ms
+    run 13/30: 1 req  1 cancelled  L1=3ms
+    run 14/30: 1 req  1 cancelled  L1=4ms
+    run 15/30: 1 req  1 cancelled  L1=3ms
+    run 16/30: 1 req  1 cancelled  L1=3ms
+    run 17/30: 1 req  1 cancelled  L1=1ms
+    run 18/30: 1 req  1 cancelled  L1=3ms
+    run 19/30: 1 req  1 cancelled  L1=3ms
+    run 20/30: 1 req  1 cancelled  L1=0ms
+    run 21/30: 1 req  1 cancelled  L1=3ms
+    run 22/30: 1 req  1 cancelled  L1=3ms
+    run 23/30: 1 req  1 cancelled  L1=2ms
+    run 24/30: 1 req  1 cancelled  L1=3ms
+    run 25/30: 1 req  1 cancelled  L1=3ms
+    run 26/30: 1 req  1 cancelled  L1=1ms
+    run 27/30: 1 req  1 cancelled  L1=0ms
+    run 28/30: 1 req  1 cancelled  L1=3ms
+    run 29/30: 1 req  1 cancelled  L1=3ms
+    run 30/30: 1 req  1 cancelled  L1=3ms
+  → rate=1.0  written to e1g_go_latency.csv
+  [gate] quiet (load=0.38) — running cell
+=== go-lat K=50 N=1 ===
+go-service ready yield_interval_ms=50 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=1 | T=1 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=30
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=1 | T=1 | K=50ms
+    run 1/30: 1 req  1 cancelled  L1=1ms
+    run 2/30: 1 req  1 cancelled  L1=3ms
+    run 3/30: 1 req  1 cancelled  L1=1ms
+    run 4/30: 1 req  1 cancelled  L1=1ms
+    run 5/30: 1 req  1 cancelled  L1=3ms
+    run 6/30: 1 req  1 cancelled  L1=3ms
+    run 7/30: 1 req  1 cancelled  L1=1ms
+    run 8/30: 1 req  1 cancelled  L1=0ms
+    run 9/30: 1 req  1 cancelled  L1=4ms
+    run 10/30: 1 req  1 cancelled  L1=3ms
+    run 11/30: 1 req  1 cancelled  L1=2ms
+    run 12/30: 1 req  1 cancelled  L1=1ms
+    run 13/30: 1 req  1 cancelled  L1=3ms
+    run 14/30: 1 req  1 cancelled  L1=3ms
+    run 15/30: 1 req  1 cancelled  L1=0ms
+    run 16/30: 1 req  1 cancelled  L1=3ms
+    run 17/30: 1 req  1 cancelled  L1=1ms
+    run 18/30: 1 req  1 cancelled  L1=3ms
+    run 19/30: 1 req  1 cancelled  L1=3ms
+    run 20/30: 1 req  1 cancelled  L1=0ms
+    run 21/30: 1 req  1 cancelled  L1=1ms
+    run 22/30: 1 req  1 cancelled  L1=1ms
+    run 23/30: 1 req  1 cancelled  L1=3ms
+    run 24/30: 1 req  1 cancelled  L1=0ms
+    run 25/30: 1 req  1 cancelled  L1=3ms
+    run 26/30: 1 req  1 cancelled  L1=3ms
+    run 27/30: 1 req  1 cancelled  L1=0ms
+    run 28/30: 1 req  1 cancelled  L1=3ms
+    run 29/30: 1 req  1 cancelled  L1=0ms
+    run 30/30: 1 req  1 cancelled  L1=3ms
+  → rate=1.0  written to e1g_go_latency.csv
+  [gate] quiet (load=0.31) — running cell
+=== go-lat K=100 N=1 ===
+go-service ready yield_interval_ms=100 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=1 | T=1 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=30
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=1 | T=1 | K=100ms
+    run 1/30: 1 req  1 cancelled  L1=3ms
+    run 2/30: 1 req  1 cancelled  L1=0ms
+    run 3/30: 1 req  1 cancelled  L1=1ms
+    run 4/30: 1 req  1 cancelled  L1=5ms
+    run 5/30: 1 req  1 cancelled  L1=3ms
+    run 6/30: 1 req  1 cancelled  L1=4ms
+    run 7/30: 1 req  1 cancelled  L1=3ms
+    run 8/30: 1 req  1 cancelled  L1=3ms
+    run 9/30: 1 req  1 cancelled  L1=1ms
+    run 10/30: 1 req  1 cancelled  L1=1ms
+    run 11/30: 1 req  1 cancelled  L1=0ms
+    run 12/30: 1 req  1 cancelled  L1=3ms
+    run 13/30: 1 req  1 cancelled  L1=4ms
+    run 14/30: 1 req  1 cancelled  L1=3ms
+    run 15/30: 1 req  1 cancelled  L1=3ms
+    run 16/30: 1 req  1 cancelled  L1=3ms
+    run 17/30: 1 req  1 cancelled  L1=3ms
+    run 18/30: 1 req  1 cancelled  L1=3ms
+    run 19/30: 1 req  1 cancelled  L1=3ms
+    run 20/30: 1 req  1 cancelled  L1=3ms
+    run 21/30: 1 req  1 cancelled  L1=0ms
+    run 22/30: 1 req  1 cancelled  L1=0ms
+    run 23/30: 1 req  1 cancelled  L1=1ms
+    run 24/30: 1 req  1 cancelled  L1=3ms
+    run 25/30: 1 req  1 cancelled  L1=3ms
+    run 26/30: 1 req  1 cancelled  L1=4ms
+    run 27/30: 1 req  1 cancelled  L1=3ms
+    run 28/30: 1 req  1 cancelled  L1=3ms
+    run 29/30: 1 req  1 cancelled  L1=1ms
+    run 30/30: 1 req  1 cancelled  L1=1ms
+  → rate=1.0  written to e1g_go_latency.csv
+  [gate] waiting for quiet… load=0.47 (0s)
+  [gate] quiet (load=0.26) — running cell
+=== go-lat K=200 N=1 ===
+go-service ready yield_interval_ms=200 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=1 | T=1 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=30
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=1 | T=1 | K=200ms
+    run 1/30: 1 req  1 cancelled  L1=3ms
+    run 2/30: 1 req  1 cancelled  L1=1ms
+    run 3/30: 1 req  1 cancelled  L1=1ms
+    run 4/30: 1 req  1 cancelled  L1=4ms
+    run 5/30: 1 req  1 cancelled  L1=0ms
+    run 6/30: 1 req  1 cancelled  L1=3ms
+    run 7/30: 1 req  1 cancelled  L1=3ms
+    run 8/30: 1 req  1 cancelled  L1=1ms
+    run 9/30: 1 req  1 cancelled  L1=4ms
+    run 10/30: 1 req  1 cancelled  L1=0ms
+    run 11/30: 1 req  1 cancelled  L1=3ms
+    run 12/30: 1 req  1 cancelled  L1=2ms
+    run 13/30: 1 req  1 cancelled  L1=1ms
+    run 14/30: 1 req  1 cancelled  L1=2ms
+    run 15/30: 1 req  1 cancelled  L1=1ms
+    run 16/30: 1 req  1 cancelled  L1=1ms
+    run 17/30: 1 req  1 cancelled  L1=1ms
+    run 18/30: 1 req  1 cancelled  L1=3ms
+    run 19/30: 1 req  1 cancelled  L1=0ms
+    run 20/30: 1 req  1 cancelled  L1=3ms
+    run 21/30: 1 req  1 cancelled  L1=4ms
+    run 22/30: 1 req  1 cancelled  L1=3ms
+    run 23/30: 1 req  1 cancelled  L1=1ms
+    run 24/30: 1 req  1 cancelled  L1=4ms
+    run 25/30: 1 req  1 cancelled  L1=4ms
+    run 26/30: 1 req  1 cancelled  L1=3ms
+    run 27/30: 1 req  1 cancelled  L1=3ms
+    run 28/30: 1 req  1 cancelled  L1=4ms
+    run 29/30: 1 req  1 cancelled  L1=3ms
+    run 30/30: 1 req  1 cancelled  L1=2ms
+  → rate=1.0  written to e1g_go_latency.csv
+  [gate] quiet (load=0.34) — running cell
+=== go-lat K=400 N=1 ===
+go-service ready yield_interval_ms=400 cpu_duration_s=15 gomaxprocs=1 num_cpu=1
+
+E1a | mode=go-cliff | N=1 | T=1 | K=400ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=30
+frameworks: ['go']
+────────────────────────────────────────────────────────────
+  go | cpu | N=1 | T=1 | K=400ms
+    run 1/30: 1 req  1 cancelled  L1=1ms
+    run 2/30: 1 req  1 cancelled  L1=3ms
+    run 3/30: 1 req  1 cancelled  L1=3ms
+    run 4/30: 1 req  1 cancelled  L1=3ms
+    run 5/30: 1 req  1 cancelled  L1=0ms
+    run 6/30: 1 req  1 cancelled  L1=3ms
+    run 7/30: 1 req  1 cancelled  L1=3ms
+    run 8/30: 1 req  1 cancelled  L1=3ms
+    run 9/30: 1 req  1 cancelled  L1=3ms
+    run 10/30: 1 req  1 cancelled  L1=3ms
+    run 11/30: 1 req  1 cancelled  L1=3ms
+    run 12/30: 1 req  1 cancelled  L1=3ms
+    run 13/30: 1 req  1 cancelled  L1=3ms
+    run 14/30: 1 req  1 cancelled  L1=0ms
+    run 15/30: 1 req  1 cancelled  L1=3ms
+    run 16/30: 1 req  1 cancelled  L1=3ms
+    run 17/30: 1 req  1 cancelled  L1=3ms
+    run 18/30: 1 req  1 cancelled  L1=0ms
+    run 19/30: 1 req  1 cancelled  L1=3ms
+    run 20/30: 1 req  1 cancelled  L1=3ms
+    run 21/30: 1 req  1 cancelled  L1=3ms
+    run 22/30: 1 req  1 cancelled  L1=3ms
+    run 23/30: 1 req  1 cancelled  L1=3ms
+    run 24/30: 1 req  1 cancelled  L1=3ms
+    run 25/30: 1 req  1 cancelled  L1=0ms
+    run 26/30: 1 req  1 cancelled  L1=3ms
+    run 27/30: 1 req  1 cancelled  L1=3ms
+    run 28/30: 1 req  1 cancelled  L1=3ms
+    run 29/30: 1 req  1 cancelled  L1=0ms
+    run 30/30: 1 req  1 cancelled  L1=2ms
+  → rate=1.0  written to e1g_go_latency.csv
+
+════════════════════════════════════════════════════════════════════
+E1a go-cliff complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

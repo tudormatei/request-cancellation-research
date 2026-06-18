@@ -1,0 +1,48 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq2/logs/e2d_20260530_131832.log
+Started at: Sat May 30 01:18:32 PM CEST 2026
+▶ E2d — outbound gRPC cancellation (in-band abort / HTTP2 RST_STREAM)
+  Third cell of IO protocol taxonomy: connection-close | in-band | out-of-band
+  Downstream mock must support gRPC (port 50051).
+Waiting for downstream mock (pip install grpcio + proto compile + startup)...
+[notice] To update, run: pip install --upgrade pip
+ts=1780139928908 req=server stage=downstream event=started detail=http_port=8090
+======== Running on http://0.0.0.0:8090 ========
+(Press CTRL+C to quit)
+ts=1780139928915 req=server stage=downstream event=grpc_started detail=port=50051
+── ASP.NET ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+aspnet ready
+
+E2d | framework=aspnet | N=1 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=64ms
+  run 2/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=8ms
+  run 3/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=5ms
+  run 4/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=8ms
+  run 5/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=8ms
+  run 6/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=4ms
+  run 7/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=5ms
+  run 8/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=4ms
+  run 9/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=6ms
+  run 10/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=8ms
+── WebFlux ──
+
+E2d | framework=webflux | N=1 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=16ms
+  run 2/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=10ms
+  run 3/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=12ms
+  run 4/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=8ms
+  run 5/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=6ms
+  run 6/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=7ms
+  run 7/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=7ms
+  run 8/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=6ms
+  run 9/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=7ms
+  run 10/10: det=1/1 grpc_cancelled=1/1 downstream=✓ lat=10ms
+
+E2d complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2d_analyse.py
+
+════════════════════════════════════════════════════════════════════
+E2 e2d finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py

@@ -1,0 +1,17 @@
+▶ E3c pool-occupancy probe (direct connection count over time). Started Sun May 31 01:55:45 AM CEST 2026
+── ASP.NET ──
+
+E3c pool-probe | aspnet | X=2.0 Y=0.8 cancel_at=0.5s | load=60s monitor=110s
+  load ended at t=65.5s
+  pool_conns DURING load: peak=0, mean=0.0
+  pool_conns AFTER load:  start=0, end=0, min=0
+  → if AFTER-load count stays high, connections are NOT returned (leak); if it drops to ~0, they recover.
+
+── WebFlux ──
+
+E3c pool-probe | webflux | X=2.0 Y=0.8 cancel_at=0.5s | load=60s monitor=110s
+  load ended at t=60.0s
+  pool_conns DURING load: peak=0, mean=0.0
+  pool_conns AFTER load:  start=0, end=0, min=0
+  → if AFTER-load count stays high, connections are NOT returned (leak); if it drops to ~0, they recover.
+✓ pool-probe complete Sun May 31 02:00:16 AM CEST 2026

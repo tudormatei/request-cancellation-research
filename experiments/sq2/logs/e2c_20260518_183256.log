@@ -1,0 +1,45 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq2/logs/e2c_20260518_183256.log
+Started at: Mon May 18 06:32:56 PM CEST 2026
+▶ E2c — outbound HTTP cancellation (connection-close protocol)
+  Downstream mock must be running.
+Waiting for downstream mock (pip install + startup)...
+[notice] A new release of pip is available: 25.0.1 -> 26.1.1
+[notice] To update, run: pip install --upgrade pip
+ts=1779121992273 req=server stage=downstream event=started detail=port=8090
+── ASP.NET ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+aspnet ready
+
+E2c | framework=aspnet | N=1 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 2/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 3/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 4/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 5/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 6/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 7/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 8/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 9/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 10/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+── WebFlux ──
+
+E2c | framework=webflux | N=1 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 2/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 3/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 4/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 5/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 6/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 7/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 8/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 9/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+  run 10/10: det=1/1 outbound_cancelled=1/1 downstream=✗ lat=Nonems
+
+E2c complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py --only e2c
+
+════════════════════════════════════════════════════════════════════
+E2 e2c finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py

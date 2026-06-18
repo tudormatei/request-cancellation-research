@@ -1,0 +1,281 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/nsweep_20260511_172107.log
+Started at: Mon May 11 05:21:07 PM CEST 2026
+
+▶ E1a nsweep (K=100ms, T_max=N)
+=== N=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=1 | T=1 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=1 | T=1 | K=100ms
+    run 1/10: 1 req  1 cancelled  L1=262ms
+    run 2/10: 1 req  1 cancelled  L1=202ms
+    run 3/10: 1 req  1 cancelled  L1=201ms
+    run 4/10: 1 req  1 cancelled  L1=201ms
+    run 5/10: 1 req  1 cancelled  L1=300ms
+    run 6/10: 1 req  1 cancelled  L1=301ms
+    run 7/10: 1 req  1 cancelled  L1=201ms
+    run 8/10: 1 req  1 cancelled  L1=301ms
+    run 9/10: 1 req  1 cancelled  L1=201ms
+    run 10/10: 1 req  1 cancelled  L1=301ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=5 ===
+threadpool min_worker=1 max_worker=5 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=5 | T=5 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=5 | T=5 | K=100ms
+    run 1/10: 5 req  5 cancelled  L1=163ms
+    run 2/10: 5 req  5 cancelled  L1=201ms
+    run 3/10: 5 req  5 cancelled  L1=222ms
+    run 4/10: 5 req  5 cancelled  L1=222ms
+    run 5/10: 5 req  5 cancelled  L1=214ms
+    run 6/10: 5 req  5 cancelled  L1=213ms
+    run 7/10: 5 req  5 cancelled  L1=218ms
+    run 8/10: 5 req  5 cancelled  L1=219ms
+    run 9/10: 5 req  5 cancelled  L1=223ms
+    run 10/10: 5 req  5 cancelled  L1=220ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=10 ===
+threadpool min_worker=1 max_worker=10 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=10 | T=10 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=10 | T=10 | K=100ms
+    run 1/10: 10 req  10 cancelled  L1=222ms
+    run 2/10: 10 req  10 cancelled  L1=255ms
+    run 3/10: 10 req  10 cancelled  L1=242ms
+    run 4/10: 10 req  10 cancelled  L1=213ms
+    run 5/10: 10 req  10 cancelled  L1=233ms
+    run 6/10: 10 req  10 cancelled  L1=224ms
+    run 7/10: 10 req  10 cancelled  L1=228ms
+    run 8/10: 10 req  10 cancelled  L1=212ms
+    run 9/10: 10 req  10 cancelled  L1=225ms
+    run 10/10: 10 req  10 cancelled  L1=222ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=20 ===
+threadpool min_worker=1 max_worker=20 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=20 | T=20 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=20 | T=20 | K=100ms
+    run 1/10: 20 req  20 cancelled  L1=249ms
+    run 2/10: 20 req  20 cancelled  L1=276ms
+    run 3/10: 20 req  20 cancelled  L1=229ms
+    run 4/10: 20 req  20 cancelled  L1=271ms
+    run 5/10: 20 req  20 cancelled  L1=238ms
+    run 6/10: 20 req  20 cancelled  L1=208ms
+    run 7/10: 20 req  20 cancelled  L1=232ms
+    run 8/10: 20 req  20 cancelled  L1=257ms
+    run 9/10: 20 req  20 cancelled  L1=218ms
+    run 10/10: 20 req  20 cancelled  L1=235ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=30 ===
+threadpool min_worker=1 max_worker=30 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=30 | T=30 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=30 | T=30 | K=100ms
+    run 1/10: 30 req  30 cancelled  L1=251ms
+    run 2/10: 30 req  30 cancelled  L1=299ms
+    run 3/10: 30 req  30 cancelled  L1=278ms
+    run 4/10: 30 req  30 cancelled  L1=240ms
+    run 5/10: 30 req  30 cancelled  L1=226ms
+    run 6/10: 30 req  30 cancelled  L1=212ms
+    run 7/10: 30 req  30 cancelled  L1=218ms
+    run 8/10: 30 req  30 cancelled  L1=233ms
+    run 9/10: 30 req  30 cancelled  L1=242ms
+    run 10/10: 30 req  30 cancelled  L1=218ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=40 ===
+threadpool min_worker=1 max_worker=40 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=40 | T=40 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=40 | T=40 | K=100ms
+    run 1/10: 40 req  40 cancelled  L1=299ms
+    run 2/10: 40 req  40 cancelled  L1=293ms
+    run 3/10: 40 req  40 cancelled  L1=266ms
+    run 4/10: 40 req  40 cancelled  L1=243ms
+    run 5/10: 40 req  40 cancelled  L1=279ms
+    run 6/10: 40 req  40 cancelled  L1=237ms
+    run 7/10: 40 req  40 cancelled  L1=261ms
+    run 8/10: 40 req  40 cancelled  L1=258ms
+    run 9/10: 40 req  40 cancelled  L1=239ms
+    run 10/10: 40 req  40 cancelled  L1=246ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=50 ===
+threadpool min_worker=1 max_worker=50 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=50 | T=50 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=50 | T=50 | K=100ms
+    run 1/10: 50 req  50 cancelled  L1=225ms
+    run 2/10: 50 req  50 cancelled  L1=292ms
+    run 3/10: 50 req  50 cancelled  L1=271ms
+    run 4/10: 50 req  50 cancelled  L1=296ms
+    run 5/10: 50 req  50 cancelled  L1=292ms
+    run 6/10: 50 req  50 cancelled  L1=284ms
+    run 7/10: 50 req  50 cancelled  L1=275ms
+    run 8/10: 50 req  50 cancelled  L1=245ms
+    run 9/10: 50 req  50 cancelled  L1=249ms
+    run 10/10: 50 req  50 cancelled  L1=217ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=75 ===
+threadpool min_worker=1 max_worker=75 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=75 | T=75 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=75 | T=75 | K=100ms
+    run 1/10: 75 req  75 cancelled  L1=278ms
+    run 2/10: 75 req  75 cancelled  L1=291ms
+    run 3/10: 75 req  75 cancelled  L1=291ms
+    run 4/10: 75 req  75 cancelled  L1=235ms
+    run 5/10: 75 req  75 cancelled  L1=1513ms
+    run 6/10: 75 req  75 cancelled  L1=442ms
+    run 7/10: 75 req  75 cancelled  L1=269ms
+    run 8/10: 75 req  75 cancelled  L1=274ms
+    run 9/10: 75 req  75 cancelled  L1=270ms
+    run 10/10: 75 req  75 cancelled  L1=270ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=100 ===
+threadpool min_worker=1 max_worker=100 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=100 | T=100 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=100 | T=100 | K=100ms
+    run 1/10: 100 req  100 cancelled  L1=295ms
+    run 2/10: 100 req  100 cancelled  L1=291ms
+    run 3/10: 100 req  100 cancelled  L1=296ms
+    run 4/10: 100 req  100 cancelled  L1=296ms
+    run 5/10: 100 req  100 cancelled  L1=296ms
+    run 6/10: 100 req  100 cancelled  L1=296ms
+    run 7/10: 85 req  0 cancelled  L1=n/a
+    run 8/10: 85 req  0 cancelled  L1=n/a
+    run 9/10: 100 req  100 cancelled  L1=1256ms
+    run 10/10: 100 req  100 cancelled  L1=294ms
+  → rate=0.8247  written to e1a_nsweep.csv
+=== N=125 ===
+threadpool min_worker=1 max_worker=125 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=125 | T=125 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=125 | T=125 | K=100ms
+    run 1/10: 125 req  125 cancelled  L1=189ms
+    run 2/10: 125 req  125 cancelled  L1=292ms
+    run 3/10: 125 req  125 cancelled  L1=299ms
+    run 4/10: 125 req  125 cancelled  L1=288ms
+    run 5/10: 125 req  125 cancelled  L1=278ms
+    run 6/10: 125 req  125 cancelled  L1=290ms
+    run 7/10: 125 req  125 cancelled  L1=281ms
+    run 8/10: 125 req  125 cancelled  L1=292ms
+    run 9/10: 125 req  125 cancelled  L1=293ms
+    run 10/10: 125 req  125 cancelled  L1=290ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=150 ===
+threadpool min_worker=1 max_worker=150 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=150 | T=150 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=150 | T=150 | K=100ms
+    run 1/10: 150 req  150 cancelled  L1=269ms
+    run 2/10: 150 req  150 cancelled  L1=299ms
+    run 3/10: 150 req  150 cancelled  L1=283ms
+    run 4/10: 150 req  150 cancelled  L1=298ms
+    run 5/10: 150 req  150 cancelled  L1=294ms
+    run 6/10: 150 req  150 cancelled  L1=283ms
+    run 7/10: 150 req  150 cancelled  L1=282ms
+    run 8/10: 150 req  150 cancelled  L1=292ms
+    run 9/10: 150 req  150 cancelled  L1=289ms
+    run 10/10: 150 req  150 cancelled  L1=287ms
+  → rate=1.0  written to e1a_nsweep.csv
+=== N=175 ===
+threadpool min_worker=1 max_worker=175 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=175 | T=175 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=175 | T=175 | K=100ms
+    run 1/10: 175 req  175 cancelled  L1=203ms
+    run 2/10: 175 req  175 cancelled  L1=294ms
+    run 3/10: 175 req  175 cancelled  L1=225ms
+    run 4/10: 175 req  175 cancelled  L1=297ms
+    run 5/10: 175 req  175 cancelled  L1=291ms
+    run 6/10: 175 req  175 cancelled  L1=389ms
+    run 7/10: 163 req  0 cancelled  L1=n/a
+    run 8/10: 172 req  0 cancelled  L1=n/a
+    run 9/10: 175 req  175 cancelled  L1=297ms
+    run 10/10: 175 req  175 cancelled  L1=294ms
+  → rate=0.8069  written to e1a_nsweep.csv
+=== N=200 ===
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=nsweep | N=200 | T=200 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=200 | T=200 | K=100ms
+    run 1/10: 200 req  200 cancelled  L1=239ms
+    run 2/10: 200 req  200 cancelled  L1=289ms
+    run 3/10: 200 req  200 cancelled  L1=296ms
+    run 4/10: 200 req  200 cancelled  L1=289ms
+    run 5/10: 200 req  200 cancelled  L1=286ms
+    run 6/10: 200 req  200 cancelled  L1=273ms
+    run 7/10: 200 req  200 cancelled  L1=278ms
+    run 8/10: 200 req  200 cancelled  L1=291ms
+    run 9/10: 200 req  200 cancelled  L1=298ms
+    run 10/10: 200 req  200 cancelled  L1=292ms
+  → rate=1.0  written to e1a_nsweep.csv
+
+════════════════════════════════════════════════════════════════════
+E1a nsweep complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

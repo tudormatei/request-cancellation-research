@@ -1,0 +1,273 @@
+▶ E3c pool-scaling verification (complete occupancy formula). Started Sun May 31 08:51:49 AM CEST 2026
+  Predicted onset X_max = pool / [(1-Y)Q + Y*hold]; Y=0.8, Q=10, cancel@0.5
+  ASP.NET hold≈0.55 → onset pool20≈8.2, pool40≈16.4
+  WebFlux hold≈10   → onset pool20≈2,   pool40≈4
+
+════ aspnet pool=20 ════
+=== aspnet pool=20 X=4 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=aspnet | X=4.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10014.0ms
+  window  1 [30.0–60.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10011.8ms
+  window  2 [60.0–90.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10012.0ms
+  window  3 [90.0–120.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10011.7ms
+  window  4 [120.0–150.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10011.7ms
+  window  5 [150.0–180.0s]  sent= 117  ok=  21  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.7rps  p95=10012.0ms
+=== aspnet pool=20 X=8 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=aspnet | X=8.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10016.1ms
+  window  1 [30.0–60.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10013.4ms
+  window  2 [60.0–90.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10013.0ms
+  window  3 [90.0–120.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10012.8ms
+  window  4 [120.0–150.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10012.7ms
+  window  5 [150.0–180.0s]  sent= 232  ok=  41  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.4rps  p95=10013.4ms
+=== aspnet pool=20 X=12 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=aspnet | X=12.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 360  ok=  72  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.4rps  p95=15015.9ms
+  window  1 [30.0–60.0s]  sent= 360  ok=  72  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.4rps  p95=21678.9ms
+  window  2 [60.0–90.0s]  sent= 359  ok=  67  failed=   5 (6.9%) [503=0 500=5 to=0]  thru_ok=2.2rps  p95=24609.2ms
+  window  3 [90.0–120.0s]  sent= 360  ok=  60  failed=  12 (16.7%) [503=0 500=12 to=0]  thru_ok=2.0rps  p95=24937.4ms
+  window  4 [120.0–150.0s]  sent= 360  ok=  60  failed=  12 (16.7%) [503=0 500=12 to=0]  thru_ok=2.0rps  p95=24931.2ms
+  window  5 [150.0–180.0s]  sent= 317  ok=  22  failed=   8 (26.7%) [503=0 500=8 to=0]  thru_ok=0.7rps  p95=24928.4ms
+=== aspnet pool=20 X=16 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=aspnet | X=16.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 480  ok=  95  failed=   1 (1.0%) [503=0 500=1 to=0]  thru_ok=3.2rps  p95=24709.2ms
+  window  1 [30.0–60.0s]  sent= 479  ok=  60  failed=  36 (37.5%) [503=0 500=36 to=0]  thru_ok=2.0rps  p95=25004.2ms
+  window  2 [60.0–90.0s]  sent= 480  ok=  60  failed=  36 (37.5%) [503=0 500=36 to=0]  thru_ok=2.0rps  p95=25008.1ms
+  window  3 [90.0–120.0s]  sent= 479  ok=  60  failed=  36 (37.5%) [503=0 500=36 to=0]  thru_ok=2.0rps  p95=25001.5ms
+  window  4 [120.0–150.0s]  sent= 479  ok=  60  failed=  36 (37.5%) [503=0 500=36 to=0]  thru_ok=2.0rps  p95=24993.3ms
+  window  5 [150.0–180.0s]  sent= 430  ok=  22  failed=  24 (52.2%) [503=0 500=24 to=0]  thru_ok=0.7rps  p95=24982.6ms
+=== aspnet pool=20 X=22 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=aspnet | X=22.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 659  ok=  99  failed=  33 (25.0%) [503=0 500=33 to=0]  thru_ok=3.3rps  p95=24964.0ms
+  window  1 [30.0–60.0s]  sent= 659  ok=  61  failed=  71 (53.8%) [503=0 500=71 to=0]  thru_ok=2.0rps  p95=25001.5ms
+  window  2 [60.0–90.0s]  sent= 659  ok=  60  failed=  72 (54.5%) [503=0 500=72 to=0]  thru_ok=2.0rps  p95=24975.0ms
+  window  3 [90.0–120.0s]  sent= 659  ok=  60  failed=  72 (54.5%) [503=0 500=72 to=0]  thru_ok=2.0rps  p95=24949.6ms
+  window  4 [120.0–150.0s]  sent= 659  ok=  59  failed=  72 (55.0%) [503=0 500=72 to=0]  thru_ok=2.0rps  p95=24931.7ms
+  window  5 [150.0–180.0s]  sent= 596  ok=  21  failed=  49 (70.0%) [503=0 500=49 to=0]  thru_ok=0.7rps  p95=24908.2ms
+
+════ aspnet pool=40 ════
+=== aspnet pool=40 X=4 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=aspnet | X=4.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10012.4ms
+  window  1 [30.0–60.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10012.9ms
+  window  2 [60.0–90.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.7ms
+  window  3 [90.0–120.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.6ms
+  window  4 [120.0–150.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.6ms
+  window  5 [150.0–180.0s]  sent= 117  ok=  21  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.7rps  p95=10013.6ms
+=== aspnet pool=40 X=8 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=aspnet | X=8.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10017.2ms
+  window  1 [30.0–60.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10012.5ms
+  window  2 [60.0–90.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10011.8ms
+  window  3 [90.0–120.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10013.5ms
+  window  4 [120.0–150.0s]  sent= 240  ok=  48  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.6rps  p95=10012.1ms
+  window  5 [150.0–180.0s]  sent= 233  ok=  41  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.4rps  p95=10012.4ms
+=== aspnet pool=40 X=12 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=aspnet | X=12.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 360  ok=  72  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.4rps  p95=10012.0ms
+  window  1 [30.0–60.0s]  sent= 360  ok=  72  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.4rps  p95=10011.8ms
+  window  2 [60.0–90.0s]  sent= 360  ok=  72  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.4rps  p95=10011.8ms
+  window  3 [90.0–120.0s]  sent= 359  ok=  72  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.4rps  p95=10011.8ms
+  window  4 [120.0–150.0s]  sent= 360  ok=  72  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.4rps  p95=10011.9ms
+  window  5 [150.0–180.0s]  sent= 349  ok=  61  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.0rps  p95=10013.0ms
+=== aspnet pool=40 X=16 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=aspnet | X=16.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 480  ok=  96  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=3.2rps  p95=10014.5ms
+  window  1 [30.0–60.0s]  sent= 479  ok=  96  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=3.2rps  p95=10013.0ms
+  window  2 [60.0–90.0s]  sent= 480  ok=  96  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=3.2rps  p95=10012.9ms
+  window  3 [90.0–120.0s]  sent= 479  ok=  96  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=3.2rps  p95=10011.8ms
+  window  4 [120.0–150.0s]  sent= 480  ok=  96  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=3.2rps  p95=10011.9ms
+  window  5 [150.0–180.0s]  sent= 464  ok=  81  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=2.7rps  p95=10011.6ms
+=== aspnet pool=40 X=22 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=aspnet | X=22.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 659  ok= 132  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=4.4rps  p95=12723.3ms
+  window  1 [30.0–60.0s]  sent= 659  ok= 132  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=4.4rps  p95=15435.3ms
+  window  2 [60.0–90.0s]  sent= 659  ok= 132  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=4.4rps  p95=18147.0ms
+  window  3 [90.0–120.0s]  sent= 659  ok= 132  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=4.4rps  p95=21755.9ms
+  window  4 [120.0–150.0s]  sent= 659  ok= 131  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=4.4rps  p95=24472.4ms
+  window  5 [150.0–180.0s]  sent= 578  ok=  45  failed=   6 (11.8%) [503=0 500=6 to=0]  thru_ok=1.5rps  p95=24921.8ms
+
+════ webflux pool=20 ════
+=== webflux pool=20 X=1 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=webflux | X=1.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  30  ok=   1  failed=   5 (83.3%) [503=0 500=0 to=5]  thru_ok=0.0rps  p95=30531.0ms
+  window  1 [30.0–60.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.3ms
+  window  4 [120.0–150.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.1ms
+  window  5 [150.0–180.0s]  sent=  25  ok=   0  failed=   1 (100.0%) [503=0 500=0 to=1]  thru_ok=0.0rps  p95=30530.8ms
+=== webflux pool=20 X=2 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=webflux | X=2.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  60  ok=   1  failed=  11 (91.7%) [503=0 500=0 to=11]  thru_ok=0.0rps  p95=30531.0ms
+  window  1 [30.0–60.0s]  sent=  60  ok=   1  failed=  11 (91.7%) [503=0 500=0 to=11]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent=  50  ok=   0  failed=   2 (100.0%) [503=0 500=0 to=2]  thru_ok=0.0rps  p95=30530.8ms
+=== webflux pool=20 X=3 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=webflux | X=3.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.1ms
+  window  4 [120.0–150.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.1ms
+  window  5 [150.0–180.0s]  sent=  75  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.1ms
+=== webflux pool=20 X=4 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=webflux | X=4.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 120  ok=   0  failed=  24 (100.0%) [503=0 500=0 to=24]  thru_ok=0.0rps  p95=30531.1ms
+  window  1 [30.0–60.0s]  sent= 120  ok=   0  failed=  24 (100.0%) [503=0 500=0 to=24]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent= 120  ok=   0  failed=  24 (100.0%) [503=0 500=0 to=24]  thru_ok=0.0rps  p95=30531.0ms
+  window  3 [90.0–120.0s]  sent= 120  ok=   2  failed=  22 (91.7%) [503=0 500=0 to=22]  thru_ok=0.1rps  p95=30531.1ms
+  window  4 [120.0–150.0s]  sent= 120  ok=  11  failed=  13 (54.2%) [503=0 500=0 to=13]  thru_ok=0.4rps  p95=30531.1ms
+  window  5 [150.0–180.0s]  sent= 102  ok=   4  failed=   2 (33.3%) [503=0 500=0 to=2]  thru_ok=0.1rps  p95=30531.3ms
+=== webflux pool=20 X=6 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p20 | framework=webflux | X=6.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 180  ok=   4  failed=  32 (88.9%) [503=0 500=0 to=32]  thru_ok=0.1rps  p95=30531.1ms
+  window  1 [30.0–60.0s]  sent= 180  ok=   7  failed=  29 (80.6%) [503=0 500=0 to=29]  thru_ok=0.2rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent= 180  ok=  20  failed=  16 (44.4%) [503=0 500=0 to=16]  thru_ok=0.7rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent= 180  ok=  24  failed=  12 (33.3%) [503=0 500=0 to=12]  thru_ok=0.8rps  p95=30531.1ms
+  window  4 [120.0–150.0s]  sent= 180  ok=  30  failed=   6 (16.7%) [503=0 500=0 to=6]  thru_ok=1.0rps  p95=30531.1ms
+  window  5 [150.0–180.0s]  sent= 154  ok=   6  failed=   4 (40.0%) [503=0 500=0 to=4]  thru_ok=0.2rps  p95=30531.0ms
+
+════ webflux pool=40 ════
+=== webflux pool=40 X=1 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=webflux | X=1.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  30  ok=   1  failed=   5 (83.3%) [503=0 500=0 to=5]  thru_ok=0.0rps  p95=30531.1ms
+  window  1 [30.0–60.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.0ms
+  window  2 [60.0–90.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.0ms
+  window  3 [90.0–120.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.1ms
+  window  4 [120.0–150.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.0ms
+  window  5 [150.0–180.0s]  sent=  25  ok=   0  failed=   1 (100.0%) [503=0 500=0 to=1]  thru_ok=0.0rps  p95=30531.0ms
+=== webflux pool=40 X=2 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=webflux | X=2.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.0ms
+  window  2 [60.0–90.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.4ms
+  window  4 [120.0–150.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30531.0ms
+  window  5 [150.0–180.0s]  sent=  50  ok=   0  failed=   2 (100.0%) [503=0 500=0 to=2]  thru_ok=0.0rps  p95=30531.2ms
+=== webflux pool=40 X=3 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=webflux | X=3.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.5ms
+  window  1 [30.0–60.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.2ms
+  window  2 [60.0–90.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.1ms
+  window  4 [120.0–150.0s]  sent=  90  ok=   0  failed=  18 (100.0%) [503=0 500=0 to=18]  thru_ok=0.0rps  p95=30531.1ms
+  window  5 [150.0–180.0s]  sent=  75  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.2ms
+=== webflux pool=40 X=4 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=webflux | X=4.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 120  ok=   0  failed=  24 (100.0%) [503=0 500=0 to=24]  thru_ok=0.0rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent= 120  ok=   0  failed=  24 (100.0%) [503=0 500=0 to=24]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent= 120  ok=   1  failed=  23 (95.8%) [503=0 500=0 to=23]  thru_ok=0.0rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent= 120  ok=   0  failed=  24 (100.0%) [503=0 500=0 to=24]  thru_ok=0.0rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent= 120  ok=   0  failed=  24 (100.0%) [503=0 500=0 to=24]  thru_ok=0.0rps  p95=30531.1ms
+  window  5 [150.0–180.0s]  sent= 100  ok=   0  failed=   4 (100.0%) [503=0 500=0 to=4]  thru_ok=0.0rps  p95=30530.9ms
+=== webflux pool=40 X=6 Y=0.8 cancel@0.5 ===
+
+E3c poolscale_p40 | framework=webflux | X=6.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent= 150  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.1ms
+✓ pool-scaling sweep complete Sun May 31 10:06:40 AM CEST 2026

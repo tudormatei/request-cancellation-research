@@ -1,0 +1,17 @@
+▶ Confirm: pool=40, X=1 — does WebFlux leak? (occupancy model: X·Q=10 ≪ 40 → should stay ~10)
+
+probe webflux | X=1.0 Y=0.8 cancel@0.5 | duration=120s
+  t_s : active / total / idle_in_tx
+      0.2s :  0 /  1 /  0
+     10.4s :  2 /  3 /  0
+     20.0s :  4 /  4 /  0
+     30.2s :  6 /  6 /  0
+     40.4s :  7 /  7 /  0
+     60.1s :  7 /  7 /  0
+     70.3s :  7 /  7 /  0
+     90.0s :  7 /  7 /  0
+    100.3s :  7 /  7 /  0
+    120.0s :  7 /  7 /  0
+    130.3s :  7 /  7 /  0
+  peak total_conns = 7 ; final = 7 ; pool max = 10
+✓ done

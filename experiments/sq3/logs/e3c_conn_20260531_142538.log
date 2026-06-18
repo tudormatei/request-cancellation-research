@@ -1,0 +1,41 @@
+▶ WebFlux connection-count diagnostic (leak vs reclaim). Sun May 31 02:25:38 PM CEST 2026
+
+════ fresh WebFlux, X=0.5 ════
+
+probe webflux | X=0.5 Y=0.8 cancel@0.5 | duration=150s
+  t_s : active / total / idle_in_tx
+      0.2s :  0 /  1 /  0
+     10.4s :  1 /  2 /  0
+     20.0s :  2 /  2 /  0
+     30.1s :  3 /  3 /  0
+     40.4s :  4 /  4 /  0
+     60.1s :  4 /  4 /  0
+     70.3s :  4 /  4 /  0
+     90.0s :  4 /  4 /  0
+    100.3s :  4 /  4 /  0
+    120.0s :  4 /  4 /  0
+    130.2s :  4 /  4 /  0
+    140.4s :  4 /  4 /  0
+    160.1s :  4 /  4 /  0
+  peak total_conns = 4 ; final = 4 ; pool max = 10
+
+════ fresh WebFlux, X=4 ════
+
+probe webflux | X=4.0 Y=0.8 cancel@0.5 | duration=150s
+  t_s : active / total / idle_in_tx
+      0.2s :  0 /  1 /  0
+     10.4s :  9 / 10 /  0
+     20.0s : 10 / 10 /  0
+     30.2s : 10 / 10 /  0
+     40.4s : 10 / 10 /  0
+     60.1s : 10 / 10 /  0
+     70.3s : 10 / 10 /  0
+     90.1s : 10 / 10 /  0
+    100.3s : 10 / 10 /  0
+    120.1s : 10 / 10 /  0
+    130.2s : 10 / 10 /  0
+    140.4s : 10 / 10 /  0
+    150.0s : 10 / 10 /  0
+    160.2s : 10 / 10 /  0
+  peak total_conns = 10 ; final = 10 ; pool max = 10
+✓ done Sun May 31 02:31:52 PM CEST 2026

@@ -1,0 +1,293 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1b/logs/e1b_20260512_091200.log
+Started at: Tue May 12 09:12:00 AM CEST 2026
+
+
+▶ E1b latency-sweep (K parametric, N=1, T_max=1)
+  Critical control: T_max=1 prevents hill-climbing fast-path
+
+=== K=10ms  N=1  T_max=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=10
+cpu_duration_s=15
+
+E1b | mode=latency-sweep | K=10ms | N=1 | T=1
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=1 | T=1 | K=10ms
+    run 1/10: 1 req  1 cancelled  L1=27ms
+    run 2/10: 1 req  1 cancelled  L1=22ms
+    run 3/10: 1 req  1 cancelled  L1=21ms
+    run 4/10: 1 req  1 cancelled  L1=21ms
+    run 5/10: 1 req  1 cancelled  L1=21ms
+    run 6/10: 1 req  1 cancelled  L1=22ms
+    run 7/10: 1 req  1 cancelled  L1=21ms
+    run 8/10: 1 req  1 cancelled  L1=21ms
+    run 9/10: 1 req  1 cancelled  L1=21ms
+    run 10/10: 1 req  1 cancelled  L1=20ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+  webflux | cpu | N=1 | T=1 | K=10ms
+    run 1/10: 1 req  1 cancelled  L1=2ms
+    run 2/10: 1 req  1 cancelled  L1=1ms
+    run 3/10: 1 req  1 cancelled  L1=1ms
+    run 4/10: 1 req  1 cancelled  L1=1ms
+    run 5/10: 1 req  1 cancelled  L1=1ms
+    run 6/10: 1 req  1 cancelled  L1=1ms
+    run 7/10: 1 req  1 cancelled  L1=1ms
+    run 8/10: 1 req  1 cancelled  L1=1ms
+    run 9/10: 1 req  1 cancelled  L1=1ms
+    run 10/10: 1 req  1 cancelled  L1=1ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+
+=== K=50ms  N=1  T_max=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1b | mode=latency-sweep | K=50ms | N=1 | T=1
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=1 | T=1 | K=50ms
+    run 1/10: 1 req  1 cancelled  L1=115ms
+    run 2/10: 1 req  1 cancelled  L1=103ms
+    run 3/10: 1 req  1 cancelled  L1=102ms
+    run 4/10: 1 req  1 cancelled  L1=101ms
+    run 5/10: 1 req  1 cancelled  L1=101ms
+    run 6/10: 1 req  1 cancelled  L1=101ms
+    run 7/10: 1 req  1 cancelled  L1=100ms
+    run 8/10: 1 req  1 cancelled  L1=101ms
+    run 9/10: 1 req  1 cancelled  L1=101ms
+    run 10/10: 1 req  1 cancelled  L1=101ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+  webflux | cpu | N=1 | T=1 | K=50ms
+    run 1/10: 1 req  1 cancelled  L1=2ms
+    run 2/10: 1 req  1 cancelled  L1=1ms
+    run 3/10: 1 req  1 cancelled  L1=1ms
+    run 4/10: 1 req  1 cancelled  L1=1ms
+    run 5/10: 1 req  1 cancelled  L1=1ms
+    run 6/10: 1 req  1 cancelled  L1=1ms
+    run 7/10: 1 req  1 cancelled  L1=1ms
+    run 8/10: 1 req  1 cancelled  L1=1ms
+    run 9/10: 1 req  1 cancelled  L1=1ms
+    run 10/10: 1 req  1 cancelled  L1=2ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+
+=== K=100ms  N=1  T_max=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1b | mode=latency-sweep | K=100ms | N=1 | T=1
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=1 | T=1 | K=100ms
+    run 1/10: 1 req  1 cancelled  L1=258ms
+    run 2/10: 1 req  1 cancelled  L1=202ms
+    run 3/10: 1 req  1 cancelled  L1=202ms
+    run 4/10: 1 req  1 cancelled  L1=201ms
+    run 5/10: 1 req  1 cancelled  L1=201ms
+    run 6/10: 1 req  1 cancelled  L1=201ms
+    run 7/10: 1 req  1 cancelled  L1=201ms
+    run 8/10: 1 req  1 cancelled  L1=201ms
+    run 9/10: 1 req  1 cancelled  L1=300ms
+    run 10/10: 1 req  1 cancelled  L1=201ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+  webflux | cpu | N=1 | T=1 | K=100ms
+    run 1/10: 1 req  1 cancelled  L1=1ms
+    run 2/10: 1 req  1 cancelled  L1=1ms
+    run 3/10: 1 req  1 cancelled  L1=1ms
+    run 4/10: 1 req  1 cancelled  L1=1ms
+    run 5/10: 1 req  1 cancelled  L1=1ms
+    run 6/10: 1 req  1 cancelled  L1=1ms
+    run 7/10: 1 req  1 cancelled  L1=1ms
+    run 8/10: 1 req  1 cancelled  L1=1ms
+    run 9/10: 1 req  1 cancelled  L1=1ms
+    run 10/10: 1 req  1 cancelled  L1=1ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+
+=== K=200ms  N=1  T_max=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1b | mode=latency-sweep | K=200ms | N=1 | T=1
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=1 | T=1 | K=200ms
+    run 1/10: 1 req  1 cancelled  L1=461ms
+    run 2/10: 1 req  1 cancelled  L1=402ms
+    run 3/10: 1 req  1 cancelled  L1=402ms
+    run 4/10: 1 req  1 cancelled  L1=400ms
+    run 5/10: 1 req  1 cancelled  L1=401ms
+    run 6/10: 1 req  1 cancelled  L1=600ms
+    run 7/10: 1 req  1 cancelled  L1=401ms
+    run 8/10: 1 req  1 cancelled  L1=400ms
+    run 9/10: 1 req  1 cancelled  L1=401ms
+    run 10/10: 1 req  1 cancelled  L1=401ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+  webflux | cpu | N=1 | T=1 | K=200ms
+    run 1/10: 1 req  1 cancelled  L1=1ms
+    run 2/10: 1 req  1 cancelled  L1=1ms
+    run 3/10: 1 req  1 cancelled  L1=1ms
+    run 4/10: 1 req  1 cancelled  L1=1ms
+    run 5/10: 1 req  1 cancelled  L1=1ms
+    run 6/10: 1 req  1 cancelled  L1=1ms
+    run 7/10: 1 req  1 cancelled  L1=1ms
+    run 8/10: 1 req  1 cancelled  L1=1ms
+    run 9/10: 1 req  1 cancelled  L1=1ms
+    run 10/10: 1 req  1 cancelled  L1=1ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+
+=== K=500ms  N=1  T_max=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=500
+cpu_duration_s=15
+
+E1b | mode=latency-sweep | K=500ms | N=1 | T=1
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=1 | T=1 | K=500ms
+    run 1/10: 1 req  1 cancelled  L1=1057ms
+    run 2/10: 1 req  1 cancelled  L1=1002ms
+    run 3/10: 1 req  1 cancelled  L1=1002ms
+    run 4/10: 1 req  1 cancelled  L1=1001ms
+    run 5/10: 1 req  1 cancelled  L1=1001ms
+    run 6/10: 1 req  1 cancelled  L1=1001ms
+    run 7/10: 1 req  1 cancelled  L1=1001ms
+    run 8/10: 1 req  1 cancelled  L1=1000ms
+    run 9/10: 1 req  1 cancelled  L1=1001ms
+    run 10/10: 1 req  1 cancelled  L1=1001ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+  webflux | cpu | N=1 | T=1 | K=500ms
+    run 1/10: 1 req  1 cancelled  L1=1ms
+    run 2/10: 1 req  1 cancelled  L1=1ms
+    run 3/10: 1 req  1 cancelled  L1=1ms
+    run 4/10: 1 req  1 cancelled  L1=1ms
+    run 5/10: 1 req  1 cancelled  L1=1ms
+    run 6/10: 1 req  1 cancelled  L1=1ms
+    run 7/10: 1 req  1 cancelled  L1=1ms
+    run 8/10: 1 req  1 cancelled  L1=1ms
+    run 9/10: 1 req  1 cancelled  L1=1ms
+    run 10/10: 1 req  1 cancelled  L1=1ms
+  → rate=1.0  written to e1b_latency_sweep.csv
+
+▶ E1b tmax-sweep (K=100ms, N=8, T_max varied)
+
+=== K=100ms  N=8  T_max=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1b | mode=tmax-sweep | K=100ms | N=8 | T=1
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=8 | T=1 | K=100ms
+    run 1/10: 8 req  8 cancelled  L1=277ms
+    run 2/10: 8 req  8 cancelled  L1=202ms
+    run 3/10: 8 req  8 cancelled  L1=201ms
+    run 4/10: 8 req  8 cancelled  L1=200ms
+    run 5/10: 8 req  8 cancelled  L1=202ms
+    run 6/10: 8 req  8 cancelled  L1=300ms
+    run 7/10: 8 req  8 cancelled  L1=201ms
+    run 8/10: 8 req  8 cancelled  L1=201ms
+    run 9/10: 8 req  8 cancelled  L1=202ms
+    run 10/10: 8 req  8 cancelled  L1=202ms
+  → rate=1.0  written to e1b_tmax_sweep.csv
+
+=== K=100ms  N=8  T_max=2 ===
+threadpool min_worker=1 max_worker=2 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1b | mode=tmax-sweep | K=100ms | N=8 | T=2
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=8 | T=2 | K=100ms
+    run 1/10: 8 req  8 cancelled  L1=300ms
+    run 2/10: 8 req  8 cancelled  L1=222ms
+    run 3/10: 8 req  8 cancelled  L1=213ms
+    run 4/10: 8 req  8 cancelled  L1=220ms
+    run 5/10: 8 req  8 cancelled  L1=227ms
+    run 6/10: 8 req  8 cancelled  L1=227ms
+    run 7/10: 8 req  8 cancelled  L1=224ms
+    run 8/10: 8 req  8 cancelled  L1=220ms
+    run 9/10: 8 req  8 cancelled  L1=216ms
+    run 10/10: 8 req  8 cancelled  L1=219ms
+  → rate=1.0  written to e1b_tmax_sweep.csv
+
+=== K=100ms  N=8  T_max=4 ===
+threadpool min_worker=1 max_worker=4 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1b | mode=tmax-sweep | K=100ms | N=8 | T=4
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=8 | T=4 | K=100ms
+    run 1/10: 8 req  8 cancelled  L1=299ms
+    run 2/10: 8 req  8 cancelled  L1=265ms
+    run 3/10: 8 req  8 cancelled  L1=284ms
+    run 4/10: 8 req  8 cancelled  L1=290ms
+    run 5/10: 8 req  8 cancelled  L1=295ms
+    run 6/10: 8 req  8 cancelled  L1=208ms
+    run 7/10: 8 req  8 cancelled  L1=217ms
+    run 8/10: 8 req  8 cancelled  L1=213ms
+    run 9/10: 8 req  8 cancelled  L1=214ms
+    run 10/10: 8 req  8 cancelled  L1=219ms
+  → rate=1.0  written to e1b_tmax_sweep.csv
+
+=== K=100ms  N=8  T_max=8 ===
+threadpool min_worker=1 max_worker=8 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1b | mode=tmax-sweep | K=100ms | N=8 | T=8
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=8 | T=8 | K=100ms
+    run 1/10: 8 req  8 cancelled  L1=275ms
+    run 2/10: 8 req  8 cancelled  L1=264ms
+    run 3/10: 8 req  8 cancelled  L1=259ms
+    run 4/10: 8 req  8 cancelled  L1=288ms
+    run 5/10: 8 req  8 cancelled  L1=277ms
+    run 6/10: 8 req  8 cancelled  L1=218ms
+    run 7/10: 8 req  8 cancelled  L1=223ms
+    run 8/10: 8 req  8 cancelled  L1=208ms
+    run 9/10: 8 req  8 cancelled  L1=214ms
+    run 10/10: 8 req  8 cancelled  L1=207ms
+  → rate=1.0  written to e1b_tmax_sweep.csv
+
+=== K=100ms  N=8  T_max=16 ===
+threadpool min_worker=1 max_worker=16 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1b | mode=tmax-sweep | K=100ms | N=8 | T=16
+cancel_after=5.0s | runs=10 | settle=8.0s
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=8 | T=16 | K=100ms
+    run 1/10: 8 req  8 cancelled  L1=262ms
+    run 2/10: 8 req  8 cancelled  L1=263ms
+    run 3/10: 8 req  8 cancelled  L1=277ms
+    run 4/10: 8 req  8 cancelled  L1=223ms
+    run 5/10: 8 req  8 cancelled  L1=211ms
+    run 6/10: 8 req  8 cancelled  L1=221ms
+    run 7/10: 8 req  8 cancelled  L1=229ms
+    run 8/10: 8 req  8 cancelled  L1=223ms
+    run 9/10: 8 req  8 cancelled  L1=228ms
+    run 10/10: 8 req  8 cancelled  L1=218ms
+  → rate=1.0  written to e1b_tmax_sweep.csv
+
+════════════════════════════════════════════════════════════════════
+E1b complete. Analyse:
+  conda activate thesis-stats
+  python /home/tudor/dev/request-cancellation-research/tests/sq1/e1b_analyse.py

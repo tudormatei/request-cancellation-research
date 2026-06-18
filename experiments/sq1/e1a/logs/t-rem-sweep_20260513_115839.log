@@ -1,0 +1,11 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/t-rem-sweep_20260513_115839.log
+Started at: Wed May 13 11:58:39 AM CEST 2026
+
+Pre-flight: 0.21, 0.32, 0.52
+✓ load OK
+▶ E1a t-rem-sweep (K=100ms, T_rem=20xs, CPU_DURATION_S=25, 50 runs/cell)
+scripts/sq1/e1a_run.sh: line 189: 20x: value too great for base (error token is "20x")
+
+════════════════════════════════════════════════════════════════════
+E1a t-rem-sweep complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

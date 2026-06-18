@@ -1,0 +1,536 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/cliff-scan_20260511_175908.log
+Started at: Mon May 11 05:59:08 PM CEST 2026
+
+▶ E1a cliff-scan (K∈{50,100,200}ms)
+── K=200ms ──
+=== K=200 N=35 ===
+threadpool min_worker=1 max_worker=35 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=35 | T=35 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=35 | T=35 | K=200ms
+    run 1/10: 35 req  35 cancelled  L1=525ms
+    run 2/10: 35 req  35 cancelled  L1=425ms
+    run 3/10: 35 req  35 cancelled  L1=455ms
+    run 4/10: 35 req  35 cancelled  L1=456ms
+    run 5/10: 35 req  35 cancelled  L1=522ms
+    run 6/10: 35 req  35 cancelled  L1=479ms
+    run 7/10: 35 req  35 cancelled  L1=569ms
+    run 8/10: 35 req  35 cancelled  L1=459ms
+    run 9/10: 35 req  35 cancelled  L1=411ms
+    run 10/10: 35 req  35 cancelled  L1=423ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=200 N=50 ===
+threadpool min_worker=1 max_worker=50 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=50 | T=50 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=50 | T=50 | K=200ms
+    run 1/10: 50 req  50 cancelled  L1=585ms
+    run 2/10: 50 req  50 cancelled  L1=598ms
+    run 3/10: 50 req  50 cancelled  L1=490ms
+    run 4/10: 50 req  50 cancelled  L1=475ms
+    run 5/10: 50 req  50 cancelled  L1=470ms
+    run 6/10: 50 req  50 cancelled  L1=474ms
+    run 7/10: 50 req  50 cancelled  L1=447ms
+    run 8/10: 50 req  50 cancelled  L1=841ms
+    run 9/10: 50 req  50 cancelled  L1=448ms
+    run 10/10: 50 req  50 cancelled  L1=439ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=200 N=65 ===
+threadpool min_worker=1 max_worker=65 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=65 | T=65 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=65 | T=65 | K=200ms
+    run 1/10: 65 req  65 cancelled  L1=598ms
+    run 2/10: 65 req  65 cancelled  L1=1267ms
+    run 3/10: 65 req  65 cancelled  L1=511ms
+    run 4/10: 65 req  65 cancelled  L1=496ms
+    run 5/10: 65 req  65 cancelled  L1=564ms
+    run 6/10: 65 req  65 cancelled  L1=588ms
+    run 7/10: 65 req  65 cancelled  L1=518ms
+    run 8/10: 65 req  65 cancelled  L1=646ms
+    run 9/10: 65 req  65 cancelled  L1=1037ms
+    run 10/10: 65 req  65 cancelled  L1=460ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=200 N=75 ===
+threadpool min_worker=1 max_worker=75 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=75 | T=75 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=75 | T=75 | K=200ms
+    run 1/10: 75 req  75 cancelled  L1=566ms
+    run 2/10: 75 req  75 cancelled  L1=499ms
+    run 3/10: 75 req  75 cancelled  L1=1054ms
+    run 4/10: 75 req  75 cancelled  L1=1449ms
+    run 5/10: 75 req  75 cancelled  L1=861ms
+    run 6/10: 75 req  75 cancelled  L1=479ms
+    run 7/10: 75 req  75 cancelled  L1=484ms
+    run 8/10: 75 req  0 cancelled  L1=n/a
+    run 9/10: 75 req  75 cancelled  L1=450ms
+    run 10/10: 75 req  75 cancelled  L1=1259ms
+  → rate=0.9  written to e1a_cliff_scan.csv
+=== K=200 N=90 ===
+threadpool min_worker=1 max_worker=90 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=90 | T=90 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=90 | T=90 | K=200ms
+    run 1/10: 90 req  90 cancelled  L1=419ms
+    run 2/10: 90 req  90 cancelled  L1=594ms
+    run 3/10: 90 req  90 cancelled  L1=597ms
+    run 4/10: 90 req  90 cancelled  L1=583ms
+    run 5/10: 90 req  90 cancelled  L1=573ms
+    run 6/10: 90 req  90 cancelled  L1=565ms
+    run 7/10: 90 req  90 cancelled  L1=498ms
+    run 8/10: 58 req  0 cancelled  L1=n/a
+    run 9/10: 86 req  0 cancelled  L1=n/a
+    run 10/10: 90 req  90 cancelled  L1=514ms
+  → rate=0.8333  written to e1a_cliff_scan.csv
+=== K=200 N=110 ===
+threadpool min_worker=1 max_worker=110 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=110 | T=110 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=110 | T=110 | K=200ms
+    run 1/10: 110 req  110 cancelled  L1=1360ms
+    run 2/10: 110 req  110 cancelled  L1=598ms
+    run 3/10: 110 req  110 cancelled  L1=593ms
+    run 4/10: 110 req  110 cancelled  L1=557ms
+    run 5/10: 110 req  110 cancelled  L1=484ms
+    run 6/10: 110 req  110 cancelled  L1=1665ms
+    run 7/10: 110 req  110 cancelled  L1=939ms
+    run 8/10: 110 req  110 cancelled  L1=528ms
+    run 9/10: 110 req  110 cancelled  L1=598ms
+    run 10/10: 110 req  110 cancelled  L1=581ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=200 N=130 ===
+threadpool min_worker=1 max_worker=130 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=130 | T=130 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=130 | T=130 | K=200ms
+    run 1/10: 89 req  0 cancelled  L1=n/a
+    run 2/10: 130 req  130 cancelled  L1=468ms
+    run 3/10: 130 req  130 cancelled  L1=568ms
+    run 4/10: 130 req  130 cancelled  L1=592ms
+    run 5/10: 130 req  130 cancelled  L1=588ms
+    run 6/10: 130 req  130 cancelled  L1=585ms
+    run 7/10: 130 req  130 cancelled  L1=528ms
+    run 8/10: 110 req  0 cancelled  L1=n/a
+    run 9/10: 86 req  0 cancelled  L1=n/a
+    run 10/10: 124 req  0 cancelled  L1=n/a
+  → rate=0.656  written to e1a_cliff_scan.csv
+=== K=200 N=160 ===
+threadpool min_worker=1 max_worker=160 logical_cpus=1
+yield_interval_ms=200
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=160 | T=160 | K=200ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=160 | T=160 | K=200ms
+    run 1/10: 160 req  160 cancelled  L1=648ms
+    run 2/10: 160 req  160 cancelled  L1=519ms
+    run 3/10: 160 req  160 cancelled  L1=589ms
+    run 4/10: 160 req  160 cancelled  L1=546ms
+    run 5/10: 160 req  160 cancelled  L1=451ms
+    run 6/10: 133 req  1 cancelled  L1=713ms
+    run 7/10: 88 req  0 cancelled  L1=n/a
+    run 8/10: 152 req  0 cancelled  L1=n/a
+    run 9/10: 160 req  160 cancelled  L1=548ms
+    run 10/10: 160 req  160 cancelled  L1=595ms
+  → rate=0.7508  written to e1a_cliff_scan.csv
+── K=100ms ──
+=== K=100 N=50 ===
+threadpool min_worker=1 max_worker=50 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=50 | T=50 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=50 | T=50 | K=100ms
+    run 1/10: 50 req  50 cancelled  L1=299ms
+    run 2/10: 50 req  50 cancelled  L1=293ms
+    run 3/10: 50 req  50 cancelled  L1=296ms
+    run 4/10: 50 req  50 cancelled  L1=281ms
+    run 5/10: 50 req  50 cancelled  L1=265ms
+    run 6/10: 50 req  50 cancelled  L1=241ms
+    run 7/10: 50 req  50 cancelled  L1=219ms
+    run 8/10: 50 req  50 cancelled  L1=268ms
+    run 9/10: 50 req  50 cancelled  L1=227ms
+    run 10/10: 50 req  50 cancelled  L1=228ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=100 N=75 ===
+threadpool min_worker=1 max_worker=75 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=75 | T=75 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=75 | T=75 | K=100ms
+    run 1/10: 75 req  75 cancelled  L1=301ms
+    run 2/10: 75 req  75 cancelled  L1=296ms
+    run 3/10: 75 req  75 cancelled  L1=292ms
+    run 4/10: 75 req  75 cancelled  L1=299ms
+    run 5/10: 75 req  75 cancelled  L1=297ms
+    run 6/10: 75 req  75 cancelled  L1=240ms
+    run 7/10: 75 req  75 cancelled  L1=242ms
+    run 8/10: 75 req  75 cancelled  L1=230ms
+    run 9/10: 75 req  75 cancelled  L1=280ms
+    run 10/10: 75 req  75 cancelled  L1=291ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=100 N=90 ===
+threadpool min_worker=1 max_worker=90 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=90 | T=90 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=90 | T=90 | K=100ms
+    run 1/10: 90 req  90 cancelled  L1=299ms
+    run 2/10: 90 req  90 cancelled  L1=292ms
+    run 3/10: 90 req  90 cancelled  L1=291ms
+    run 4/10: 90 req  90 cancelled  L1=287ms
+    run 5/10: 90 req  90 cancelled  L1=264ms
+    run 6/10: 90 req  90 cancelled  L1=1831ms
+    run 7/10: 84 req  0 cancelled  L1=n/a
+    run 8/10: 90 req  90 cancelled  L1=249ms
+    run 9/10: 90 req  90 cancelled  L1=256ms
+    run 10/10: 90 req  90 cancelled  L1=269ms
+  → rate=0.906  written to e1a_cliff_scan.csv
+=== K=100 N=100 ===
+threadpool min_worker=1 max_worker=100 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=100 | T=100 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=100 | T=100 | K=100ms
+    run 1/10: 100 req  100 cancelled  L1=496ms
+    run 2/10: 100 req  100 cancelled  L1=302ms
+    run 3/10: 100 req  100 cancelled  L1=290ms
+    run 4/10: 100 req  100 cancelled  L1=292ms
+    run 5/10: 100 req  100 cancelled  L1=292ms
+    run 6/10: 94 req  0 cancelled  L1=n/a
+    run 7/10: 100 req  100 cancelled  L1=1156ms
+    run 8/10: 100 req  100 cancelled  L1=288ms
+    run 9/10: 100 req  100 cancelled  L1=276ms
+    run 10/10: 100 req  100 cancelled  L1=268ms
+  → rate=0.9054  written to e1a_cliff_scan.csv
+=== K=100 N=110 ===
+threadpool min_worker=1 max_worker=110 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=110 | T=110 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=110 | T=110 | K=100ms
+    run 1/10: 110 req  110 cancelled  L1=291ms
+    run 2/10: 110 req  110 cancelled  L1=294ms
+    run 3/10: 110 req  110 cancelled  L1=287ms
+    run 4/10: 110 req  110 cancelled  L1=297ms
+    run 5/10: 110 req  110 cancelled  L1=235ms
+    run 6/10: 110 req  110 cancelled  L1=271ms
+    run 7/10: 110 req  110 cancelled  L1=282ms
+    run 8/10: 110 req  110 cancelled  L1=263ms
+    run 9/10: 110 req  110 cancelled  L1=281ms
+    run 10/10: 110 req  110 cancelled  L1=1545ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=100 N=125 ===
+threadpool min_worker=1 max_worker=125 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=125 | T=125 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=125 | T=125 | K=100ms
+    run 1/10: 125 req  125 cancelled  L1=299ms
+    run 2/10: 125 req  125 cancelled  L1=291ms
+    run 3/10: 125 req  125 cancelled  L1=291ms
+    run 4/10: 125 req  125 cancelled  L1=293ms
+    run 5/10: 125 req  125 cancelled  L1=297ms
+    run 6/10: 125 req  125 cancelled  L1=212ms
+    run 7/10: 111 req  0 cancelled  L1=n/a
+    run 8/10: 97 req  0 cancelled  L1=n/a
+    run 9/10: 125 req  125 cancelled  L1=667ms
+    run 10/10: 125 req  125 cancelled  L1=297ms
+  → rate=0.8278  written to e1a_cliff_scan.csv
+=== K=100 N=150 ===
+threadpool min_worker=1 max_worker=150 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=150 | T=150 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=150 | T=150 | K=100ms
+    run 1/10: 150 req  150 cancelled  L1=298ms
+    run 2/10: 150 req  150 cancelled  L1=296ms
+    run 3/10: 150 req  150 cancelled  L1=289ms
+    run 4/10: 150 req  150 cancelled  L1=227ms
+    run 5/10: 150 req  150 cancelled  L1=288ms
+    run 6/10: 150 req  150 cancelled  L1=291ms
+    run 7/10: 150 req  150 cancelled  L1=287ms
+    run 8/10: 150 req  150 cancelled  L1=286ms
+    run 9/10: 150 req  150 cancelled  L1=298ms
+    run 10/10: 150 req  150 cancelled  L1=290ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=100 N=175 ===
+threadpool min_worker=1 max_worker=175 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=175 | T=175 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=175 | T=175 | K=100ms
+    run 1/10: 175 req  175 cancelled  L1=347ms
+    run 2/10: 175 req  175 cancelled  L1=296ms
+    run 3/10: 175 req  175 cancelled  L1=285ms
+    run 4/10: 175 req  175 cancelled  L1=297ms
+    run 5/10: 175 req  175 cancelled  L1=278ms
+    run 6/10: 175 req  175 cancelled  L1=282ms
+    run 7/10: 175 req  175 cancelled  L1=296ms
+    run 8/10: 175 req  175 cancelled  L1=269ms
+    run 9/10: 175 req  175 cancelled  L1=274ms
+    run 10/10: 175 req  175 cancelled  L1=293ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=100 N=200 ===
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=200 | T=200 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=200 | T=200 | K=100ms
+    run 1/10: 200 req  200 cancelled  L1=317ms
+    run 2/10: 200 req  200 cancelled  L1=297ms
+    run 3/10: 200 req  200 cancelled  L1=278ms
+    run 4/10: 200 req  200 cancelled  L1=292ms
+    run 5/10: 200 req  200 cancelled  L1=287ms
+    run 6/10: 200 req  200 cancelled  L1=299ms
+    run 7/10: 200 req  200 cancelled  L1=294ms
+    run 8/10: 97 req  0 cancelled  L1=n/a
+    run 9/10: 105 req  0 cancelled  L1=n/a
+    run 10/10: 186 req  0 cancelled  L1=n/a
+  → rate=0.783  written to e1a_cliff_scan.csv
+── K=50ms ──
+=== K=50 N=75 ===
+threadpool min_worker=1 max_worker=75 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=75 | T=75 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=75 | T=75 | K=50ms
+    run 1/10: 75 req  75 cancelled  L1=149ms
+    run 2/10: 75 req  75 cancelled  L1=148ms
+    run 3/10: 75 req  75 cancelled  L1=147ms
+    run 4/10: 75 req  75 cancelled  L1=149ms
+    run 5/10: 75 req  75 cancelled  L1=146ms
+    run 6/10: 75 req  75 cancelled  L1=142ms
+    run 7/10: 75 req  75 cancelled  L1=149ms
+    run 8/10: 75 req  75 cancelled  L1=149ms
+    run 9/10: 75 req  75 cancelled  L1=130ms
+    run 10/10: 75 req  75 cancelled  L1=117ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=50 N=100 ===
+threadpool min_worker=1 max_worker=100 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=100 | T=100 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=100 | T=100 | K=50ms
+    run 1/10: 100 req  100 cancelled  L1=158ms
+    run 2/10: 100 req  100 cancelled  L1=141ms
+    run 3/10: 100 req  100 cancelled  L1=150ms
+    run 4/10: 100 req  100 cancelled  L1=149ms
+    run 5/10: 100 req  100 cancelled  L1=140ms
+    run 6/10: 100 req  100 cancelled  L1=143ms
+    run 7/10: 100 req  100 cancelled  L1=149ms
+    run 8/10: 100 req  100 cancelled  L1=143ms
+    run 9/10: 100 req  100 cancelled  L1=126ms
+    run 10/10: 100 req  100 cancelled  L1=116ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=50 N=125 ===
+threadpool min_worker=1 max_worker=125 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=125 | T=125 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=125 | T=125 | K=50ms
+    run 1/10: 125 req  125 cancelled  L1=143ms
+    run 2/10: 125 req  125 cancelled  L1=150ms
+    run 3/10: 125 req  125 cancelled  L1=148ms
+    run 4/10: 125 req  125 cancelled  L1=149ms
+    run 5/10: 125 req  125 cancelled  L1=149ms
+    run 6/10: 125 req  125 cancelled  L1=147ms
+    run 7/10: 125 req  125 cancelled  L1=118ms
+    run 8/10: 125 req  125 cancelled  L1=237ms
+    run 9/10: 125 req  125 cancelled  L1=145ms
+    run 10/10: 125 req  125 cancelled  L1=117ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=50 N=150 ===
+threadpool min_worker=1 max_worker=150 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=150 | T=150 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=150 | T=150 | K=50ms
+    run 1/10: 150 req  150 cancelled  L1=133ms
+    run 2/10: 150 req  150 cancelled  L1=147ms
+    run 3/10: 150 req  150 cancelled  L1=148ms
+    run 4/10: 150 req  150 cancelled  L1=146ms
+    run 5/10: 150 req  150 cancelled  L1=122ms
+    run 6/10: 150 req  150 cancelled  L1=146ms
+    run 7/10: 150 req  150 cancelled  L1=147ms
+    run 8/10: 150 req  150 cancelled  L1=148ms
+    run 9/10: 150 req  150 cancelled  L1=140ms
+    run 10/10: 150 req  150 cancelled  L1=1633ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=50 N=165 ===
+threadpool min_worker=1 max_worker=165 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=165 | T=165 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=165 | T=165 | K=50ms
+    run 1/10: 165 req  165 cancelled  L1=145ms
+    run 2/10: 165 req  165 cancelled  L1=140ms
+    run 3/10: 165 req  165 cancelled  L1=142ms
+    run 4/10: 165 req  165 cancelled  L1=145ms
+    run 5/10: 165 req  165 cancelled  L1=147ms
+    run 6/10: 165 req  165 cancelled  L1=147ms
+    run 7/10: 165 req  165 cancelled  L1=620ms
+    run 8/10: 165 req  165 cancelled  L1=148ms
+    run 9/10: 165 req  165 cancelled  L1=143ms
+    run 10/10: 165 req  165 cancelled  L1=147ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=50 N=180 ===
+threadpool min_worker=1 max_worker=180 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=180 | T=180 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=180 | T=180 | K=50ms
+    run 1/10: 180 req  180 cancelled  L1=139ms
+    run 2/10: 180 req  180 cancelled  L1=148ms
+    run 3/10: 180 req  180 cancelled  L1=141ms
+    run 4/10: 180 req  180 cancelled  L1=146ms
+    run 5/10: 180 req  180 cancelled  L1=132ms
+    run 6/10: 180 req  180 cancelled  L1=1315ms
+    run 7/10: 180 req  180 cancelled  L1=880ms
+    run 8/10: 180 req  180 cancelled  L1=144ms
+    run 9/10: 180 req  180 cancelled  L1=146ms
+    run 10/10: 180 req  180 cancelled  L1=144ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=50 N=200 ===
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=200 | T=200 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=200 | T=200 | K=50ms
+    run 1/10: 200 req  200 cancelled  L1=174ms
+    run 2/10: 200 req  200 cancelled  L1=146ms
+    run 3/10: 200 req  200 cancelled  L1=641ms
+    run 4/10: 200 req  200 cancelled  L1=145ms
+    run 5/10: 200 req  200 cancelled  L1=147ms
+    run 6/10: 200 req  200 cancelled  L1=1059ms
+    run 7/10: 200 req  200 cancelled  L1=148ms
+    run 8/10: 200 req  200 cancelled  L1=197ms
+    run 9/10: 200 req  200 cancelled  L1=133ms
+    run 10/10: 200 req  200 cancelled  L1=149ms
+  → rate=1.0  written to e1a_cliff_scan.csv
+=== K=50 N=225 ===
+threadpool min_worker=1 max_worker=225 logical_cpus=1
+yield_interval_ms=50
+cpu_duration_s=15
+
+E1a | mode=cliff-scan | N=225 | T=225 | K=50ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=225 | T=225 | K=50ms
+    run 1/10: 225 req  225 cancelled  L1=1211ms
+    run 2/10: 225 req  225 cancelled  L1=146ms
+    run 3/10: 225 req  225 cancelled  L1=149ms
+    run 4/10: 225 req  225 cancelled  L1=1871ms
+    run 5/10: 225 req  225 cancelled  L1=147ms
+    run 6/10: 225 req  225 cancelled  L1=144ms
+    run 7/10: 225 req  225 cancelled  L1=126ms
+    run 8/10: 181 req  0 cancelled  L1=n/a
+    run 9/10: 225 req  225 cancelled  L1=139ms
+    run 10/10: 225 req  225 cancelled  L1=144ms
+  → rate=0.918  written to e1a_cliff_scan.csv
+
+════════════════════════════════════════════════════════════════════
+E1a cliff-scan complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

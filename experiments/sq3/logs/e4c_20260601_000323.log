@@ -1,0 +1,149 @@
+START Mon Jun  1 12:03:23 AM CEST 2026
+==== aspnet ====
+
+E4c multi-step state | framework=aspnet | tx=False | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 2/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 3/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 4/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 5/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 6/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 7/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 8/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 9/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 10/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 11/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 12/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 13/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 14/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 15/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 16/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 17/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 18/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 19/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 20/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  → {'rollback': 0, 'torn': 20, 'full': 0, 'unknown': 0}
+
+E4c multi-step state | framework=aspnet | tx=True | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 2/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 3/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 4/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 5/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 6/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 7/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 8/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 9/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 10/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 11/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 12/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 13/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 14/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 15/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 16/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 17/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 18/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 19/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 20/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  → {'rollback': 20, 'torn': 0, 'full': 0, 'unknown': 0}
+==== webflux ====
+
+E4c multi-step state | framework=webflux | tx=False | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 2/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 3/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 4/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 5/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 6/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 7/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 8/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 9/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 10/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 11/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 12/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 13/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 14/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 15/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 16/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 17/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 18/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 19/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  trial 20/20: committed_steps=1 outcome=torn idle_in_txn=0 detected=1 propagated=1
+  → {'rollback': 0, 'torn': 20, 'full': 0, 'unknown': 0}
+
+E4c multi-step state | framework=webflux | tx=True | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 2/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 3/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 4/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 5/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 6/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 7/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 8/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 9/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 10/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 11/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 12/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 13/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 14/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 15/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 16/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 17/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 18/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 19/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  trial 20/20: committed_steps=0 outcome=rollback idle_in_txn=0 detected=1 propagated=1
+  → {'rollback': 20, 'torn': 0, 'full': 0, 'unknown': 0}
+==== mvc ====
+
+E4c multi-step state | framework=mvc | tx=False | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 2/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 3/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 4/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 5/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 6/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 7/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 8/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 9/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 10/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 11/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 12/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 13/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 14/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 15/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 16/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 17/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 18/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 19/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  trial 20/20: committed_steps=2 outcome=full idle_in_txn=0 detected=0 propagated=0
+  → {'rollback': 0, 'torn': 0, 'full': 20, 'unknown': 0}
+
+E4c multi-step state | framework=mvc | tx=True | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 2/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 3/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 4/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 5/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 6/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 7/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 8/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 9/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 10/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 11/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 12/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 13/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 14/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 15/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 16/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 17/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 18/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 19/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  trial 20/20: committed_steps=2 outcome=full idle_in_txn=1 detected=0 propagated=0
+  → {'rollback': 0, 'torn': 0, 'full': 20, 'unknown': 0}
+DONE Mon Jun  1 12:13:49 AM CEST 2026

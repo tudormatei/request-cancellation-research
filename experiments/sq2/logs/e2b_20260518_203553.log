@@ -1,0 +1,118 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq2/logs/e2b_20260518_203553.log
+Started at: Mon May 18 08:35:53 PM CEST 2026
+▶ E2b — streaming DB query (consumption bridge)
+── ASP.NET ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+aspnet ready
+=== aspnet stream N=1 ===
+
+E2b | framework=aspnet | N=1 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=40ms
+  run 2/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=63ms
+  run 3/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=86ms
+  run 4/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=74ms
+  run 5/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=114ms
+  run 6/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=75ms
+  run 7/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=88ms
+  run 8/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=132ms
+  run 9/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=94ms
+  run 10/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=75ms
+=== aspnet stream N=5 ===
+
+E2b | framework=aspnet | N=5 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=100ms
+  run 2/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=122ms
+  run 3/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=123ms
+  run 4/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=90ms
+  run 5/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=106ms
+  run 6/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=85ms
+  run 7/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=101ms
+  run 8/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=91ms
+  run 9/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=105ms
+  run 10/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=95ms
+=== aspnet stream N=10 ===
+
+E2b | framework=aspnet | N=10 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=148ms
+  run 2/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=119ms
+  run 3/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=134ms
+  run 4/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=115ms
+  run 5/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=115ms
+  run 6/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=117ms
+  run 7/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=105ms
+  run 8/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=111ms
+  run 9/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=114ms
+  run 10/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=111ms
+── WebFlux ──
+=== webflux stream N=1 ===
+
+E2b | framework=webflux | N=1 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 2/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 3/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 4/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 5/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 6/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 7/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 8/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 9/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+  run 10/10: det=1/1 cursor_cancelled=1/1 rows_consumed≈None ghost_holdtime=Nonems
+=== webflux stream N=5 ===
+
+E2b | framework=webflux | N=5 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 1/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 2/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 3/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 4/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 5/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 6/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 7/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 8/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 9/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 10/10: det=5/5 cursor_cancelled=5/5 rows_consumed≈None ghost_holdtime=Nonems
+=== webflux stream N=10 ===
+
+E2b | framework=webflux | N=10 | cancel_after=2.0s | runs=10
+────────────────────────────────────────────────────────────
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 1/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 2/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 3/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 4/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 5/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 6/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 7/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 8/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 9/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+  ⚠ pg_stat_activity not clean after 15s (n, pg_sleep)
+  run 10/10: det=10/10 cursor_cancelled=10/10 rows_consumed≈None ghost_holdtime=Nonems
+
+E2b complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py --only e2b
+
+════════════════════════════════════════════════════════════════════
+E2 e2b finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py

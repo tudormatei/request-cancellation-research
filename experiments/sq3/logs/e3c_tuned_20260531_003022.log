@@ -1,0 +1,191 @@
+▶ E3c TUNED regime — ghost-cascade isolation. Started Sun May 31 12:30:22 AM CEST 2026
+  pool=10, query=pg_sleep(10), cancel_at=0.5s, Y=80%, X-sweep.
+  Predicted: WebFlux exhausts ~X>=1 (holds cancelled conns 10s);
+             ASP.NET healthy to ~X<=4 (releases cancelled conns in ~54ms).
+
+════════ aspnet ════════
+=== aspnet X=0.5rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=aspnet | X=0.5rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  15  ok=   3  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.1rps  p95=10082.8ms
+  window  1 [30.0–60.0s]  sent=  15  ok=   3  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.1rps  p95=10011.7ms
+  window  2 [60.0–90.0s]  sent=  15  ok=   3  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.1rps  p95=10012.0ms
+  window  3 [90.0–120.0s]  sent=  15  ok=   3  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.1rps  p95=10011.6ms
+  window  4 [120.0–150.0s]  sent=  15  ok=   3  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.1rps  p95=10010.9ms
+  window  5 [150.0–180.0s]  sent=  15  ok=   3  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.1rps  p95=10011.9ms
+=== aspnet X=1rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=aspnet | X=1.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  30  ok=   6  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.2rps  p95=10012.4ms
+  window  1 [30.0–60.0s]  sent=  30  ok=   6  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.2rps  p95=10012.0ms
+  window  2 [60.0–90.0s]  sent=  30  ok=   6  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.2rps  p95=10011.9ms
+  window  3 [90.0–120.0s]  sent=  30  ok=   6  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.2rps  p95=10011.9ms
+  window  4 [120.0–150.0s]  sent=  30  ok=   6  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.2rps  p95=10011.8ms
+  window  5 [150.0–180.0s]  sent=  30  ok=   6  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.2rps  p95=10012.0ms
+=== aspnet X=2rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=aspnet | X=2.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  60  ok=  12  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.4rps  p95=10011.8ms
+  window  1 [30.0–60.0s]  sent=  60  ok=  12  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.4rps  p95=10013.0ms
+  window  2 [60.0–90.0s]  sent=  60  ok=  12  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.4rps  p95=10013.0ms
+  window  3 [90.0–120.0s]  sent=  60  ok=  12  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.4rps  p95=10013.1ms
+  window  4 [120.0–150.0s]  sent=  60  ok=  12  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.4rps  p95=10015.0ms
+  window  5 [150.0–180.0s]  sent=  59  ok=  11  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.4rps  p95=10012.2ms
+=== aspnet X=3rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=aspnet | X=3.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  90  ok=  18  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.6rps  p95=10011.7ms
+  window  1 [30.0–60.0s]  sent=  90  ok=  18  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.6rps  p95=10011.8ms
+  window  2 [60.0–90.0s]  sent=  90  ok=  18  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.6rps  p95=10011.7ms
+  window  3 [90.0–120.0s]  sent=  90  ok=  18  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.6rps  p95=10011.8ms
+  window  4 [120.0–150.0s]  sent=  90  ok=  18  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.6rps  p95=10011.7ms
+  window  5 [150.0–180.0s]  sent=  88  ok=  16  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.5rps  p95=10011.7ms
+=== aspnet X=4rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=aspnet | X=4.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.0ms
+  window  1 [30.0–60.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.0ms
+  window  2 [60.0–90.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.0ms
+  window  3 [90.0–120.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.0ms
+  window  4 [120.0–150.0s]  sent= 120  ok=  24  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.8rps  p95=10013.0ms
+  window  5 [150.0–180.0s]  sent= 117  ok=  21  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.7rps  p95=10013.4ms
+=== aspnet X=5rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=aspnet | X=5.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 150  ok=  30  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.0rps  p95=10316.5ms
+  window  1 [30.0–60.0s]  sent= 150  ok=  30  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.0rps  p95=10328.8ms
+  window  2 [60.0–90.0s]  sent= 150  ok=  30  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.0rps  p95=10340.5ms
+  window  3 [90.0–120.0s]  sent= 150  ok=  30  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.0rps  p95=10352.2ms
+  window  4 [120.0–150.0s]  sent= 150  ok=  30  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.0rps  p95=10359.8ms
+  window  5 [150.0–180.0s]  sent= 146  ok=  26  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.9rps  p95=10366.6ms
+=== aspnet X=6rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=aspnet | X=6.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 180  ok=  36  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.2rps  p95=15025.7ms
+  window  1 [30.0–60.0s]  sent= 180  ok=  36  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=1.2rps  p95=21702.2ms
+  window  2 [60.0–90.0s]  sent= 180  ok=  33  failed=   3 (8.3%) [503=0 500=3 to=0]  thru_ok=1.1rps  p95=24384.5ms
+  window  3 [90.0–120.0s]  sent= 180  ok=  30  failed=   6 (16.7%) [503=0 500=6 to=0]  thru_ok=1.0rps  p95=24559.7ms
+  window  4 [120.0–150.0s]  sent= 180  ok=  30  failed=   6 (16.7%) [503=0 500=6 to=0]  thru_ok=1.0rps  p95=24570.4ms
+  window  5 [150.0–180.0s]  sent= 160  ok=  12  failed=   4 (25.0%) [503=0 500=4 to=0]  thru_ok=0.4rps  p95=24577.4ms
+
+════════ webflux ════════
+=== webflux X=0.5rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=webflux | X=0.5rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  15  ok=   1  failed=   2 (66.7%) [503=0 500=0 to=2]  thru_ok=0.0rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent=  13  ok=   0  failed=   1 (100.0%) [503=0 500=0 to=1]  thru_ok=0.0rps  p95=30520.6ms
+=== webflux X=1rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=webflux | X=1.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.3ms
+  window  2 [60.0–90.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.3ms
+  window  4 [120.0–150.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent=  25  ok=   0  failed=   1 (100.0%) [503=0 500=0 to=1]  thru_ok=0.0rps  p95=30507.4ms
+=== webflux X=2rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=webflux | X=2.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  60  ok=   0  failed=  12 (100.0%) [503=0 500=0 to=12]  thru_ok=0.0rps  p95=30532.0ms
+  window  1 [30.0–60.0s]  sent=  60  ok=   1  failed=  11 (91.7%) [503=0 500=0 to=11]  thru_ok=0.0rps  p95=30531.6ms
+  window  2 [60.0–90.0s]  sent=  60  ok=   7  failed=   5 (41.7%) [503=0 500=0 to=5]  thru_ok=0.2rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  60  ok=   6  failed=   6 (50.0%) [503=0 500=0 to=6]  thru_ok=0.2rps  p95=30531.3ms
+  window  4 [120.0–150.0s]  sent=  60  ok=   5  failed=   7 (58.3%) [503=0 500=0 to=7]  thru_ok=0.2rps  p95=30531.4ms
+  window  5 [150.0–180.0s]  sent=  54  ok=   4  failed=   2 (33.3%) [503=0 500=0 to=2]  thru_ok=0.1rps  p95=30531.1ms
+=== webflux X=3rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=webflux | X=3.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  90  ok=   4  failed=  14 (77.8%) [503=0 500=0 to=14]  thru_ok=0.1rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent=  90  ok=   4  failed=  14 (77.8%) [503=0 500=0 to=14]  thru_ok=0.1rps  p95=30531.3ms
+  window  2 [60.0–90.0s]  sent=  90  ok=  15  failed=   3 (16.7%) [503=0 500=0 to=3]  thru_ok=0.5rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  90  ok=  12  failed=   6 (33.3%) [503=0 500=0 to=6]  thru_ok=0.4rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent=  90  ok=  11  failed=   7 (38.9%) [503=0 500=0 to=7]  thru_ok=0.4rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent=  83  ok=  11  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.4rps  p95=25791.3ms
+=== webflux X=4rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=webflux | X=4.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 120  ok=   7  failed=  17 (70.8%) [503=0 500=0 to=17]  thru_ok=0.2rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent= 120  ok=   6  failed=  18 (75.0%) [503=0 500=0 to=18]  thru_ok=0.2rps  p95=30531.2ms
+  window  2 [60.0–90.0s]  sent= 120  ok=  10  failed=  14 (58.3%) [503=0 500=0 to=14]  thru_ok=0.3rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent= 120  ok=  20  failed=   4 (16.7%) [503=0 500=0 to=4]  thru_ok=0.7rps  p95=30525.2ms
+  window  4 [120.0–150.0s]  sent= 120  ok=  23  failed=   1 (4.2%) [503=0 500=0 to=1]  thru_ok=0.8rps  p95=28085.8ms
+  window  5 [150.0–180.0s]  sent= 113  ok=  17  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.6rps  p95=19353.1ms
+=== webflux X=5rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=webflux | X=5.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 150  ok=   7  failed=  23 (76.7%) [503=0 500=0 to=23]  thru_ok=0.2rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.2ms
+  window  2 [60.0–90.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.3ms
+  window  5 [150.0–180.0s]  sent= 125  ok=   2  failed=   3 (60.0%) [503=0 500=0 to=3]  thru_ok=0.1rps  p95=30531.2ms
+=== webflux X=6rps Y=0.8 cancel_at=0.5 ===
+
+E3c tuned_sweep | framework=webflux | X=6.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 180  ok=   8  failed=  28 (77.8%) [503=0 500=0 to=28]  thru_ok=0.3rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent= 150  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+✓ E3c tuned sweep complete Sun May 31 01:23:45 AM CEST 2026

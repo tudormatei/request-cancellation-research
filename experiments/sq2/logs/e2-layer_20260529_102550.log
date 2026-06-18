@@ -1,0 +1,122 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq2/logs/e2-layer_20260529_102550.log
+Started at: Fri May 29 10:25:50 AM CEST 2026
+▶ E2-layer — multi-layer handler timing vs DB gone (verifiability asymmetry)
+  Measures gap_ms = handler_fired_at - db_gone for each application layer.
+  Negative gap → notification (WebFlux). Positive gap → completion event (ASP.NET).
+── ASP.NET ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+aspnet ready
+
+E2-layer | framework=aspnet | N=1 | cancel_after=6.0s | runs=10
+  Measuring: handler_ts - db_gone_ts per layer
+  Negative gap = handler fired before DB stopped (notification)
+  Positive gap = handler fired after  DB stopped (completion event)
+──────────────────────────────────────────────────────────────────────
+  run 1/10: db_gone_ts=1780043177795
+    layer=service                handler_ts=1780043177672  gap_ms=-123  db_still_active=1
+    layer=controller             handler_ts=1780043177672  gap_ms=-123  db_still_active=1
+  run 2/10: db_gone_ts=1780043193732
+    layer=service                handler_ts=1780043193728  gap_ms=-4  db_still_active=1
+    layer=controller             handler_ts=1780043193728  gap_ms=-4  db_still_active=1
+  run 3/10: db_gone_ts=1780043209841
+    layer=service                handler_ts=1780043209802  gap_ms=-39  db_still_active=1
+    layer=controller             handler_ts=1780043209802  gap_ms=-39  db_still_active=1
+  run 4/10: db_gone_ts=1780043226020
+    layer=service                handler_ts=1780043225870  gap_ms=-150  db_still_active=1
+    layer=controller             handler_ts=1780043225870  gap_ms=-150  db_still_active=1
+  run 5/10: db_gone_ts=1780043241976
+    layer=service                handler_ts=1780043241943  gap_ms=-33  db_still_active=1
+    layer=controller             handler_ts=1780043241943  gap_ms=-33  db_still_active=1
+  run 6/10: db_gone_ts=1780043258162
+    layer=service                handler_ts=1780043258015  gap_ms=-147  db_still_active=1
+    layer=controller             handler_ts=1780043258015  gap_ms=-147  db_still_active=1
+  run 7/10: db_gone_ts=1780043274122
+    layer=service                handler_ts=1780043274081  gap_ms=-41  db_still_active=1
+    layer=controller             handler_ts=1780043274081  gap_ms=-41  db_still_active=1
+  run 8/10: db_gone_ts=1780043290158
+    layer=service                handler_ts=1780043290152  gap_ms=-6  db_still_active=1
+    layer=controller             handler_ts=1780043290152  gap_ms=-6  db_still_active=1
+  run 9/10: db_gone_ts=1780043306220
+    layer=service                handler_ts=1780043306216  gap_ms=-4  db_still_active=1
+    layer=controller             handler_ts=1780043306216  gap_ms=-4  db_still_active=1
+  run 10/10: db_gone_ts=1780043322421
+    layer=service                handler_ts=1780043322288  gap_ms=-133  db_still_active=1
+    layer=controller             handler_ts=1780043322288  gap_ms=-133  db_still_active=1
+
+  Output: /home/tudor/dev/request-cancellation-research/experiments/sq2/e2_layer/e2_layer_timing.csv
+── WebFlux ──
+
+E2-layer | framework=webflux | N=1 | cancel_after=6.0s | runs=10
+  Measuring: handler_ts - db_gone_ts per layer
+  Negative gap = handler fired before DB stopped (notification)
+  Positive gap = handler fired after  DB stopped (completion event)
+──────────────────────────────────────────────────────────────────────
+  run 1/10: db_gone_ts=1780043358390
+    layer=repository doOnCancel  handler_ts=1780043354107  gap_ms=-4283  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043354108  gap_ms=-4282  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043354107  gap_ms=-4283  db_still_active=1
+    layer=service doFinally      handler_ts=1780043354108  gap_ms=-4282  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043354107  gap_ms=-4283  db_still_active=1
+  run 2/10: db_gone_ts=1780043376633
+    layer=repository doOnCancel  handler_ts=1780043372460  gap_ms=-4173  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043372461  gap_ms=-4172  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043372460  gap_ms=-4173  db_still_active=1
+    layer=service doFinally      handler_ts=1780043372461  gap_ms=-4172  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043372460  gap_ms=-4173  db_still_active=1
+  run 3/10: db_gone_ts=1780043394878
+    layer=repository doOnCancel  handler_ts=1780043390701  gap_ms=-4177  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043390702  gap_ms=-4176  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043390701  gap_ms=-4177  db_still_active=1
+    layer=service doFinally      handler_ts=1780043390702  gap_ms=-4176  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043390701  gap_ms=-4177  db_still_active=1
+  run 4/10: db_gone_ts=1780043413117
+    layer=repository doOnCancel  handler_ts=1780043408946  gap_ms=-4171  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043408946  gap_ms=-4171  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043408946  gap_ms=-4171  db_still_active=1
+    layer=service doFinally      handler_ts=1780043408946  gap_ms=-4171  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043408946  gap_ms=-4171  db_still_active=1
+  run 5/10: db_gone_ts=1780043431337
+    layer=repository doOnCancel  handler_ts=1780043427188  gap_ms=-4149  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043427188  gap_ms=-4149  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043427188  gap_ms=-4149  db_still_active=1
+    layer=service doFinally      handler_ts=1780043427188  gap_ms=-4149  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043427188  gap_ms=-4149  db_still_active=1
+  run 6/10: db_gone_ts=1780043449441
+    layer=repository doOnCancel  handler_ts=1780043445405  gap_ms=-4036  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043445405  gap_ms=-4036  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043445405  gap_ms=-4036  db_still_active=1
+    layer=service doFinally      handler_ts=1780043445405  gap_ms=-4036  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043445405  gap_ms=-4036  db_still_active=1
+  run 7/10: db_gone_ts=1780043467686
+    layer=repository doOnCancel  handler_ts=1780043463510  gap_ms=-4176  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043463510  gap_ms=-4176  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043463509  gap_ms=-4177  db_still_active=1
+    layer=service doFinally      handler_ts=1780043463510  gap_ms=-4176  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043463509  gap_ms=-4177  db_still_active=1
+  run 8/10: db_gone_ts=1780043485891
+    layer=repository doOnCancel  handler_ts=1780043481758  gap_ms=-4133  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043481759  gap_ms=-4132  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043481758  gap_ms=-4133  db_still_active=1
+    layer=service doFinally      handler_ts=1780043481759  gap_ms=-4132  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043481758  gap_ms=-4133  db_still_active=1
+  run 9/10: db_gone_ts=1780043503980
+    layer=repository doOnCancel  handler_ts=1780043499960  gap_ms=-4020  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043499961  gap_ms=-4019  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043499960  gap_ms=-4020  db_still_active=1
+    layer=service doFinally      handler_ts=1780043499961  gap_ms=-4019  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043499960  gap_ms=-4020  db_still_active=1
+  run 10/10: db_gone_ts=1780043522211
+    layer=repository doOnCancel  handler_ts=1780043518051  gap_ms=-4160  db_still_active=1
+    layer=repository doFinally   handler_ts=1780043518051  gap_ms=-4160  db_still_active=1
+    layer=service doOnCancel     handler_ts=1780043518051  gap_ms=-4160  db_still_active=1
+    layer=service doFinally      handler_ts=1780043518051  gap_ms=-4160  db_still_active=1
+    layer=controller doOnCancel  handler_ts=1780043518051  gap_ms=-4160  db_still_active=1
+
+  Output: /home/tudor/dev/request-cancellation-research/experiments/sq2/e2_layer/e2_layer_timing.csv
+
+E2-layer complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_layer_analyse.py
+
+════════════════════════════════════════════════════════════════════
+E2 e2-layer finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py

@@ -1,0 +1,130 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/noinject_20260603_022328.log
+Started at: Wed  3 Jun 02:23:28 CEST 2026
+
+Pre-flight: 0.47, 1.87, 3.07
+✓ load OK
+▶ A4 no-injection K-sweep (C=1, THREAD_POOL_MIN=MAX=N)
+── K=100ms (clean prediction N_safe ≈ 100) ──
+=== noinject K=100 N=80 ===
+threadpool min_worker=80 max_worker=80 logical_cpus=1
+yield_interval_ms=100
+
+E1a | mode=noinject | N=80 | T=80 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=80 | T=80 | K=100ms
+    run 1/50: 80 req  80 cancelled  L1=11ms
+    run 2/50: 80 req  80 cancelled  L1=9ms
+    run 3/50: 80 req  80 cancelled  L1=10ms
+    run 4/50: 80 req  80 cancelled  L1=10ms
+    run 5/50: 80 req  80 cancelled  L1=8ms
+    run 6/50: 80 req  80 cancelled  L1=10ms
+    run 7/50: 80 req  80 cancelled  L1=10ms
+    run 8/50: 80 req  80 cancelled  L1=12ms
+    run 9/50: 80 req  80 cancelled  L1=8ms
+    run 10/50: 80 req  80 cancelled  L1=8ms
+    run 11/50: 80 req  80 cancelled  L1=8ms
+    run 12/50: 80 req  80 cancelled  L1=8ms
+    run 13/50: 80 req  80 cancelled  L1=9ms
+    run 14/50: 80 req  80 cancelled  L1=9ms
+    run 15/50: 80 req  80 cancelled  L1=10ms
+    run 16/50: 80 req  80 cancelled  L1=17ms
+    run 17/50: 80 req  80 cancelled  L1=8ms
+    run 18/50: 80 req  80 cancelled  L1=8ms
+    run 19/50: 80 req  80 cancelled  L1=10ms
+    run 20/50: 80 req  80 cancelled  L1=9ms
+    run 21/50: 80 req  80 cancelled  L1=9ms
+    run 22/50: 80 req  80 cancelled  L1=10ms
+    run 23/50: 80 req  80 cancelled  L1=9ms
+    run 24/50: 80 req  80 cancelled  L1=67ms
+    run 25/50: 80 req  80 cancelled  L1=9ms
+    run 26/50: 80 req  80 cancelled  L1=8ms
+    run 27/50: 80 req  80 cancelled  L1=5ms
+    run 28/50: 80 req  80 cancelled  L1=8ms
+    run 29/50: 80 req  80 cancelled  L1=9ms
+    run 30/50: 80 req  80 cancelled  L1=9ms
+    run 31/50: 80 req  80 cancelled  L1=9ms
+    run 32/50: 80 req  80 cancelled  L1=8ms
+    run 33/50: 80 req  80 cancelled  L1=7ms
+    run 34/50: 80 req  80 cancelled  L1=9ms
+    run 35/50: 80 req  80 cancelled  L1=8ms
+    run 36/50: 80 req  80 cancelled  L1=5ms
+    run 37/50: 80 req  80 cancelled  L1=14ms
+    run 38/50: 80 req  80 cancelled  L1=9ms
+    run 39/50: 80 req  80 cancelled  L1=8ms
+    run 40/50: 80 req  80 cancelled  L1=10ms
+    run 41/50: 80 req  80 cancelled  L1=11ms
+    run 42/50: 80 req  80 cancelled  L1=12ms
+    run 43/50: 80 req  80 cancelled  L1=8ms
+    run 44/50: 80 req  80 cancelled  L1=10ms
+    run 45/50: 80 req  80 cancelled  L1=9ms
+    run 46/50: 80 req  80 cancelled  L1=7ms
+    run 47/50: 80 req  80 cancelled  L1=11ms
+    run 48/50: 80 req  80 cancelled  L1=8ms
+    run 49/50: 80 req  80 cancelled  L1=8ms
+    run 50/50: 80 req  80 cancelled  L1=7ms
+  → rate=1.0  written to e1a_noinject_K100.csv
+=== noinject K=100 N=95 ===
+threadpool min_worker=95 max_worker=95 logical_cpus=1
+yield_interval_ms=100
+
+E1a | mode=noinject | N=95 | T=95 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=95 | T=95 | K=100ms
+    run 1/50: 95 req  95 cancelled  L1=12ms
+    run 2/50: 95 req  95 cancelled  L1=9ms
+    run 3/50: 95 req  95 cancelled  L1=8ms
+    run 4/50: 95 req  95 cancelled  L1=8ms
+    run 5/50: 95 req  95 cancelled  L1=8ms
+    run 6/50: 95 req  95 cancelled  L1=29ms
+    run 7/50: 95 req  95 cancelled  L1=11ms
+    run 8/50: 95 req  95 cancelled  L1=12ms
+    run 9/50: 95 req  95 cancelled  L1=10ms
+    run 10/50: 95 req  95 cancelled  L1=7ms
+    run 11/50: 95 req  95 cancelled  L1=9ms
+    run 12/50: 95 req  95 cancelled  L1=9ms
+    run 13/50: 95 req  95 cancelled  L1=8ms
+    run 14/50: 95 req  95 cancelled  L1=8ms
+    run 15/50: 95 req  95 cancelled  L1=8ms
+    run 16/50: 95 req  95 cancelled  L1=9ms
+    run 17/50: 95 req  95 cancelled  L1=12ms
+    run 18/50: 95 req  95 cancelled  L1=10ms
+    run 19/50: 95 req  95 cancelled  L1=10ms
+    run 20/50: 95 req  95 cancelled  L1=8ms
+    run 21/50: 95 req  95 cancelled  L1=8ms
+    run 22/50: 95 req  95 cancelled  L1=10ms
+    run 23/50: 95 req  95 cancelled  L1=15ms
+    run 24/50: 95 req  95 cancelled  L1=10ms
+    run 25/50: 95 req  95 cancelled  L1=20ms
+    run 26/50: 95 req  95 cancelled  L1=9ms
+    run 27/50: 95 req  95 cancelled  L1=14ms
+    run 28/50: 95 req  95 cancelled  L1=12ms
+    run 29/50: 95 req  95 cancelled  L1=11ms
+    run 30/50: 95 req  95 cancelled  L1=9ms
+    run 31/50: 95 req  95 cancelled  L1=11ms
+    run 32/50: 95 req  95 cancelled  L1=11ms
+    run 33/50: 95 req  95 cancelled  L1=19ms
+    run 34/50: 95 req  95 cancelled  L1=6ms
+    run 35/50: 95 req  95 cancelled  L1=10ms
+    run 36/50: 95 req  95 cancelled  L1=9ms
+    run 37/50: 95 req  95 cancelled  L1=10ms
+    run 38/50: 95 req  95 cancelled  L1=10ms
+    run 39/50: 95 req  95 cancelled  L1=9ms
+    run 40/50: 95 req  95 cancelled  L1=9ms
+    run 41/50: 95 req  95 cancelled  L1=11ms
+    run 42/50: 95 req  95 cancelled  L1=10ms
+    run 43/50: 95 req  95 cancelled  L1=9ms
+    run 44/50: 95 req  95 cancelled  L1=10ms
+    run 45/50: 95 req  95 cancelled  L1=54ms
+    run 46/50: 95 req  95 cancelled  L1=10ms
+    run 47/50: 95 req  95 cancelled  L1=9ms
+    run 48/50: 95 req  95 cancelled  L1=9ms
+    run 49/50: 95 req  95 cancelled  L1=9ms
+    run 50/50: 95 req  95 cancelled  L1=24ms
+  → rate=1.0  written to e1a_noinject_K100.csv
+=== noinject K=100 N=110 ===
+threadpool min_worker=110 max_worker=110 logical_cpus=1
+yield_interval_ms=100

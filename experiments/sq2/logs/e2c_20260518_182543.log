@@ -1,0 +1,18 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq2/logs/e2c_20260518_182543.log
+Started at: Mon May 18 06:25:43 PM CEST 2026
+▶ E2c — outbound HTTP cancellation (connection-close protocol)
+  Downstream mock must be running.
+Waiting for downstream mock (pip install + startup)...
+[notice] A new release of pip is available: 25.0.1 -> 26.1.1
+[notice] To update, run: pip install --upgrade pip
+python: can't open file '/app/server.py': [Errno 13] Permission denied
+── ASP.NET ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+aspnet ready
+Traceback (most recent call last):
+  File "/home/tudor/dev/request-cancellation-research/tests/sq2/e2c_collect.py", line 23, in <module>
+    from _common import (
+  File "/home/tudor/dev/request-cancellation-research/tests/sq2/_common.py", line 13, in <module>
+    from _common import FRAMEWORKS, fire_concurrent, collect_logs, LOG_RE  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'FRAMEWORKS' from partially initialized module '_common' (most likely due to a circular import) (/home/tudor/dev/request-cancellation-research/tests/sq2/_common.py)

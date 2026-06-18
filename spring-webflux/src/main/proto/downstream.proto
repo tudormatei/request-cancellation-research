@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package downstream;
+
+option java_package = "com.example.webflux.grpc";
+option java_outer_classname = "DownstreamProto";
+option java_multiple_files = true;
+option csharp_namespace = "Downstream.Grpc";
+
+service DownstreamService {
+  rpc SlowCall(SlowRequest) returns (SlowResponse);
+}
+
+message SlowRequest {
+  string req_id = 1;
+  int32 delay_seconds = 2;
+}
+
+message SlowResponse {
+  string message = 1;
+}

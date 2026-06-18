@@ -1,0 +1,94 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/cross-val_20260512_085131.log
+Started at: Tue May 12 08:51:31 AM CEST 2026
+
+▶ E1a cross-val (K=150ms, C=1, T_rem=10s)
+  Predicted N_safe ≈ 51 (from k-sweep formula)
+  N values: 35 51 66 81
+=== K=150 N=35 ===
+threadpool min_worker=1 max_worker=35 logical_cpus=1
+yield_interval_ms=150
+cpu_duration_s=15
+
+E1a | mode=cross-val | N=35 | T=35 | K=150ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=35 | T=35 | K=150ms
+    run 1/10: 35 req  35 cancelled  L1=389ms
+    run 2/10: 35 req  35 cancelled  L1=352ms
+    run 3/10: 35 req  35 cancelled  L1=332ms
+    run 4/10: 35 req  35 cancelled  L1=441ms
+    run 5/10: 35 req  35 cancelled  L1=438ms
+    run 6/10: 35 req  35 cancelled  L1=448ms
+    run 7/10: 35 req  35 cancelled  L1=421ms
+    run 8/10: 35 req  35 cancelled  L1=417ms
+    run 9/10: 35 req  35 cancelled  L1=439ms
+    run 10/10: 35 req  35 cancelled  L1=441ms
+  → rate=1.0  written to e1a_cross_val.csv
+=== K=150 N=51 ===
+threadpool min_worker=1 max_worker=51 logical_cpus=1
+yield_interval_ms=150
+cpu_duration_s=15
+
+E1a | mode=cross-val | N=51 | T=51 | K=150ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=51 | T=51 | K=150ms
+    run 1/10: 51 req  51 cancelled  L1=405ms
+    run 2/10: 51 req  51 cancelled  L1=331ms
+    run 3/10: 51 req  51 cancelled  L1=363ms
+    run 4/10: 51 req  51 cancelled  L1=328ms
+    run 5/10: 51 req  51 cancelled  L1=448ms
+    run 6/10: 51 req  51 cancelled  L1=318ms
+    run 7/10: 51 req  51 cancelled  L1=443ms
+    run 8/10: 51 req  51 cancelled  L1=338ms
+    run 9/10: 51 req  51 cancelled  L1=312ms
+    run 10/10: 51 req  51 cancelled  L1=449ms
+  → rate=1.0  written to e1a_cross_val.csv
+=== K=150 N=66 ===
+threadpool min_worker=1 max_worker=66 logical_cpus=1
+yield_interval_ms=150
+cpu_duration_s=15
+
+E1a | mode=cross-val | N=66 | T=66 | K=150ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=66 | T=66 | K=150ms
+    run 1/10: 66 req  66 cancelled  L1=329ms
+    run 2/10: 66 req  66 cancelled  L1=442ms
+    run 3/10: 66 req  66 cancelled  L1=440ms
+    run 4/10: 66 req  66 cancelled  L1=351ms
+    run 5/10: 66 req  66 cancelled  L1=336ms
+    run 6/10: 66 req  66 cancelled  L1=330ms
+    run 7/10: 66 req  66 cancelled  L1=322ms
+    run 8/10: 66 req  66 cancelled  L1=318ms
+    run 9/10: 66 req  66 cancelled  L1=365ms
+    run 10/10: 66 req  66 cancelled  L1=441ms
+  → rate=1.0  written to e1a_cross_val.csv
+=== K=150 N=81 ===
+threadpool min_worker=1 max_worker=81 logical_cpus=1
+yield_interval_ms=150
+cpu_duration_s=15
+
+E1a | mode=cross-val | N=81 | T=81 | K=150ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=81 | T=81 | K=150ms
+    run 1/10: 81 req  81 cancelled  L1=385ms
+    run 2/10: 81 req  81 cancelled  L1=439ms
+    run 3/10: 81 req  81 cancelled  L1=449ms
+    run 4/10: 81 req  81 cancelled  L1=446ms
+    run 5/10: 81 req  81 cancelled  L1=445ms
+    run 6/10: 81 req  81 cancelled  L1=434ms
+    run 7/10: 81 req  81 cancelled  L1=444ms
+    run 8/10: 81 req  81 cancelled  L1=449ms
+    run 9/10: 63 req  0 cancelled  L1=n/a
+    run 10/10: 61 req  0 cancelled  L1=n/a
+  → rate=0.8394  written to e1a_cross_val.csv
+
+════════════════════════════════════════════════════════════════════
+E1a cross-val complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

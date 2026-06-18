@@ -1,0 +1,5 @@
+tests/results/
+results-md/
+documents/
+*archive/
+*__pycache__/

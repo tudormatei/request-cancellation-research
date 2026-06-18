@@ -1,0 +1,408 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/webflux-sched_20260603_105447.log
+Started at: Wed  3 Jun 10:54:47 CEST 2026
+
+▶ A1 within-WebFlux scheduler probe (K=100ms, C=1)
+── boundedElastic (idiomatic; expect flat ~100% across N) ──
+  [gate] waiting for quiet… load=1.24 (0s)
+  [gate] quiet (load=0.32) — running cell
+=== be N=1 ===
+reactor_scheduler=boundedElastic yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=1 | T=1 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=1 | T=1 | K=100ms
+    run 1/50: 1 req  1 cancelled  L1=2ms
+    run 2/50: 1 req  1 cancelled  L1=3ms
+    run 3/50: 1 req  1 cancelled  L1=0ms
+    run 4/50: 1 req  1 cancelled  L1=0ms
+    run 5/50: 1 req  1 cancelled  L1=0ms
+    run 6/50: 1 req  1 cancelled  L1=0ms
+    run 7/50: 1 req  1 cancelled  L1=0ms
+    run 8/50: 1 req  1 cancelled  L1=0ms
+    run 9/50: 1 req  1 cancelled  L1=0ms
+    run 10/50: 1 req  1 cancelled  L1=1ms
+    run 11/50: 1 req  1 cancelled  L1=0ms
+    run 12/50: 1 req  1 cancelled  L1=1ms
+    run 13/50: 1 req  1 cancelled  L1=0ms
+    run 14/50: 1 req  1 cancelled  L1=0ms
+    run 15/50: 1 req  1 cancelled  L1=0ms
+    run 16/50: 1 req  1 cancelled  L1=0ms
+    run 17/50: 1 req  1 cancelled  L1=0ms
+    run 18/50: 1 req  1 cancelled  L1=0ms
+    run 19/50: 1 req  1 cancelled  L1=0ms
+    run 20/50: 1 req  1 cancelled  L1=0ms
+    run 21/50: 1 req  1 cancelled  L1=0ms
+    run 22/50: 1 req  1 cancelled  L1=0ms
+    run 23/50: 1 req  1 cancelled  L1=1ms
+    run 24/50: 1 req  1 cancelled  L1=0ms
+    run 25/50: 1 req  1 cancelled  L1=0ms
+    run 26/50: 1 req  1 cancelled  L1=0ms
+    run 27/50: 1 req  1 cancelled  L1=1ms
+    run 28/50: 1 req  1 cancelled  L1=0ms
+    run 29/50: 1 req  1 cancelled  L1=0ms
+    run 30/50: 1 req  1 cancelled  L1=0ms
+    run 31/50: 1 req  1 cancelled  L1=0ms
+    run 32/50: 1 req  1 cancelled  L1=0ms
+    run 33/50: 1 req  1 cancelled  L1=1ms
+    run 34/50: 1 req  1 cancelled  L1=0ms
+    run 35/50: 1 req  1 cancelled  L1=1ms
+    run 36/50: 1 req  1 cancelled  L1=1ms
+    run 37/50: 1 req  1 cancelled  L1=0ms
+    run 38/50: 1 req  1 cancelled  L1=0ms
+    run 39/50: 1 req  1 cancelled  L1=1ms
+    run 40/50: 1 req  1 cancelled  L1=1ms
+    run 41/50: 1 req  1 cancelled  L1=0ms
+    run 42/50: 1 req  1 cancelled  L1=0ms
+    run 43/50: 1 req  1 cancelled  L1=0ms
+    run 44/50: 1 req  1 cancelled  L1=0ms
+    run 45/50: 1 req  1 cancelled  L1=0ms
+    run 46/50: 1 req  1 cancelled  L1=0ms
+    run 47/50: 1 req  1 cancelled  L1=0ms
+    run 48/50: 1 req  1 cancelled  L1=0ms
+    run 49/50: 1 req  1 cancelled  L1=1ms
+    run 50/50: 1 req  1 cancelled  L1=0ms
+  → rate=1.0  written to e1f_webflux_be.csv
+  [gate] waiting for quiet… load=0.46 (0s)
+  [gate] quiet (load=0.33) — running cell
+=== be N=8 ===
+reactor_scheduler=boundedElastic yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=8 | T=8 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=8 | T=8 | K=100ms
+    run 1/50: 8 req  8 cancelled  L1=33ms
+    run 2/50: 8 req  8 cancelled  L1=2ms
+    run 3/50: 8 req  8 cancelled  L1=2ms
+    run 4/50: 8 req  8 cancelled  L1=1ms
+    run 5/50: 8 req  8 cancelled  L1=1ms
+    run 6/50: 8 req  8 cancelled  L1=4ms
+    run 7/50: 8 req  8 cancelled  L1=3ms
+    run 8/50: 8 req  8 cancelled  L1=2ms
+    run 9/50: 8 req  8 cancelled  L1=1ms
+    run 10/50: 8 req  8 cancelled  L1=3ms
+    run 11/50: 8 req  8 cancelled  L1=1ms
+    run 12/50: 8 req  8 cancelled  L1=1ms
+    run 13/50: 8 req  8 cancelled  L1=3ms
+    run 14/50: 8 req  8 cancelled  L1=2ms
+    run 15/50: 8 req  8 cancelled  L1=1ms
+    run 16/50: 8 req  8 cancelled  L1=2ms
+    run 17/50: 8 req  8 cancelled  L1=1ms
+    run 18/50: 8 req  8 cancelled  L1=1ms
+    run 19/50: 8 req  8 cancelled  L1=1ms
+    run 20/50: 8 req  8 cancelled  L1=1ms
+    run 21/50: 8 req  8 cancelled  L1=1ms
+    run 22/50: 8 req  8 cancelled  L1=1ms
+    run 23/50: 8 req  8 cancelled  L1=4ms
+    run 24/50: 8 req  8 cancelled  L1=1ms
+    run 25/50: 8 req  8 cancelled  L1=3ms
+    run 26/50: 8 req  8 cancelled  L1=2ms
+    run 27/50: 8 req  8 cancelled  L1=2ms
+    run 28/50: 8 req  8 cancelled  L1=3ms
+    run 29/50: 8 req  8 cancelled  L1=1ms
+    run 30/50: 8 req  8 cancelled  L1=4ms
+    run 31/50: 8 req  8 cancelled  L1=2ms
+    run 32/50: 8 req  8 cancelled  L1=2ms
+    run 33/50: 8 req  8 cancelled  L1=3ms
+    run 34/50: 8 req  8 cancelled  L1=3ms
+    run 35/50: 8 req  8 cancelled  L1=2ms
+    run 36/50: 8 req  8 cancelled  L1=1ms
+    run 37/50: 8 req  8 cancelled  L1=2ms
+    run 38/50: 8 req  8 cancelled  L1=3ms
+    run 39/50: 8 req  8 cancelled  L1=1ms
+    run 40/50: 8 req  8 cancelled  L1=4ms
+    run 41/50: 8 req  8 cancelled  L1=1ms
+    run 42/50: 8 req  8 cancelled  L1=0ms
+    run 43/50: 8 req  8 cancelled  L1=1ms
+    run 44/50: 8 req  8 cancelled  L1=1ms
+    run 45/50: 8 req  8 cancelled  L1=0ms
+    run 46/50: 8 req  8 cancelled  L1=1ms
+    run 47/50: 8 req  8 cancelled  L1=1ms
+    run 48/50: 8 req  8 cancelled  L1=0ms
+    run 49/50: 8 req  8 cancelled  L1=0ms
+    run 50/50: 8 req  8 cancelled  L1=0ms
+  → rate=1.0  written to e1f_webflux_be.csv
+  [gate] waiting for quiet… load=2.69 (0s)
+  [gate] quiet (load=0.36) — running cell
+=== be N=32 ===
+reactor_scheduler=boundedElastic yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=32 | T=32 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=32 | T=32 | K=100ms
+    run 1/50: 32 req  32 cancelled  L1=16ms
+    run 2/50: 32 req  32 cancelled  L1=3ms
+    run 3/50: 32 req  32 cancelled  L1=5ms
+    run 4/50: 32 req  32 cancelled  L1=3ms
+    run 5/50: 32 req  32 cancelled  L1=4ms
+    run 6/50: 32 req  32 cancelled  L1=2ms
+    run 7/50: 32 req  32 cancelled  L1=5ms
+    run 8/50: 32 req  32 cancelled  L1=2ms
+    run 9/50: 32 req  32 cancelled  L1=1ms
+    run 10/50: 32 req  32 cancelled  L1=2ms
+    run 11/50: 32 req  32 cancelled  L1=2ms
+    run 12/50: 32 req  32 cancelled  L1=5ms
+    run 13/50: 32 req  32 cancelled  L1=4ms
+    run 14/50: 32 req  32 cancelled  L1=2ms
+    run 15/50: 32 req  32 cancelled  L1=4ms
+    run 16/50: 32 req  32 cancelled  L1=2ms
+    run 17/50: 32 req  32 cancelled  L1=1ms
+    run 18/50: 32 req  32 cancelled  L1=5ms
+    run 19/50: 32 req  32 cancelled  L1=1ms
+    run 20/50: 32 req  32 cancelled  L1=3ms
+    run 21/50: 32 req  32 cancelled  L1=1ms
+    run 22/50: 32 req  32 cancelled  L1=3ms
+    run 23/50: 32 req  32 cancelled  L1=2ms
+    run 24/50: 32 req  32 cancelled  L1=2ms
+    run 25/50: 32 req  32 cancelled  L1=4ms
+    run 26/50: 32 req  32 cancelled  L1=1ms
+    run 27/50: 32 req  32 cancelled  L1=1ms
+    run 28/50: 32 req  32 cancelled  L1=2ms
+    run 29/50: 32 req  32 cancelled  L1=2ms
+    run 30/50: 32 req  32 cancelled  L1=3ms
+    run 31/50: 32 req  32 cancelled  L1=0ms
+    run 32/50: 32 req  32 cancelled  L1=1ms
+    run 33/50: 32 req  32 cancelled  L1=1ms
+    run 34/50: 32 req  32 cancelled  L1=0ms
+    run 35/50: 32 req  32 cancelled  L1=1ms
+    run 36/50: 32 req  32 cancelled  L1=1ms
+    run 37/50: 32 req  32 cancelled  L1=2ms
+    run 38/50: 32 req  32 cancelled  L1=2ms
+    run 39/50: 32 req  32 cancelled  L1=1ms
+    run 40/50: 32 req  32 cancelled  L1=1ms
+    run 41/50: 32 req  32 cancelled  L1=1ms
+    run 42/50: 32 req  32 cancelled  L1=0ms
+    run 43/50: 32 req  32 cancelled  L1=4ms
+    run 44/50: 32 req  32 cancelled  L1=0ms
+    run 45/50: 32 req  32 cancelled  L1=1ms
+    run 46/50: 32 req  32 cancelled  L1=0ms
+    run 47/50: 32 req  32 cancelled  L1=1ms
+    run 48/50: 32 req  32 cancelled  L1=1ms
+    run 49/50: 32 req  32 cancelled  L1=1ms
+    run 50/50: 32 req  32 cancelled  L1=0ms
+  → rate=1.0  written to e1f_webflux_be.csv
+  [gate] waiting for quiet… load=3.63 (0s)
+  [gate] quiet (load=0.35) — running cell
+=== be N=100 ===
+reactor_scheduler=boundedElastic yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=100 | T=100 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=100 | T=100 | K=100ms
+    run 1/50: 100 req  100 cancelled  L1=34ms
+    run 2/50: 100 req  100 cancelled  L1=8ms
+    run 3/50: 100 req  100 cancelled  L1=8ms
+    run 4/50: 100 req  100 cancelled  L1=5ms
+    run 5/50: 100 req  100 cancelled  L1=6ms
+    run 6/50: 100 req  100 cancelled  L1=5ms
+    run 7/50: 100 req  100 cancelled  L1=4ms
+    run 8/50: 100 req  100 cancelled  L1=3ms
+    run 9/50: 100 req  100 cancelled  L1=3ms
+    run 10/50: 100 req  100 cancelled  L1=3ms
+    run 11/50: 100 req  100 cancelled  L1=8ms
+    run 12/50: 100 req  100 cancelled  L1=3ms
+    run 13/50: 100 req  100 cancelled  L1=3ms
+    run 14/50: 100 req  100 cancelled  L1=2ms
+    run 15/50: 100 req  100 cancelled  L1=2ms
+    run 16/50: 100 req  100 cancelled  L1=2ms
+    run 17/50: 100 req  100 cancelled  L1=1ms
+    run 18/50: 100 req  100 cancelled  L1=1ms
+    run 19/50: 100 req  100 cancelled  L1=2ms
+    run 20/50: 100 req  100 cancelled  L1=2ms
+    run 21/50: 100 req  100 cancelled  L1=5ms
+    run 22/50: 100 req  100 cancelled  L1=1ms
+    run 23/50: 100 req  100 cancelled  L1=3ms
+    run 24/50: 100 req  100 cancelled  L1=1ms
+    run 25/50: 100 req  100 cancelled  L1=2ms
+    run 26/50: 100 req  100 cancelled  L1=3ms
+    run 27/50: 100 req  100 cancelled  L1=1ms
+    run 28/50: 100 req  100 cancelled  L1=3ms
+    run 29/50: 100 req  100 cancelled  L1=1ms
+    run 30/50: 100 req  100 cancelled  L1=3ms
+    run 31/50: 100 req  100 cancelled  L1=4ms
+    run 32/50: 100 req  100 cancelled  L1=1ms
+    run 33/50: 100 req  100 cancelled  L1=4ms
+    run 34/50: 100 req  100 cancelled  L1=4ms
+    run 35/50: 100 req  100 cancelled  L1=2ms
+    run 36/50: 100 req  100 cancelled  L1=3ms
+    run 37/50: 100 req  100 cancelled  L1=3ms
+    run 38/50: 100 req  100 cancelled  L1=0ms
+    run 39/50: 100 req  100 cancelled  L1=2ms
+    run 40/50: 100 req  100 cancelled  L1=3ms
+    run 41/50: 100 req  100 cancelled  L1=3ms
+    run 42/50: 100 req  100 cancelled  L1=1ms
+    run 43/50: 100 req  100 cancelled  L1=4ms
+    run 44/50: 100 req  100 cancelled  L1=0ms
+    run 45/50: 100 req  100 cancelled  L1=1ms
+    run 46/50: 100 req  100 cancelled  L1=1ms
+    run 47/50: 100 req  100 cancelled  L1=2ms
+    run 48/50: 100 req  100 cancelled  L1=3ms
+    run 49/50: 100 req  100 cancelled  L1=1ms
+    run 50/50: 100 req  100 cancelled  L1=1ms
+  → rate=1.0  written to e1f_webflux_be.csv
+  [gate] waiting for quiet… load=3.68 (0s)
+  [gate] quiet (load=0.24) — running cell
+=== be N=175 ===
+reactor_scheduler=boundedElastic yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=175 | T=175 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=50
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=175 | T=175 | K=100ms
+    run 1/50: 175 req  175 cancelled  L1=58ms
+    run 2/50: 175 req  175 cancelled  L1=24ms
+    run 3/50: 175 req  175 cancelled  L1=11ms
+    run 4/50: 175 req  175 cancelled  L1=9ms
+    run 5/50: 175 req  175 cancelled  L1=9ms
+    run 6/50: 175 req  175 cancelled  L1=6ms
+    run 7/50: 175 req  175 cancelled  L1=4ms
+    run 8/50: 175 req  175 cancelled  L1=6ms
+    run 9/50: 175 req  175 cancelled  L1=6ms
+    run 10/50: 175 req  175 cancelled  L1=6ms
+    run 11/50: 175 req  175 cancelled  L1=3ms
+    run 12/50: 175 req  175 cancelled  L1=4ms
+    run 13/50: 175 req  175 cancelled  L1=2ms
+    run 14/50: 175 req  175 cancelled  L1=5ms
+    run 15/50: 175 req  175 cancelled  L1=3ms
+    run 16/50: 175 req  175 cancelled  L1=3ms
+    run 17/50: 175 req  175 cancelled  L1=3ms
+    run 18/50: 175 req  175 cancelled  L1=4ms
+    run 19/50: 175 req  175 cancelled  L1=4ms
+    run 20/50: 175 req  175 cancelled  L1=4ms
+    run 21/50: 175 req  175 cancelled  L1=4ms
+    run 22/50: 175 req  175 cancelled  L1=2ms
+    run 23/50: 175 req  175 cancelled  L1=3ms
+    run 24/50: 175 req  175 cancelled  L1=2ms
+    run 25/50: 175 req  175 cancelled  L1=4ms
+    run 26/50: 175 req  175 cancelled  L1=3ms
+    run 27/50: 175 req  175 cancelled  L1=3ms
+    run 28/50: 175 req  175 cancelled  L1=3ms
+    run 29/50: 175 req  175 cancelled  L1=4ms
+    run 30/50: 175 req  175 cancelled  L1=2ms
+    run 31/50: 175 req  175 cancelled  L1=3ms
+    run 32/50: 175 req  175 cancelled  L1=2ms
+    run 33/50: 175 req  175 cancelled  L1=3ms
+    run 34/50: 175 req  175 cancelled  L1=3ms
+    run 35/50: 175 req  175 cancelled  L1=6ms
+    run 36/50: 175 req  175 cancelled  L1=1ms
+    run 37/50: 175 req  175 cancelled  L1=1ms
+    run 38/50: 175 req  175 cancelled  L1=2ms
+    run 39/50: 175 req  175 cancelled  L1=1ms
+    run 40/50: 175 req  175 cancelled  L1=3ms
+    run 41/50: 175 req  175 cancelled  L1=2ms
+    run 42/50: 175 req  175 cancelled  L1=2ms
+    run 43/50: 175 req  175 cancelled  L1=2ms
+    run 44/50: 175 req  175 cancelled  L1=1ms
+    run 45/50: 175 req  175 cancelled  L1=3ms
+    run 46/50: 175 req  175 cancelled  L1=1ms
+    run 47/50: 175 req  175 cancelled  L1=1ms
+    run 48/50: 175 req  175 cancelled  L1=3ms
+    run 49/50: 175 req  175 cancelled  L1=4ms
+    run 50/50: 175 req  175 cancelled  L1=1ms
+  → rate=1.0  written to e1f_webflux_be.csv
+── immediate (probe; expect detection blackout at ALL N, incl. N=1) ──
+  [gate] waiting for quiet… load=3.65 (0s)
+  [gate] quiet (load=0.30) — running cell
+=== imm N=1 ===
+reactor_scheduler=immediate yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=1 | T=1 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=20
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=1 | T=1 | K=100ms
+    run 1/20: 1 req  0 cancelled  L1=n/a
+    run 2/20: 1 req  0 cancelled  L1=n/a
+    run 3/20: 1 req  0 cancelled  L1=n/a
+    run 4/20: 1 req  0 cancelled  L1=n/a
+    run 5/20: 1 req  0 cancelled  L1=n/a
+    run 6/20: 1 req  0 cancelled  L1=n/a
+    run 7/20: 1 req  0 cancelled  L1=n/a
+    run 8/20: 1 req  0 cancelled  L1=n/a
+    run 9/20: 1 req  0 cancelled  L1=n/a
+    run 10/20: 1 req  0 cancelled  L1=n/a
+    run 11/20: 1 req  0 cancelled  L1=n/a
+    run 12/20: 1 req  0 cancelled  L1=n/a
+    run 13/20: 1 req  0 cancelled  L1=n/a
+    run 14/20: 1 req  0 cancelled  L1=n/a
+    run 15/20: 1 req  0 cancelled  L1=n/a
+    run 16/20: 1 req  0 cancelled  L1=n/a
+    run 17/20: 1 req  0 cancelled  L1=n/a
+    run 18/20: 1 req  0 cancelled  L1=n/a
+    run 19/20: 1 req  0 cancelled  L1=n/a
+    run 20/20: 1 req  0 cancelled  L1=n/a
+  → rate=0.0  written to e1f_webflux_imm.csv
+  [gate] waiting for quiet… load=1.03 (0s)
+  [gate] quiet (load=0.35) — running cell
+=== imm N=8 ===
+reactor_scheduler=immediate yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=8 | T=8 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=20
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=8 | T=8 | K=100ms
+    run 1/20: 4 req  0 cancelled  L1=n/a
+    run 2/20: 4 req  0 cancelled  L1=n/a
+    run 3/20: 4 req  0 cancelled  L1=n/a
+    run 4/20: 4 req  0 cancelled  L1=n/a
+    run 5/20: 4 req  0 cancelled  L1=n/a
+    run 6/20: 4 req  0 cancelled  L1=n/a
+    run 7/20: 4 req  0 cancelled  L1=n/a
+    run 8/20: 4 req  0 cancelled  L1=n/a
+    run 9/20: 4 req  0 cancelled  L1=n/a
+    run 10/20: 4 req  0 cancelled  L1=n/a
+    run 11/20: 4 req  0 cancelled  L1=n/a
+    run 12/20: 4 req  0 cancelled  L1=n/a
+    run 13/20: 4 req  0 cancelled  L1=n/a
+    run 14/20: 0 req  0 cancelled  L1=n/a
+    run 15/20: 0 req  0 cancelled  L1=n/a
+    run 16/20: 0 req  0 cancelled  L1=n/a
+    run 17/20: 0 req  0 cancelled  L1=n/a
+    run 18/20: 0 req  0 cancelled  L1=n/a
+    run 19/20: 0 req  0 cancelled  L1=n/a
+    run 20/20: 0 req  0 cancelled  L1=n/a
+  → rate=0.0  written to e1f_webflux_imm.csv
+  [gate] waiting for quiet… load=4.13 (0s)
+  [gate] quiet (load=0.35) — running cell
+=== imm N=32 ===
+reactor_scheduler=immediate yield_interval_ms=100
+
+E1a | mode=webflux-sched | N=32 | T=32 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=20
+frameworks: ['webflux']
+────────────────────────────────────────────────────────────
+  webflux | cpu | N=32 | T=32 | K=100ms
+    run 1/20: 4 req  0 cancelled  L1=n/a
+    run 2/20: 4 req  0 cancelled  L1=n/a
+    run 3/20: 4 req  0 cancelled  L1=n/a
+    run 4/20: 4 req  0 cancelled  L1=n/a
+    run 5/20: 4 req  0 cancelled  L1=n/a
+    run 6/20: 4 req  0 cancelled  L1=n/a
+    run 7/20: 4 req  0 cancelled  L1=n/a
+    run 8/20: 4 req  0 cancelled  L1=n/a
+    run 9/20: 4 req  0 cancelled  L1=n/a
+    run 10/20: 4 req  0 cancelled  L1=n/a
+    run 11/20: 4 req  0 cancelled  L1=n/a
+    run 12/20: 4 req  0 cancelled  L1=n/a
+    run 13/20: 4 req  0 cancelled  L1=n/a
+    run 14/20: 4 req  0 cancelled  L1=n/a
+    run 15/20: 4 req  0 cancelled  L1=n/a
+    run 16/20: 0 req  0 cancelled  L1=n/a
+    run 17/20: 0 req  0 cancelled  L1=n/a
+    run 18/20: 0 req  0 cancelled  L1=n/a
+    run 19/20: 0 req  0 cancelled  L1=n/a
+    run 20/20: 0 req  0 cancelled  L1=n/a
+  → rate=0.0  written to e1f_webflux_imm.csv
+
+════════════════════════════════════════════════════════════════════
+E1a webflux-sched complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

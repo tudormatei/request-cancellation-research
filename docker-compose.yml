@@ -1,0 +1,175 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: thesis_postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - thesis_net
+
+    cpus: "${POSTGRES_CPUS}"
+    cpuset: "${POSTGRES_CPUSET}"
+    mem_limit: "${POSTGRES_MEM_LIMIT}"
+    mem_reservation: "${POSTGRES_MEM_RESERVATION}"
+    memswap_limit: "${POSTGRES_MEM_LIMIT}"
+    pids_limit: ${POSTGRES_PIDS_LIMIT}
+
+  aspnet:
+    profiles: ["aspnet"]
+    build:
+      context: ./aspnet
+      dockerfile: Dockerfile
+    container_name: thesis_aspnet
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT}
+      ASPNETCORE_URLS: ${ASPNETCORE_URLS}
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Maximum Pool Size=${POOL_SIZE:-10};Minimum Pool Size=0
+      YIELD_INTERVAL_MS: ${YIELD_INTERVAL_MS:-100}
+      THREAD_POOL_MAX: ${THREAD_POOL_MAX:-1}
+      THREAD_POOL_MIN: ${THREAD_POOL_MIN:-}
+      CPU_DURATION_S: ${CPU_DURATION_S:-15}
+      DOWNSTREAM_URL: ${DOWNSTREAM_URL:-http://downstream:8090}
+      DOWNSTREAM_GRPC_URL: ${DOWNSTREAM_GRPC_URL:-http://downstream:50051}
+    ports:
+      - "${ASPNET_PORT}:8080"
+    networks:
+      - thesis_net
+
+    cpus: "${ASPNET_CPUS}"
+    cpuset: "${ASPNET_CPUSET}"
+    mem_limit: "${ASPNET_MEM_LIMIT}"
+    mem_reservation: "${ASPNET_MEM_RESERVATION}"
+    memswap_limit: "${ASPNET_MEM_LIMIT}"
+    pids_limit: ${ASPNET_PIDS_LIMIT}
+
+    read_only: true
+    tmpfs:
+      - /tmp
+
+  spring-mvc:
+    profiles: ["spring-mvc"]
+    build:
+      context: ./spring-mvc
+      dockerfile: Dockerfile
+    container_name: thesis_spring_mvc
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      SERVER_PORT: 8080
+      JAVA_TOOL_OPTIONS: ${JAVA_TOOL_OPTIONS}
+    ports:
+      - "${SPRING_PORT}:8080"
+    networks:
+      - thesis_net
+
+    cpus: "${SPRING_CPUS}"
+    cpuset: "${SPRING_CPUSET}"
+    mem_limit: "${SPRING_MEM_LIMIT}"
+    mem_reservation: "${SPRING_MEM_RESERVATION}"
+    memswap_limit: "${SPRING_MEM_LIMIT}"
+    pids_limit: ${SPRING_PIDS_LIMIT}
+
+    read_only: true
+    tmpfs:
+      - /tmp
+
+  spring-webflux:
+    profiles: ["spring-webflux"]
+    build:
+      context: ./spring-webflux
+      dockerfile: Dockerfile
+    container_name: thesis_spring_webflux
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_R2DBC_URL: r2dbc:postgresql://postgres:5432/${POSTGRES_DB}
+      SPRING_R2DBC_USERNAME: ${POSTGRES_USER}
+      SPRING_R2DBC_PASSWORD: ${POSTGRES_PASSWORD}
+      POOL_SIZE: ${POOL_SIZE:-10}
+      SERVER_PORT: 8080
+      JAVA_TOOL_OPTIONS: ${JAVA_TOOL_OPTIONS}
+      YIELD_INTERVAL_MS: ${YIELD_INTERVAL_MS:-100}
+      REACTOR_SCHEDULER: ${REACTOR_SCHEDULER:-boundedElastic}
+      DOWNSTREAM_URL: ${DOWNSTREAM_URL:-http://downstream:8090}
+      DOWNSTREAM_GRPC_URL: ${DOWNSTREAM_GRPC_URL:-downstream:50051}
+    ports:
+      - "${SPRING_WEBFLUX_PORT}:8080"
+    networks:
+      - thesis_net
+
+    cpus: "${SPRING_WEBFLUX_CPUS}"
+    cpuset: "${SPRING_WEBFLUX_CPUSET}"
+    mem_limit: "${SPRING_WEBFLUX_MEM_LIMIT}"
+    mem_reservation: "${SPRING_WEBFLUX_MEM_RESERVATION}"
+    memswap_limit: "${SPRING_WEBFLUX_MEM_LIMIT}"
+    pids_limit: ${SPRING_WEBFLUX_PIDS_LIMIT}
+
+    read_only: true
+    tmpfs:
+      - /tmp
+
+  go-service:
+    profiles: ["go"]
+    build:
+      context: ./go-service
+      dockerfile: Dockerfile
+    container_name: thesis_go_service
+    environment:
+      SERVER_PORT: 8080
+      YIELD_INTERVAL_MS: ${YIELD_INTERVAL_MS:-100}
+      CPU_DURATION_S: ${CPU_DURATION_S:-15}
+      GOMAXPROCS: ${GOMAXPROCS:-}
+    ports:
+      - "${GO_PORT:-8084}:8080"
+    networks:
+      - thesis_net
+
+    cpus: "${GO_CPUS:-1.0}"
+    cpuset: "${GO_CPUSET:-0}"
+    mem_limit: "${GO_MEM_LIMIT:-1g}"
+    mem_reservation: "${GO_MEM_RESERVATION:-256m}"
+    memswap_limit: "${GO_MEM_LIMIT:-1g}"
+    pids_limit: ${GO_PIDS_LIMIT:-256}
+
+    read_only: true
+
+  downstream:
+    profiles: ["downstream"]
+    image: python:3.12-slim
+    container_name: thesis_downstream
+    command: sh -c "pip install aiohttp grpcio grpcio-tools -q && python -m grpc_tools.protoc -I/app/proto --python_out=/app --grpc_python_out=/app /app/proto/downstream.proto && python /app/server.py"
+    volumes:
+      - ./downstream/server.py:/app/server.py:ro,z
+      - ./downstream/proto:/app/proto:ro,z
+    ports:
+      - "8090:8090"
+      - "50051:50051"
+    networks:
+      - thesis_net
+
+volumes:
+  postgres_data:
+
+networks:
+  thesis_net:
+    driver: bridge

@@ -1,0 +1,9 @@
+framework,pool,slope_Es,X_max,n_used
+aspnet,10,2.289,4.368,3
+aspnet,20,2.382,8.395,2
+aspnet,30,2.394,12.534,3
+aspnet,40,2.382,16.79,2
+webflux,10,8.103,1.234,3
+webflux,20,6.983,2.864,3
+webflux,30,6.839,4.387,3
+webflux,40,6.94,5.764,3

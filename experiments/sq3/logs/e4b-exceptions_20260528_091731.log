@@ -1,0 +1,81 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq3/logs/e4b-exceptions_20260528_091731.log
+Started at: Thu May 28 09:17:31 AM CEST 2026
+
+▶ E4b-exceptions — Npgsql exception distinguishability (DSTAR=60ms)
+  D*-50ms (ghost write expected) and D*+50ms (clean cancel expected)
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+aspnet ready
+
+E4b exceptions | aspnet | D=10ms | category=below_dstar | runs=30
+────────────────────────────────────────────────────────────
+  trial 1/30: ghost=0 outer=OperationCanceledException inner=None sql_state=None
+  trial 2/30: ghost=1 outer=None inner=None sql_state=None
+  trial 3/30: ghost=1 outer=None inner=None sql_state=None
+  trial 4/30: ghost=1 outer=None inner=None sql_state=None
+  trial 5/30: ghost=1 outer=None inner=None sql_state=None
+  trial 6/30: ghost=1 outer=None inner=None sql_state=None
+  trial 7/30: ghost=1 outer=None inner=None sql_state=None
+  trial 8/30: ghost=1 outer=None inner=None sql_state=None
+  trial 9/30: ghost=1 outer=None inner=None sql_state=None
+  trial 10/30: ghost=1 outer=None inner=None sql_state=None
+  trial 11/30: ghost=1 outer=None inner=None sql_state=None
+  trial 12/30: ghost=1 outer=None inner=None sql_state=None
+  trial 13/30: ghost=1 outer=None inner=None sql_state=None
+  trial 14/30: ghost=1 outer=None inner=None sql_state=None
+  trial 15/30: ghost=1 outer=None inner=None sql_state=None
+  trial 16/30: ghost=1 outer=None inner=None sql_state=None
+  trial 17/30: ghost=1 outer=None inner=None sql_state=None
+  trial 18/30: ghost=1 outer=None inner=None sql_state=None
+  trial 19/30: ghost=1 outer=None inner=None sql_state=None
+  trial 20/30: ghost=1 outer=None inner=None sql_state=None
+  trial 21/30: ghost=1 outer=None inner=None sql_state=None
+  trial 22/30: ghost=1 outer=None inner=None sql_state=None
+  trial 23/30: ghost=1 outer=None inner=None sql_state=None
+  trial 24/30: ghost=1 outer=None inner=None sql_state=None
+  trial 25/30: ghost=1 outer=None inner=None sql_state=None
+  trial 26/30: ghost=1 outer=None inner=None sql_state=None
+  trial 27/30: ghost=1 outer=None inner=None sql_state=None
+  trial 28/30: ghost=1 outer=None inner=None sql_state=None
+  trial 29/30: ghost=1 outer=None inner=None sql_state=None
+  trial 30/30: ghost=1 outer=None inner=None sql_state=None
+
+E4b exceptions | aspnet | D=110ms | category=above_dstar | runs=30
+────────────────────────────────────────────────────────────
+  trial 1/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 21/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 22/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 23/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 24/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 25/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 26/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 27/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 28/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 29/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 30/30: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+
+E4b-exceptions complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e4_analyse.py --only e4b-exceptions
+
+════════════════════════════════════════════════════════════════════
+E4 e4b-exceptions finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e4_analyse.py

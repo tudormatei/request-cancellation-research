@@ -1,0 +1,5 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/webflux-sched_20260603_011402.log
+Started at: Wed  3 Jun 01:14:02 CEST 2026
+
+Pre-flight: 0.52, 1.27, 1.74
+✗ load 0.52 > 0.5 — wait before starting

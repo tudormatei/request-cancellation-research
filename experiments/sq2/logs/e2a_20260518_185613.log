@@ -1,0 +1,220 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq2/logs/e2a_20260518_185613.log
+Started at: Mon May 18 06:56:13 PM CEST 2026
+▶ E2a — single-result DB query (full bridge vs no bridge)
+── ASP.NET (N-sweep) ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+aspnet ready
+=== aspnet N=1 ===
+
+E2a | framework=aspnet | N=1 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 db_cancelled=1 ghost_holdtime=27ms db_cancel_latency=27ms
+  run 2/10: det=1/1 db_cancelled=1 ghost_holdtime=28ms db_cancel_latency=28ms
+  run 3/10: det=1/1 db_cancelled=1 ghost_holdtime=29ms db_cancel_latency=29ms
+  run 4/10: det=1/1 db_cancelled=1 ghost_holdtime=42ms db_cancel_latency=42ms
+  run 5/10: det=1/1 db_cancelled=1 ghost_holdtime=68ms db_cancel_latency=68ms
+  run 6/10: det=1/1 db_cancelled=1 ghost_holdtime=45ms db_cancel_latency=45ms
+  run 7/10: det=1/1 db_cancelled=1 ghost_holdtime=33ms db_cancel_latency=33ms
+  run 8/10: det=1/1 db_cancelled=1 ghost_holdtime=61ms db_cancel_latency=61ms
+  run 9/10: det=1/1 db_cancelled=1 ghost_holdtime=25ms db_cancel_latency=25ms
+  run 10/10: det=1/1 db_cancelled=1 ghost_holdtime=38ms db_cancel_latency=38ms
+=== aspnet N=5 ===
+
+E2a | framework=aspnet | N=5 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=5/5 db_cancelled=1 ghost_holdtime=50ms db_cancel_latency=50ms
+  run 2/10: det=5/5 db_cancelled=1 ghost_holdtime=54ms db_cancel_latency=54ms
+  run 3/10: det=5/5 db_cancelled=1 ghost_holdtime=45ms db_cancel_latency=45ms
+  run 4/10: det=5/5 db_cancelled=1 ghost_holdtime=25ms db_cancel_latency=25ms
+  run 5/10: det=5/5 db_cancelled=1 ghost_holdtime=20ms db_cancel_latency=20ms
+  run 6/10: det=5/5 db_cancelled=1 ghost_holdtime=177ms db_cancel_latency=177ms
+  run 7/10: det=5/5 db_cancelled=1 ghost_holdtime=39ms db_cancel_latency=39ms
+  run 8/10: det=5/5 db_cancelled=1 ghost_holdtime=176ms db_cancel_latency=176ms
+  run 9/10: det=5/5 db_cancelled=1 ghost_holdtime=88ms db_cancel_latency=88ms
+  run 10/10: det=5/5 db_cancelled=1 ghost_holdtime=50ms db_cancel_latency=50ms
+=== aspnet N=10 ===
+
+E2a | framework=aspnet | N=10 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=10/10 db_cancelled=1 ghost_holdtime=61ms db_cancel_latency=61ms
+  run 2/10: det=10/10 db_cancelled=1 ghost_holdtime=26ms db_cancel_latency=26ms
+  run 3/10: det=10/10 db_cancelled=1 ghost_holdtime=67ms db_cancel_latency=67ms
+  run 4/10: det=10/10 db_cancelled=1 ghost_holdtime=33ms db_cancel_latency=33ms
+  run 5/10: det=10/10 db_cancelled=1 ghost_holdtime=33ms db_cancel_latency=33ms
+  run 6/10: det=10/10 db_cancelled=1 ghost_holdtime=52ms db_cancel_latency=52ms
+  run 7/10: det=10/10 db_cancelled=1 ghost_holdtime=64ms db_cancel_latency=64ms
+  run 8/10: det=10/10 db_cancelled=1 ghost_holdtime=65ms db_cancel_latency=65ms
+  run 9/10: det=10/10 db_cancelled=1 ghost_holdtime=53ms db_cancel_latency=53ms
+  run 10/10: det=10/10 db_cancelled=1 ghost_holdtime=37ms db_cancel_latency=37ms
+=== aspnet N=25 ===
+
+E2a | framework=aspnet | N=25 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=25/25 db_cancelled=1 ghost_holdtime=86ms db_cancel_latency=86ms
+  run 2/10: det=25/25 db_cancelled=1 ghost_holdtime=91ms db_cancel_latency=91ms
+  run 3/10: det=25/25 db_cancelled=1 ghost_holdtime=57ms db_cancel_latency=57ms
+  run 4/10: det=25/25 db_cancelled=1 ghost_holdtime=58ms db_cancel_latency=58ms
+  run 5/10: det=25/25 db_cancelled=1 ghost_holdtime=88ms db_cancel_latency=88ms
+  run 6/10: det=25/25 db_cancelled=1 ghost_holdtime=52ms db_cancel_latency=52ms
+  run 7/10: det=25/25 db_cancelled=1 ghost_holdtime=73ms db_cancel_latency=73ms
+  run 8/10: det=25/25 db_cancelled=1 ghost_holdtime=139ms db_cancel_latency=139ms
+  run 9/10: det=25/25 db_cancelled=1 ghost_holdtime=245ms db_cancel_latency=245ms
+  run 10/10: det=25/25 db_cancelled=1 ghost_holdtime=147ms db_cancel_latency=147ms
+=== aspnet N=50 ===
+
+E2a | framework=aspnet | N=50 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=50/50 db_cancelled=1 ghost_holdtime=184ms db_cancel_latency=184ms
+  run 2/10: det=50/50 db_cancelled=1 ghost_holdtime=112ms db_cancel_latency=112ms
+  run 3/10: det=50/50 db_cancelled=1 ghost_holdtime=117ms db_cancel_latency=117ms
+  run 4/10: det=50/50 db_cancelled=1 ghost_holdtime=108ms db_cancel_latency=108ms
+  run 5/10: det=50/50 db_cancelled=1 ghost_holdtime=109ms db_cancel_latency=109ms
+  run 6/10: det=50/50 db_cancelled=1 ghost_holdtime=113ms db_cancel_latency=113ms
+  run 7/10: det=50/50 db_cancelled=1 ghost_holdtime=107ms db_cancel_latency=107ms
+  run 8/10: det=50/50 db_cancelled=1 ghost_holdtime=120ms db_cancel_latency=120ms
+  run 9/10: det=50/50 db_cancelled=1 ghost_holdtime=115ms db_cancel_latency=115ms
+  run 10/10: det=50/50 db_cancelled=1 ghost_holdtime=124ms db_cancel_latency=124ms
+=== aspnet N=100 ===
+
+E2a | framework=aspnet | N=100 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 2/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 3/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 4/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 5/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 6/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 7/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 8/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 9/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 10/10: det=100/100 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+=== aspnet N=200 ===
+
+E2a | framework=aspnet | N=200 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 2/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 3/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 4/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 5/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 6/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 7/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 8/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 9/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+  run 10/10: det=200/200 db_cancelled=1 ghost_holdtime=0ms db_cancel_latency=0ms
+── WebFlux (N-sweep) ──
+=== webflux N=1 ===
+
+E2a | framework=webflux | N=1 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=1/1 db_cancelled=0 ghost_holdtime=4783ms db_cancel_latency=Nonems
+  run 2/10: det=1/1 db_cancelled=0 ghost_holdtime=4115ms db_cancel_latency=Nonems
+  run 3/10: det=1/1 db_cancelled=0 ghost_holdtime=4105ms db_cancel_latency=Nonems
+  run 4/10: det=1/1 db_cancelled=0 ghost_holdtime=4107ms db_cancel_latency=Nonems
+  run 5/10: det=1/1 db_cancelled=0 ghost_holdtime=4122ms db_cancel_latency=Nonems
+  run 6/10: det=1/1 db_cancelled=0 ghost_holdtime=4130ms db_cancel_latency=Nonems
+  run 7/10: det=1/1 db_cancelled=0 ghost_holdtime=4132ms db_cancel_latency=Nonems
+  run 8/10: det=1/1 db_cancelled=0 ghost_holdtime=4091ms db_cancel_latency=Nonems
+  run 9/10: det=1/1 db_cancelled=0 ghost_holdtime=4096ms db_cancel_latency=Nonems
+  run 10/10: det=1/1 db_cancelled=0 ghost_holdtime=4132ms db_cancel_latency=Nonems
+=== webflux N=5 ===
+
+E2a | framework=webflux | N=5 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=5/5 db_cancelled=0 ghost_holdtime=4118ms db_cancel_latency=Nonems
+  run 2/10: det=5/5 db_cancelled=0 ghost_holdtime=4140ms db_cancel_latency=Nonems
+  run 3/10: det=5/5 db_cancelled=0 ghost_holdtime=4124ms db_cancel_latency=Nonems
+  run 4/10: det=5/5 db_cancelled=0 ghost_holdtime=4119ms db_cancel_latency=Nonems
+  run 5/10: det=5/5 db_cancelled=0 ghost_holdtime=4128ms db_cancel_latency=Nonems
+  run 6/10: det=5/5 db_cancelled=0 ghost_holdtime=4114ms db_cancel_latency=Nonems
+  run 7/10: det=5/5 db_cancelled=0 ghost_holdtime=4138ms db_cancel_latency=Nonems
+  run 8/10: det=5/5 db_cancelled=0 ghost_holdtime=4125ms db_cancel_latency=Nonems
+  run 9/10: det=5/5 db_cancelled=0 ghost_holdtime=4125ms db_cancel_latency=Nonems
+  run 10/10: det=5/5 db_cancelled=0 ghost_holdtime=4112ms db_cancel_latency=Nonems
+=== webflux N=10 ===
+
+E2a | framework=webflux | N=10 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=10/10 db_cancelled=0 ghost_holdtime=4133ms db_cancel_latency=Nonems
+  run 2/10: det=10/10 db_cancelled=0 ghost_holdtime=4110ms db_cancel_latency=Nonems
+  run 3/10: det=10/10 db_cancelled=0 ghost_holdtime=4133ms db_cancel_latency=Nonems
+  run 4/10: det=10/10 db_cancelled=0 ghost_holdtime=4136ms db_cancel_latency=Nonems
+  run 5/10: det=10/10 db_cancelled=0 ghost_holdtime=4161ms db_cancel_latency=Nonems
+  run 6/10: det=10/10 db_cancelled=0 ghost_holdtime=4172ms db_cancel_latency=Nonems
+  run 7/10: det=10/10 db_cancelled=0 ghost_holdtime=4110ms db_cancel_latency=Nonems
+  run 8/10: det=10/10 db_cancelled=0 ghost_holdtime=4107ms db_cancel_latency=Nonems
+  run 9/10: det=10/10 db_cancelled=0 ghost_holdtime=4139ms db_cancel_latency=Nonems
+  run 10/10: det=10/10 db_cancelled=0 ghost_holdtime=4135ms db_cancel_latency=Nonems
+=== webflux N=25 ===
+
+E2a | framework=webflux | N=25 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=25/25 db_cancelled=0 ghost_holdtime=4136ms db_cancel_latency=Nonems
+  run 2/10: det=25/25 db_cancelled=0 ghost_holdtime=4137ms db_cancel_latency=Nonems
+  run 3/10: det=25/25 db_cancelled=0 ghost_holdtime=4108ms db_cancel_latency=Nonems
+  run 4/10: det=25/25 db_cancelled=0 ghost_holdtime=4136ms db_cancel_latency=Nonems
+  run 5/10: det=25/25 db_cancelled=0 ghost_holdtime=14128ms db_cancel_latency=Nonems
+  run 6/10: det=25/25 db_cancelled=0 ghost_holdtime=14155ms db_cancel_latency=Nonems
+  run 7/10: det=25/25 db_cancelled=0 ghost_holdtime=4133ms db_cancel_latency=Nonems
+  run 8/10: det=25/25 db_cancelled=0 ghost_holdtime=4129ms db_cancel_latency=Nonems
+  run 9/10: det=25/25 db_cancelled=0 ghost_holdtime=14207ms db_cancel_latency=Nonems
+  run 10/10: det=25/25 db_cancelled=0 ghost_holdtime=4122ms db_cancel_latency=Nonems
+=== webflux N=50 ===
+
+E2a | framework=webflux | N=50 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=50/50 db_cancelled=0 ghost_holdtime=4119ms db_cancel_latency=Nonems
+  run 2/10: det=50/50 db_cancelled=0 ghost_holdtime=4142ms db_cancel_latency=Nonems
+  run 3/10: det=50/50 db_cancelled=0 ghost_holdtime=14126ms db_cancel_latency=Nonems
+  run 4/10: det=50/50 db_cancelled=0 ghost_holdtime=4137ms db_cancel_latency=Nonems
+  run 5/10: det=50/50 db_cancelled=0 ghost_holdtime=4142ms db_cancel_latency=Nonems
+  run 6/10: det=50/50 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 7/10: det=50/50 db_cancelled=0 ghost_holdtime=14151ms db_cancel_latency=Nonems
+  run 8/10: det=50/50 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 9/10: det=50/50 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 10/10: det=50/50 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+=== webflux N=100 ===
+
+E2a | framework=webflux | N=100 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  run 1/10: det=100/100 db_cancelled=0 ghost_holdtime=14127ms db_cancel_latency=Nonems
+  run 2/10: det=100/100 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 3/10: det=100/100 db_cancelled=0 ghost_holdtime=14141ms db_cancel_latency=Nonems
+  run 4/10: det=100/100 db_cancelled=0 ghost_holdtime=14135ms db_cancel_latency=Nonems
+  run 5/10: det=100/100 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 6/10: det=100/100 db_cancelled=0 ghost_holdtime=14130ms db_cancel_latency=Nonems
+  run 7/10: det=100/100 db_cancelled=0 ghost_holdtime=14167ms db_cancel_latency=Nonems
+  run 8/10: det=100/100 db_cancelled=0 ghost_holdtime=14145ms db_cancel_latency=Nonems
+  run 9/10: det=100/100 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 10/10: det=100/100 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+=== webflux N=200 ===
+
+E2a | framework=webflux | N=200 | cancel_after=6.0s | runs=10
+────────────────────────────────────────────────────────────
+  ⚠ pg_stat_activity not clean after 15s (pg_sleep)
+  run 1/10: det=200/200 db_cancelled=0 ghost_holdtime=18836ms db_cancel_latency=Nonems
+  run 2/10: det=200/200 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 3/10: det=200/200 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 4/10: det=200/200 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 5/10: det=200/200 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 6/10: det=200/200 db_cancelled=0 ghost_holdtime=14167ms db_cancel_latency=Nonems
+  run 7/10: det=200/200 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 8/10: det=200/200 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+  run 9/10: det=200/200 db_cancelled=0 ghost_holdtime=14171ms db_cancel_latency=Nonems
+  run 10/10: det=200/200 db_cancelled=0 ghost_holdtime=Nonems db_cancel_latency=Nonems
+── Spring MVC (N=1 qualitative) ──
+
+E2a | framework=mvc | N=1 | cancel_after=6.0s | runs=5
+────────────────────────────────────────────────────────────
+  run 1/5: det=0/1 db_cancelled=0 ghost_holdtime=4588ms db_cancel_latency=Nonems
+  run 2/5: det=0/1 db_cancelled=0 ghost_holdtime=4121ms db_cancel_latency=Nonems
+  run 3/5: det=0/1 db_cancelled=0 ghost_holdtime=4120ms db_cancel_latency=Nonems
+  run 4/5: det=0/1 db_cancelled=0 ghost_holdtime=4159ms db_cancel_latency=Nonems
+  run 5/5: det=0/1 db_cancelled=0 ghost_holdtime=4029ms db_cancel_latency=Nonems
+
+E2a complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py --only e2a
+
+════════════════════════════════════════════════════════════════════
+E2 e2a finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq2/e2_analyse.py

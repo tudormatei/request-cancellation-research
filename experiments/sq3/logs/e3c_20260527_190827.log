@@ -1,0 +1,127 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq3/logs/e3c_20260527_190827.log
+Started at: Wed May 27 07:08:27 PM CEST 2026
+
+▶ E3c — cascade dynamics (sustained load, pool exhaustion)
+  X∈{25,50,125} req/s | Y=10% cancel | 5 min per cell
+
+── ASP.NET ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+aspnet ready
+=== aspnet X=25rps ===
+
+E3c sustained | framework=aspnet | X=25.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 749  completed= 674  pool_exhausted=  0 (0.0%)  throughput=22.5rps  p95=24952.4ms
+  window  1 [30.0–60.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=24972.3ms
+  window  2 [60.0–90.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=24966.4ms
+  window  3 [90.0–120.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=24973.0ms
+  window  4 [120.0–150.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=24952.3ms
+  window  5 [150.0–180.0s]  sent= 748  completed= 674  pool_exhausted=  0 (0.0%)  throughput=22.5rps  p95=24959.4ms
+  window  6 [180.0–210.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=24969.4ms
+  window  7 [210.0–240.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=24975.8ms
+  window  8 [240.0–270.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=24976.8ms
+  window  9 [270.0–300.0s]  sent= 562  completed= 487  pool_exhausted=  0 (0.0%)  throughput=16.2rps  p95=24973.6ms
+=== aspnet X=50rps ===
+
+E3c sustained | framework=aspnet | X=50.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=1493  completed=1343  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=25003.0ms
+  window  1 [30.0–60.0s]  sent=1493  completed=1344  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24993.0ms
+  window  2 [60.0–90.0s]  sent=1492  completed=1343  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24987.9ms
+  window  3 [90.0–120.0s]  sent=1493  completed=1343  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24991.2ms
+  window  4 [120.0–150.0s]  sent=1493  completed=1344  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24989.1ms
+  window  5 [150.0–180.0s]  sent=1493  completed=1344  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24986.5ms
+  window  6 [180.0–210.0s]  sent=1492  completed=1343  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24985.1ms
+  window  7 [210.0–240.0s]  sent=1493  completed=1343  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24985.9ms
+  window  8 [240.0–270.0s]  sent=1493  completed=1344  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=24982.4ms
+  window  9 [270.0–300.0s]  sent=1216  completed=1067  pool_exhausted=  0 (0.0%)  throughput=35.6rps  p95=24970.2ms
+=== aspnet X=125rps ===
+
+E3c sustained | framework=aspnet | X=125.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=3711  completed=3339  pool_exhausted=  0 (0.0%)  throughput=111.3rps  p95=24996.2ms
+  window  1 [30.0–60.0s]  sent=3710  completed=3339  pool_exhausted=  0 (0.0%)  throughput=111.3rps  p95=24995.1ms
+  window  2 [60.0–90.0s]  sent=3713  completed=3342  pool_exhausted=  0 (0.0%)  throughput=111.4rps  p95=24993.2ms
+  window  3 [90.0–120.0s]  sent=3709  completed=3338  pool_exhausted=  0 (0.0%)  throughput=111.3rps  p95=24994.2ms
+  window  4 [120.0–150.0s]  sent=3708  completed=3337  pool_exhausted=  0 (0.0%)  throughput=111.2rps  p95=24987.4ms
+  window  5 [150.0–180.0s]  sent=3712  completed=3341  pool_exhausted=  0 (0.0%)  throughput=111.4rps  p95=24990.9ms
+  window  6 [180.0–210.0s]  sent=3708  completed=3337  pool_exhausted=  0 (0.0%)  throughput=111.2rps  p95=24987.6ms
+  window  7 [210.0–240.0s]  sent=3704  completed=3334  pool_exhausted=  0 (0.0%)  throughput=111.1rps  p95=24984.4ms
+  window  8 [240.0–270.0s]  sent=3712  completed=3341  pool_exhausted=  0 (0.0%)  throughput=111.4rps  p95=24985.3ms
+  window  9 [270.0–300.0s]  sent=3170  completed=2799  pool_exhausted=  0 (0.0%)  throughput=93.3rps  p95=24938.4ms
+
+── WebFlux ──
+=== webflux X=25rps ===
+
+E3c sustained | framework=webflux | X=25.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 748  completed=  28  pool_exhausted=645 (86.2%)  throughput=0.9rps  p95=36036.7ms
+  window  1 [30.0–60.0s]  sent= 748  completed=   0  pool_exhausted=673 (90.0%)  throughput=0.0rps  p95=36036.7ms
+  window  2 [60.0–90.0s]  sent= 747  completed=   0  pool_exhausted=672 (90.0%)  throughput=0.0rps  p95=36036.7ms
+  window  3 [90.0–120.0s]  sent= 748  completed=   0  pool_exhausted=673 (90.0%)  throughput=0.0rps  p95=36036.6ms
+  window  4 [120.0–150.0s]  sent= 748  completed= 657  pool_exhausted= 17 (2.3%)  throughput=21.9rps  p95=34984.4ms
+  window  5 [150.0–180.0s]  sent= 748  completed= 633  pool_exhausted= 40 (5.3%)  throughput=21.1rps  p95=36032.2ms
+  window  6 [180.0–210.0s]  sent= 747  completed= 663  pool_exhausted=  9 (1.2%)  throughput=22.1rps  p95=17218.5ms
+  window  7 [210.0–240.0s]  sent= 748  completed= 633  pool_exhausted= 40 (5.3%)  throughput=21.1rps  p95=36021.2ms
+  window  8 [240.0–270.0s]  sent= 747  completed= 624  pool_exhausted= 49 (6.6%)  throughput=20.8rps  p95=36035.7ms
+  window  9 [270.0–300.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=26459.1ms
+=== webflux X=50rps ===
+
+E3c sustained | framework=webflux | X=50.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=1491  completed=1264  pool_exhausted= 77 (5.2%)  throughput=42.1rps  p95=36033.6ms
+  window  1 [30.0–60.0s]  sent=1492  completed=1302  pool_exhausted= 41 (2.8%)  throughput=43.4rps  p95=35239.0ms
+  window  2 [60.0–90.0s]  sent=1491  completed=1333  pool_exhausted=  9 (0.6%)  throughput=44.4rps  p95=20552.1ms
+  window  3 [90.0–120.0s]  sent=1491  completed=1302  pool_exhausted= 40 (2.7%)  throughput=43.4rps  p95=35194.9ms
+  window  4 [120.0–150.0s]  sent=1492  completed=1294  pool_exhausted= 49 (3.3%)  throughput=43.1rps  p95=35417.5ms
+  window  5 [150.0–180.0s]  sent=1491  completed=1342  pool_exhausted=  0 (0.0%)  throughput=44.7rps  p95=30294.7ms
+  window  6 [180.0–210.0s]  sent=1491  completed=1294  pool_exhausted= 48 (3.2%)  throughput=43.1rps  p95=35399.8ms
+  window  7 [210.0–240.0s]  sent=1491  completed=1333  pool_exhausted=  9 (0.6%)  throughput=44.4rps  p95=20893.7ms
+  window  8 [240.0–270.0s]  sent=1491  completed=1301  pool_exhausted= 40 (2.7%)  throughput=43.4rps  p95=35218.3ms
+  window  9 [270.0–300.0s]  sent=1259  completed=1110  pool_exhausted=  0 (0.0%)  throughput=37.0rps  p95=10888.7ms
+=== webflux X=125rps ===
+
+E3c sustained | framework=webflux | X=125.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=3709  completed=3251  pool_exhausted= 87 (2.4%)  throughput=108.4rps  p95=35233.9ms
+  window  1 [30.0–60.0s]  sent=3708  completed=3288  pool_exhausted= 49 (1.3%)  throughput=109.6rps  p95=34895.7ms
+  window  2 [60.0–90.0s]  sent=3708  completed=3337  pool_exhausted=  0 (0.0%)  throughput=111.2rps  p95=28931.2ms
+  window  3 [90.0–120.0s]  sent=3706  completed=3286  pool_exhausted= 49 (1.3%)  throughput=109.5rps  p95=34897.8ms
+  window  4 [120.0–150.0s]  sent=3700  completed=3321  pool_exhausted=  9 (0.2%)  throughput=110.7rps  p95=19282.7ms
+  window  5 [150.0–180.0s]  sent=3704  completed=3285  pool_exhausted= 49 (1.3%)  throughput=109.5rps  p95=34901.2ms
+  window  6 [180.0–210.0s]  sent=3703  completed=3325  pool_exhausted=  8 (0.2%)  throughput=110.8rps  p95=19529.9ms
+  window  7 [210.0–240.0s]  sent=3701  completed=3291  pool_exhausted= 40 (1.1%)  throughput=109.7rps  p95=34836.3ms
+  window  8 [240.0–270.0s]  sent=3706  completed=3295  pool_exhausted= 40 (1.1%)  throughput=109.8rps  p95=34836.5ms
+  window  9 [270.0–300.0s]  sent=3690  completed=3320  pool_exhausted=  0 (0.0%)  throughput=110.7rps  p95=19500.2ms
+
+E3c complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e3_analyse.py --only e3c
+
+════════════════════════════════════════════════════════════════════
+E3 e3c finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e3_analyse.py

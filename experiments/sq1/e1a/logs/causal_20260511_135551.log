@@ -1,0 +1,670 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq1/e1a/logs/causal_20260511_135551.log
+Started at: Mon May 11 01:55:51 PM CEST 2026
+
+▶ E1a causal — cpu scenario (K=100ms, T_max=N)
+=== cpu N=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=1 | T=1 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=1 | T=1 | K=100ms
+    run 1/10: 1 req  1 cancelled  L1=280ms
+    run 2/10: 1 req  1 cancelled  L1=202ms
+    run 3/10: 1 req  1 cancelled  L1=202ms
+    run 4/10: 1 req  1 cancelled  L1=201ms
+    run 5/10: 1 req  1 cancelled  L1=202ms
+    run 6/10: 1 req  1 cancelled  L1=201ms
+    run 7/10: 1 req  1 cancelled  L1=202ms
+    run 8/10: 1 req  1 cancelled  L1=201ms
+    run 9/10: 1 req  1 cancelled  L1=201ms
+    run 10/10: 1 req  1 cancelled  L1=301ms
+  → rate=1.0  written to e1a_cpu.csv
+  webflux | cpu | N=1 | T=1 | K=100ms
+    run 1/10: 1 req  1 cancelled  L1=2ms
+    run 2/10: 1 req  1 cancelled  L1=1ms
+    run 3/10: 1 req  1 cancelled  L1=1ms
+    run 4/10: 1 req  1 cancelled  L1=1ms
+    run 5/10: 1 req  1 cancelled  L1=1ms
+    run 6/10: 1 req  1 cancelled  L1=1ms
+    run 7/10: 1 req  1 cancelled  L1=1ms
+    run 8/10: 1 req  1 cancelled  L1=1ms
+    run 9/10: 1 req  1 cancelled  L1=1ms
+    run 10/10: 1 req  1 cancelled  L1=1ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=5 ===
+threadpool min_worker=1 max_worker=5 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=5 | T=5 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=5 | T=5 | K=100ms
+    run 1/10: 5 req  5 cancelled  L1=156ms
+    run 2/10: 5 req  5 cancelled  L1=271ms
+    run 3/10: 5 req  5 cancelled  L1=253ms
+    run 4/10: 5 req  5 cancelled  L1=173ms
+    run 5/10: 5 req  5 cancelled  L1=249ms
+    run 6/10: 5 req  5 cancelled  L1=188ms
+    run 7/10: 5 req  5 cancelled  L1=227ms
+    run 8/10: 5 req  5 cancelled  L1=215ms
+    run 9/10: 5 req  5 cancelled  L1=218ms
+    run 10/10: 5 req  5 cancelled  L1=246ms
+  → rate=1.0  written to e1a_cpu.csv
+  webflux | cpu | N=5 | T=5 | K=100ms
+    run 1/10: 5 req  5 cancelled  L1=8ms
+    run 2/10: 5 req  5 cancelled  L1=1ms
+    run 3/10: 5 req  5 cancelled  L1=1ms
+    run 4/10: 5 req  5 cancelled  L1=2ms
+    run 5/10: 5 req  5 cancelled  L1=2ms
+    run 6/10: 5 req  5 cancelled  L1=2ms
+    run 7/10: 5 req  5 cancelled  L1=1ms
+    run 8/10: 5 req  5 cancelled  L1=4ms
+    run 9/10: 5 req  5 cancelled  L1=2ms
+    run 10/10: 5 req  5 cancelled  L1=1ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=10 ===
+threadpool min_worker=1 max_worker=10 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=10 | T=10 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=10 | T=10 | K=100ms
+    run 1/10: 10 req  10 cancelled  L1=211ms
+    run 2/10: 10 req  10 cancelled  L1=224ms
+    run 3/10: 10 req  10 cancelled  L1=294ms
+    run 4/10: 10 req  10 cancelled  L1=246ms
+    run 5/10: 10 req  10 cancelled  L1=268ms
+    run 6/10: 10 req  10 cancelled  L1=227ms
+    run 7/10: 10 req  10 cancelled  L1=217ms
+    run 8/10: 10 req  10 cancelled  L1=230ms
+    run 9/10: 10 req  10 cancelled  L1=214ms
+    run 10/10: 10 req  10 cancelled  L1=216ms
+  → rate=1.0  written to e1a_cpu.csv
+  webflux | cpu | N=10 | T=10 | K=100ms
+    run 1/10: 10 req  10 cancelled  L1=34ms
+    run 2/10: 10 req  10 cancelled  L1=7ms
+    run 3/10: 10 req  10 cancelled  L1=2ms
+    run 4/10: 10 req  10 cancelled  L1=7ms
+    run 5/10: 10 req  10 cancelled  L1=1ms
+    run 6/10: 10 req  10 cancelled  L1=2ms
+    run 7/10: 10 req  10 cancelled  L1=7ms
+    run 8/10: 10 req  10 cancelled  L1=2ms
+    run 9/10: 10 req  10 cancelled  L1=2ms
+    run 10/10: 10 req  10 cancelled  L1=2ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=25 ===
+threadpool min_worker=1 max_worker=25 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=25 | T=25 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=25 | T=25 | K=100ms
+    run 1/10: 25 req  25 cancelled  L1=268ms
+    run 2/10: 25 req  25 cancelled  L1=257ms
+    run 3/10: 25 req  25 cancelled  L1=269ms
+    run 4/10: 25 req  25 cancelled  L1=255ms
+    run 5/10: 25 req  25 cancelled  L1=266ms
+    run 6/10: 25 req  25 cancelled  L1=252ms
+    run 7/10: 25 req  25 cancelled  L1=226ms
+    run 8/10: 25 req  25 cancelled  L1=224ms
+    run 9/10: 25 req  25 cancelled  L1=215ms
+    run 10/10: 25 req  25 cancelled  L1=234ms
+  → rate=1.0  written to e1a_cpu.csv
+  webflux | cpu | N=25 | T=25 | K=100ms
+    run 1/10: 25 req  25 cancelled  L1=19ms
+    run 2/10: 25 req  25 cancelled  L1=3ms
+    run 3/10: 25 req  25 cancelled  L1=7ms
+    run 4/10: 25 req  25 cancelled  L1=3ms
+    run 5/10: 25 req  25 cancelled  L1=4ms
+    run 6/10: 25 req  25 cancelled  L1=4ms
+    run 7/10: 25 req  25 cancelled  L1=3ms
+    run 8/10: 25 req  25 cancelled  L1=4ms
+    run 9/10: 25 req  25 cancelled  L1=4ms
+    run 10/10: 25 req  25 cancelled  L1=2ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=50 ===
+threadpool min_worker=1 max_worker=50 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=50 | T=50 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=50 | T=50 | K=100ms
+    run 1/10: 50 req  50 cancelled  L1=296ms
+    run 2/10: 50 req  50 cancelled  L1=297ms
+    run 3/10: 50 req  50 cancelled  L1=282ms
+    run 4/10: 50 req  50 cancelled  L1=298ms
+    run 5/10: 50 req  50 cancelled  L1=242ms
+    run 6/10: 50 req  50 cancelled  L1=274ms
+    run 7/10: 50 req  50 cancelled  L1=271ms
+    run 8/10: 50 req  50 cancelled  L1=224ms
+    run 9/10: 50 req  50 cancelled  L1=219ms
+    run 10/10: 50 req  50 cancelled  L1=296ms
+  → rate=1.0  written to e1a_cpu.csv
+  webflux | cpu | N=50 | T=50 | K=100ms
+    run 1/10: 50 req  50 cancelled  L1=40ms
+    run 2/10: 50 req  50 cancelled  L1=4ms
+    run 3/10: 50 req  50 cancelled  L1=13ms
+    run 4/10: 50 req  50 cancelled  L1=4ms
+    run 5/10: 50 req  50 cancelled  L1=4ms
+    run 6/10: 50 req  50 cancelled  L1=4ms
+    run 7/10: 50 req  50 cancelled  L1=3ms
+    run 8/10: 50 req  50 cancelled  L1=5ms
+    run 9/10: 50 req  50 cancelled  L1=3ms
+    run 10/10: 50 req  50 cancelled  L1=5ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=75 ===
+threadpool min_worker=1 max_worker=75 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=75 | T=75 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=75 | T=75 | K=100ms
+    run 1/10: 75 req  75 cancelled  L1=284ms
+    run 2/10: 75 req  75 cancelled  L1=248ms
+    run 3/10: 75 req  75 cancelled  L1=266ms
+    run 4/10: 75 req  75 cancelled  L1=239ms
+    run 5/10: 75 req  75 cancelled  L1=247ms
+    run 6/10: 75 req  75 cancelled  L1=265ms
+    run 7/10: 75 req  75 cancelled  L1=283ms
+    run 8/10: 75 req  75 cancelled  L1=255ms
+    run 9/10: 75 req  75 cancelled  L1=239ms
+    run 10/10: 75 req  75 cancelled  L1=229ms
+  → rate=1.0  written to e1a_cpu.csv
+  webflux | cpu | N=75 | T=75 | K=100ms
+    run 1/10: 75 req  75 cancelled  L1=57ms
+    run 2/10: 75 req  75 cancelled  L1=8ms
+    run 3/10: 75 req  75 cancelled  L1=5ms
+    run 4/10: 75 req  75 cancelled  L1=5ms
+    run 5/10: 75 req  75 cancelled  L1=5ms
+    run 6/10: 75 req  75 cancelled  L1=9ms
+    run 7/10: 75 req  75 cancelled  L1=5ms
+    run 8/10: 75 req  75 cancelled  L1=5ms
+    run 9/10: 75 req  75 cancelled  L1=3ms
+    run 10/10: 75 req  75 cancelled  L1=3ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=100 ===
+threadpool min_worker=1 max_worker=100 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=100 | T=100 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=100 | T=100 | K=100ms
+    run 1/10: 100 req  100 cancelled  L1=232ms
+    run 2/10: 100 req  100 cancelled  L1=279ms
+    run 3/10: 100 req  100 cancelled  L1=285ms
+    run 4/10: 100 req  100 cancelled  L1=276ms
+    run 5/10: 100 req  100 cancelled  L1=293ms
+    run 6/10: 100 req  100 cancelled  L1=258ms
+    run 7/10: 100 req  100 cancelled  L1=281ms
+    run 8/10: 100 req  100 cancelled  L1=553ms
+    run 9/10: 100 req  100 cancelled  L1=1452ms
+    run 10/10: 100 req  100 cancelled  L1=295ms
+  → rate=1.0  written to e1a_cpu.csv
+  webflux | cpu | N=100 | T=100 | K=100ms
+    run 1/10: 100 req  100 cancelled  L1=61ms
+    run 2/10: 100 req  100 cancelled  L1=19ms
+    run 3/10: 100 req  100 cancelled  L1=10ms
+    run 4/10: 100 req  100 cancelled  L1=9ms
+    run 5/10: 100 req  100 cancelled  L1=7ms
+    run 6/10: 100 req  100 cancelled  L1=6ms
+    run 7/10: 100 req  100 cancelled  L1=4ms
+    run 8/10: 100 req  100 cancelled  L1=4ms
+    run 9/10: 100 req  100 cancelled  L1=5ms
+    run 10/10: 100 req  100 cancelled  L1=3ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=125 ===
+threadpool min_worker=1 max_worker=125 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=125 | T=125 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=125 | T=125 | K=100ms
+    run 1/10: 125 req  125 cancelled  L1=297ms
+    run 2/10: 125 req  125 cancelled  L1=296ms
+    run 3/10: 125 req  0 cancelled  L1=n/a
+    run 4/10: 125 req  125 cancelled  L1=289ms
+    run 5/10: 125 req  125 cancelled  L1=259ms
+    run 6/10: 125 req  125 cancelled  L1=1862ms
+    run 7/10: 124 req  0 cancelled  L1=n/a
+    run 8/10: 125 req  125 cancelled  L1=579ms
+    run 9/10: 125 req  125 cancelled  L1=292ms
+    run 10/10: 125 req  125 cancelled  L1=290ms
+  → rate=0.8006  written to e1a_cpu.csv
+  webflux | cpu | N=125 | T=125 | K=100ms
+    run 1/10: 125 req  125 cancelled  L1=77ms
+    run 2/10: 125 req  125 cancelled  L1=68ms
+    run 3/10: 125 req  125 cancelled  L1=9ms
+    run 4/10: 125 req  125 cancelled  L1=7ms
+    run 5/10: 125 req  125 cancelled  L1=9ms
+    run 6/10: 125 req  125 cancelled  L1=5ms
+    run 7/10: 125 req  125 cancelled  L1=6ms
+    run 8/10: 125 req  125 cancelled  L1=5ms
+    run 9/10: 125 req  125 cancelled  L1=5ms
+    run 10/10: 125 req  125 cancelled  L1=4ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=150 ===
+threadpool min_worker=1 max_worker=150 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=150 | T=150 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=150 | T=150 | K=100ms
+    run 1/10: 150 req  150 cancelled  L1=282ms
+    run 2/10: 104 req  0 cancelled  L1=n/a
+    run 3/10: 150 req  0 cancelled  L1=n/a
+    run 4/10: 150 req  150 cancelled  L1=257ms
+    run 5/10: 150 req  150 cancelled  L1=285ms
+    run 6/10: 150 req  150 cancelled  L1=292ms
+    run 7/10: 150 req  150 cancelled  L1=293ms
+    run 8/10: 150 req  150 cancelled  L1=270ms
+    run 9/10: 150 req  150 cancelled  L1=857ms
+    run 10/10: 150 req  150 cancelled  L1=297ms
+  → rate=0.8253  written to e1a_cpu.csv
+  webflux | cpu | N=150 | T=150 | K=100ms
+    run 1/10: 150 req  150 cancelled  L1=72ms
+    run 2/10: 150 req  150 cancelled  L1=54ms
+    run 3/10: 150 req  150 cancelled  L1=23ms
+    run 4/10: 150 req  150 cancelled  L1=15ms
+    run 5/10: 150 req  150 cancelled  L1=7ms
+    run 6/10: 150 req  150 cancelled  L1=6ms
+    run 7/10: 150 req  150 cancelled  L1=6ms
+    run 8/10: 150 req  150 cancelled  L1=9ms
+    run 9/10: 150 req  150 cancelled  L1=4ms
+    run 10/10: 150 req  150 cancelled  L1=6ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=200 ===
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=200 | T=200 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=200 | T=200 | K=100ms
+    run 1/10: 155 req  0 cancelled  L1=n/a
+    run 2/10: 200 req  200 cancelled  L1=294ms
+    run 3/10: 200 req  200 cancelled  L1=293ms
+    run 4/10: 200 req  200 cancelled  L1=293ms
+    run 5/10: 200 req  200 cancelled  L1=289ms
+    run 6/10: 200 req  200 cancelled  L1=291ms
+    run 7/10: 200 req  200 cancelled  L1=288ms
+    run 8/10: 200 req  200 cancelled  L1=298ms
+    run 9/10: 170 req  0 cancelled  L1=n/a
+    run 10/10: 200 req  200 cancelled  L1=1118ms
+  → rate=0.8312  written to e1a_cpu.csv
+  webflux | cpu | N=200 | T=200 | K=100ms
+    run 1/10: 200 req  200 cancelled  L1=98ms
+    run 2/10: 200 req  200 cancelled  L1=58ms
+    run 3/10: 200 req  200 cancelled  L1=27ms
+    run 4/10: 200 req  200 cancelled  L1=16ms
+    run 5/10: 200 req  200 cancelled  L1=42ms
+    run 6/10: 200 req  200 cancelled  L1=10ms
+    run 7/10: 200 req  200 cancelled  L1=21ms
+    run 8/10: 200 req  200 cancelled  L1=5ms
+    run 9/10: 200 req  200 cancelled  L1=4ms
+    run 10/10: 200 req  200 cancelled  L1=3ms
+  → rate=1.0  written to e1a_cpu.csv
+=== cpu N=300 ===
+threadpool min_worker=1 max_worker=300 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-cpu | N=300 | T=300 | K=100ms | C=1
+scenario=cpu | cancel_after=5.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | cpu | N=300 | T=300 | K=100ms
+    run 1/10: 300 req  300 cancelled  L1=1950ms
+    run 2/10: 186 req  0 cancelled  L1=n/a
+    run 3/10: 159 req  0 cancelled  L1=n/a
+    run 4/10: 300 req  0 cancelled  L1=n/a
+    run 5/10: 299 req  0 cancelled  L1=n/a
+    run 6/10: 258 req  0 cancelled  L1=n/a
+    run 7/10: 294 req  0 cancelled  L1=n/a
+    run 8/10: 215 req  0 cancelled  L1=n/a
+    run 9/10: 300 req  300 cancelled  L1=524ms
+    run 10/10: 300 req  300 cancelled  L1=294ms
+  → rate=0.3447  written to e1a_cpu.csv
+  webflux | cpu | N=300 | T=300 | K=100ms
+    run 1/10: 300 req  300 cancelled  L1=156ms
+    run 2/10: 300 req  300 cancelled  L1=51ms
+    run 3/10: 300 req  300 cancelled  L1=82ms
+    run 4/10: 300 req  300 cancelled  L1=19ms
+    run 5/10: 300 req  300 cancelled  L1=31ms
+    run 6/10: 300 req  300 cancelled  L1=9ms
+    run 7/10: 300 req  300 cancelled  L1=20ms
+    run 8/10: 300 req  300 cancelled  L1=11ms
+    run 9/10: 300 req  300 cancelled  L1=13ms
+    run 10/10: 300 req  300 cancelled  L1=6ms
+  → rate=1.0  written to e1a_cpu.csv
+
+▶ E1a causal — async scenario (causal control, T_max=1)
+=== async N=1 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=1 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=1 | T=1 | K=100ms
+    run 1/10: 1 req  1 cancelled  L1=2ms
+    run 2/10: 1 req  1 cancelled  L1=0ms
+    run 3/10: 1 req  1 cancelled  L1=0ms
+    run 4/10: 1 req  1 cancelled  L1=0ms
+    run 5/10: 1 req  1 cancelled  L1=0ms
+    run 6/10: 1 req  1 cancelled  L1=0ms
+    run 7/10: 1 req  1 cancelled  L1=0ms
+    run 8/10: 1 req  1 cancelled  L1=0ms
+    run 9/10: 1 req  1 cancelled  L1=0ms
+    run 10/10: 1 req  1 cancelled  L1=0ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=1 | T=1 | K=100ms
+    run 1/10: 1 req  1 cancelled  L1=1ms
+    run 2/10: 1 req  1 cancelled  L1=0ms
+    run 3/10: 1 req  1 cancelled  L1=0ms
+    run 4/10: 1 req  1 cancelled  L1=0ms
+    run 5/10: 1 req  1 cancelled  L1=0ms
+    run 6/10: 1 req  1 cancelled  L1=0ms
+    run 7/10: 1 req  1 cancelled  L1=0ms
+    run 8/10: 1 req  1 cancelled  L1=0ms
+    run 9/10: 1 req  1 cancelled  L1=0ms
+    run 10/10: 1 req  1 cancelled  L1=0ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=5 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=5 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=5 | T=1 | K=100ms
+    run 1/10: 5 req  5 cancelled  L1=5ms
+    run 2/10: 5 req  5 cancelled  L1=0ms
+    run 3/10: 5 req  5 cancelled  L1=0ms
+    run 4/10: 5 req  5 cancelled  L1=0ms
+    run 5/10: 5 req  5 cancelled  L1=0ms
+    run 6/10: 5 req  5 cancelled  L1=0ms
+    run 7/10: 5 req  5 cancelled  L1=0ms
+    run 8/10: 5 req  5 cancelled  L1=0ms
+    run 9/10: 5 req  5 cancelled  L1=1ms
+    run 10/10: 5 req  5 cancelled  L1=0ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=5 | T=1 | K=100ms
+    run 1/10: 5 req  5 cancelled  L1=5ms
+    run 2/10: 5 req  5 cancelled  L1=1ms
+    run 3/10: 5 req  5 cancelled  L1=1ms
+    run 4/10: 5 req  5 cancelled  L1=1ms
+    run 5/10: 5 req  5 cancelled  L1=1ms
+    run 6/10: 5 req  5 cancelled  L1=1ms
+    run 7/10: 5 req  5 cancelled  L1=1ms
+    run 8/10: 5 req  5 cancelled  L1=1ms
+    run 9/10: 5 req  5 cancelled  L1=1ms
+    run 10/10: 5 req  5 cancelled  L1=1ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=10 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=10 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=10 | T=1 | K=100ms
+    run 1/10: 10 req  10 cancelled  L1=6ms
+    run 2/10: 10 req  10 cancelled  L1=0ms
+    run 3/10: 10 req  10 cancelled  L1=0ms
+    run 4/10: 10 req  10 cancelled  L1=2ms
+    run 5/10: 10 req  10 cancelled  L1=0ms
+    run 6/10: 10 req  10 cancelled  L1=1ms
+    run 7/10: 10 req  10 cancelled  L1=0ms
+    run 8/10: 10 req  10 cancelled  L1=0ms
+    run 9/10: 10 req  10 cancelled  L1=0ms
+    run 10/10: 10 req  10 cancelled  L1=0ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=10 | T=1 | K=100ms
+    run 1/10: 10 req  10 cancelled  L1=5ms
+    run 2/10: 10 req  10 cancelled  L1=2ms
+    run 3/10: 10 req  10 cancelled  L1=1ms
+    run 4/10: 10 req  10 cancelled  L1=1ms
+    run 5/10: 10 req  10 cancelled  L1=1ms
+    run 6/10: 10 req  10 cancelled  L1=1ms
+    run 7/10: 10 req  10 cancelled  L1=1ms
+    run 8/10: 10 req  10 cancelled  L1=1ms
+    run 9/10: 10 req  10 cancelled  L1=1ms
+    run 10/10: 10 req  10 cancelled  L1=2ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=25 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=25 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=25 | T=1 | K=100ms
+    run 1/10: 25 req  25 cancelled  L1=7ms
+    run 2/10: 25 req  25 cancelled  L1=1ms
+    run 3/10: 25 req  25 cancelled  L1=1ms
+    run 4/10: 25 req  25 cancelled  L1=0ms
+    run 5/10: 25 req  25 cancelled  L1=0ms
+    run 6/10: 25 req  25 cancelled  L1=1ms
+    run 7/10: 25 req  25 cancelled  L1=1ms
+    run 8/10: 25 req  25 cancelled  L1=0ms
+    run 9/10: 25 req  25 cancelled  L1=1ms
+    run 10/10: 25 req  25 cancelled  L1=3ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=25 | T=1 | K=100ms
+    run 1/10: 25 req  25 cancelled  L1=10ms
+    run 2/10: 25 req  25 cancelled  L1=4ms
+    run 3/10: 25 req  25 cancelled  L1=4ms
+    run 4/10: 25 req  25 cancelled  L1=4ms
+    run 5/10: 25 req  25 cancelled  L1=4ms
+    run 6/10: 25 req  25 cancelled  L1=2ms
+    run 7/10: 25 req  25 cancelled  L1=3ms
+    run 8/10: 25 req  25 cancelled  L1=5ms
+    run 9/10: 25 req  25 cancelled  L1=2ms
+    run 10/10: 25 req  25 cancelled  L1=5ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=50 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=50 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=50 | T=1 | K=100ms
+    run 1/10: 50 req  50 cancelled  L1=7ms
+    run 2/10: 50 req  50 cancelled  L1=1ms
+    run 3/10: 50 req  50 cancelled  L1=0ms
+    run 4/10: 50 req  50 cancelled  L1=2ms
+    run 5/10: 50 req  50 cancelled  L1=1ms
+    run 6/10: 50 req  50 cancelled  L1=1ms
+    run 7/10: 50 req  50 cancelled  L1=1ms
+    run 8/10: 50 req  50 cancelled  L1=1ms
+    run 9/10: 50 req  50 cancelled  L1=0ms
+    run 10/10: 50 req  50 cancelled  L1=0ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=50 | T=1 | K=100ms
+    run 1/10: 50 req  50 cancelled  L1=10ms
+    run 2/10: 50 req  50 cancelled  L1=5ms
+    run 3/10: 50 req  50 cancelled  L1=6ms
+    run 4/10: 50 req  50 cancelled  L1=5ms
+    run 5/10: 50 req  50 cancelled  L1=5ms
+    run 6/10: 50 req  50 cancelled  L1=4ms
+    run 7/10: 50 req  50 cancelled  L1=3ms
+    run 8/10: 50 req  50 cancelled  L1=7ms
+    run 9/10: 50 req  50 cancelled  L1=2ms
+    run 10/10: 50 req  50 cancelled  L1=2ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=100 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=100 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=100 | T=1 | K=100ms
+    run 1/10: 100 req  100 cancelled  L1=9ms
+    run 2/10: 100 req  100 cancelled  L1=1ms
+    run 3/10: 100 req  100 cancelled  L1=1ms
+    run 4/10: 100 req  100 cancelled  L1=2ms
+    run 5/10: 100 req  100 cancelled  L1=4ms
+    run 6/10: 100 req  100 cancelled  L1=1ms
+    run 7/10: 100 req  100 cancelled  L1=2ms
+    run 8/10: 100 req  100 cancelled  L1=1ms
+    run 9/10: 100 req  100 cancelled  L1=8ms
+    run 10/10: 100 req  100 cancelled  L1=5ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=100 | T=1 | K=100ms
+    run 1/10: 100 req  100 cancelled  L1=53ms
+    run 2/10: 100 req  100 cancelled  L1=20ms
+    run 3/10: 100 req  100 cancelled  L1=8ms
+    run 4/10: 100 req  100 cancelled  L1=8ms
+    run 5/10: 100 req  100 cancelled  L1=7ms
+    run 6/10: 100 req  100 cancelled  L1=4ms
+    run 7/10: 100 req  100 cancelled  L1=3ms
+    run 8/10: 100 req  100 cancelled  L1=3ms
+    run 9/10: 100 req  100 cancelled  L1=4ms
+    run 10/10: 100 req  100 cancelled  L1=2ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=200 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=200 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=200 | T=1 | K=100ms
+    run 1/10: 200 req  200 cancelled  L1=11ms
+    run 2/10: 200 req  200 cancelled  L1=6ms
+    run 3/10: 200 req  200 cancelled  L1=1ms
+    run 4/10: 200 req  200 cancelled  L1=3ms
+    run 5/10: 200 req  200 cancelled  L1=4ms
+    run 6/10: 200 req  200 cancelled  L1=2ms
+    run 7/10: 200 req  200 cancelled  L1=2ms
+    run 8/10: 200 req  200 cancelled  L1=1ms
+    run 9/10: 200 req  200 cancelled  L1=1ms
+    run 10/10: 200 req  200 cancelled  L1=1ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=200 | T=1 | K=100ms
+    run 1/10: 200 req  200 cancelled  L1=37ms
+    run 2/10: 200 req  200 cancelled  L1=22ms
+    run 3/10: 200 req  200 cancelled  L1=16ms
+    run 4/10: 200 req  200 cancelled  L1=13ms
+    run 5/10: 200 req  200 cancelled  L1=5ms
+    run 6/10: 200 req  200 cancelled  L1=5ms
+    run 7/10: 200 req  200 cancelled  L1=5ms
+    run 8/10: 200 req  200 cancelled  L1=8ms
+    run 9/10: 200 req  200 cancelled  L1=2ms
+    run 10/10: 200 req  200 cancelled  L1=2ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=500 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=500 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=500 | T=1 | K=100ms
+    run 1/10: 500 req  500 cancelled  L1=12ms
+    run 2/10: 500 req  500 cancelled  L1=6ms
+    run 3/10: 500 req  500 cancelled  L1=5ms
+    run 4/10: 500 req  500 cancelled  L1=7ms
+    run 5/10: 500 req  500 cancelled  L1=7ms
+    run 6/10: 500 req  500 cancelled  L1=0ms
+    run 7/10: 500 req  500 cancelled  L1=4ms
+    run 8/10: 500 req  500 cancelled  L1=7ms
+    run 9/10: 500 req  500 cancelled  L1=15ms
+    run 10/10: 500 req  500 cancelled  L1=0ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=500 | T=1 | K=100ms
+    run 1/10: 500 req  500 cancelled  L1=69ms
+    run 2/10: 500 req  500 cancelled  L1=38ms
+    run 3/10: 500 req  500 cancelled  L1=20ms
+    run 4/10: 500 req  500 cancelled  L1=14ms
+    run 5/10: 500 req  500 cancelled  L1=11ms
+    run 6/10: 500 req  500 cancelled  L1=10ms
+    run 7/10: 500 req  500 cancelled  L1=11ms
+    run 8/10: 500 req  500 cancelled  L1=7ms
+    run 9/10: 500 req  500 cancelled  L1=6ms
+    run 10/10: 500 req  500 cancelled  L1=9ms
+  → rate=1.0  written to e1a_async.csv
+=== async N=750 ===
+threadpool min_worker=1 max_worker=1 logical_cpus=1
+yield_interval_ms=100
+cpu_duration_s=15
+
+E1a | mode=causal-async | N=750 | T=1 | K=100ms | C=1
+scenario=async | cancel_after=6.0s | runs=10
+frameworks: ['aspnet', 'webflux']
+────────────────────────────────────────────────────────────
+  aspnet | async | N=750 | T=1 | K=100ms
+    run 1/10: 750 req  750 cancelled  L1=22ms
+    run 2/10: 750 req  750 cancelled  L1=21ms
+    run 3/10: 750 req  750 cancelled  L1=5ms
+    run 4/10: 750 req  750 cancelled  L1=8ms
+    run 5/10: 750 req  750 cancelled  L1=9ms
+    run 6/10: 750 req  750 cancelled  L1=3ms
+    run 7/10: 750 req  750 cancelled  L1=17ms
+    run 8/10: 750 req  750 cancelled  L1=5ms
+    run 9/10: 750 req  750 cancelled  L1=5ms
+    run 10/10: 750 req  750 cancelled  L1=3ms
+  → rate=1.0  written to e1a_async.csv
+  webflux | async | N=750 | T=1 | K=100ms
+    run 1/10: 750 req  750 cancelled  L1=91ms
+    run 2/10: 750 req  750 cancelled  L1=36ms
+    run 3/10: 750 req  750 cancelled  L1=41ms
+    run 4/10: 750 req  750 cancelled  L1=11ms
+    run 5/10: 750 req  750 cancelled  L1=11ms
+    run 6/10: 750 req  750 cancelled  L1=9ms
+    run 7/10: 750 req  750 cancelled  L1=18ms
+    run 8/10: 750 req  750 cancelled  L1=9ms
+    run 9/10: 750 req  750 cancelled  L1=6ms
+    run 10/10: 750 req  750 cancelled  L1=4ms
+  → rate=1.0  written to e1a_async.csv
+
+════════════════════════════════════════════════════════════════════
+E1a causal complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq1/e1a_analyse.py

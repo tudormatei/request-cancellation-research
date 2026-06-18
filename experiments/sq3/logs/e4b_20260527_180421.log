@@ -1,0 +1,298 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq3/logs/e4b_20260527_180421.log
+Started at: Wed May 27 06:04:21 PM CEST 2026
+
+▶ E4b — D* sweep (INSERT duration vs ghost write rate)
+── ASP.NET (10 D values × 20 trials) ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+aspnet ready
+=== aspnet D=50ms ===
+
+E4b D-sweep | framework=aspnet | D=50ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=None sql_state=None
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=1 outer=None inner=None sql_state=None
+  trial 5/20: ghost=1 outer=None inner=None sql_state=None
+  trial 6/20: ghost=1 outer=None inner=None sql_state=None
+  trial 7/20: ghost=1 outer=None inner=None sql_state=None
+  trial 8/20: ghost=1 outer=None inner=None sql_state=None
+  trial 9/20: ghost=1 outer=None inner=None sql_state=None
+  trial 10/20: ghost=1 outer=None inner=None sql_state=None
+  trial 11/20: ghost=1 outer=None inner=None sql_state=None
+  trial 12/20: ghost=1 outer=None inner=None sql_state=None
+  trial 13/20: ghost=1 outer=None inner=None sql_state=None
+  trial 14/20: ghost=1 outer=None inner=None sql_state=None
+  trial 15/20: ghost=1 outer=None inner=None sql_state=None
+  trial 16/20: ghost=1 outer=None inner=None sql_state=None
+  trial 17/20: ghost=1 outer=None inner=None sql_state=None
+  trial 18/20: ghost=1 outer=None inner=None sql_state=None
+  trial 19/20: ghost=1 outer=None inner=None sql_state=None
+  trial 20/20: ghost=1 outer=None inner=None sql_state=None
+=== aspnet D=75ms ===
+
+E4b D-sweep | framework=aspnet | D=75ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=100ms ===
+
+E4b D-sweep | framework=aspnet | D=100ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=125ms ===
+
+E4b D-sweep | framework=aspnet | D=125ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=150ms ===
+
+E4b D-sweep | framework=aspnet | D=150ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=175ms ===
+
+E4b D-sweep | framework=aspnet | D=175ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=200ms ===
+
+E4b D-sweep | framework=aspnet | D=200ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=250ms ===
+
+E4b D-sweep | framework=aspnet | D=250ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=500ms ===
+
+E4b D-sweep | framework=aspnet | D=500ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+=== aspnet D=1000ms ===
+
+E4b D-sweep | framework=aspnet | D=1000ms | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 2/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 3/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 4/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 5/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 6/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 7/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 8/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 9/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 10/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 11/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 12/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 13/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 14/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 15/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 16/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 17/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 18/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 19/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+  trial 20/20: ghost=0 outer=OperationCanceledException inner=PostgresException sql_state=57014
+── WebFlux (3 confirmatory D values × 10 trials) ──
+=== webflux D=100ms ===
+
+E4b D-sweep | framework=webflux | D=100ms | runs=10
+────────────────────────────────────────────────────────────
+  trial 1/10: ghost=0 outer=None inner=None sql_state=None
+  trial 2/10: ghost=1 outer=None inner=None sql_state=None
+  trial 3/10: ghost=1 outer=None inner=None sql_state=None
+  trial 4/10: ghost=1 outer=None inner=None sql_state=None
+  trial 5/10: ghost=1 outer=None inner=None sql_state=None
+  trial 6/10: ghost=1 outer=None inner=None sql_state=None
+  trial 7/10: ghost=1 outer=None inner=None sql_state=None
+  trial 8/10: ghost=1 outer=None inner=None sql_state=None
+  trial 9/10: ghost=1 outer=None inner=None sql_state=None
+  trial 10/10: ghost=1 outer=None inner=None sql_state=None
+=== webflux D=250ms ===
+
+E4b D-sweep | framework=webflux | D=250ms | runs=10
+────────────────────────────────────────────────────────────
+  trial 1/10: ghost=1 outer=None inner=None sql_state=None
+  trial 2/10: ghost=1 outer=None inner=None sql_state=None
+  trial 3/10: ghost=1 outer=None inner=None sql_state=None
+  trial 4/10: ghost=1 outer=None inner=None sql_state=None
+  trial 5/10: ghost=1 outer=None inner=None sql_state=None
+  trial 6/10: ghost=1 outer=None inner=None sql_state=None
+  trial 7/10: ghost=1 outer=None inner=None sql_state=None
+  trial 8/10: ghost=1 outer=None inner=None sql_state=None
+  trial 9/10: ghost=1 outer=None inner=None sql_state=None
+  trial 10/10: ghost=1 outer=None inner=None sql_state=None
+=== webflux D=1000ms ===
+
+E4b D-sweep | framework=webflux | D=1000ms | runs=10
+────────────────────────────────────────────────────────────
+  trial 1/10: ghost=1 outer=None inner=None sql_state=None
+  trial 2/10: ghost=1 outer=None inner=None sql_state=None
+  trial 3/10: ghost=1 outer=None inner=None sql_state=None
+  trial 4/10: ghost=1 outer=None inner=None sql_state=None
+  trial 5/10: ghost=1 outer=None inner=None sql_state=None
+  trial 6/10: ghost=1 outer=None inner=None sql_state=None
+  trial 7/10: ghost=1 outer=None inner=None sql_state=None
+  trial 8/10: ghost=1 outer=None inner=None sql_state=None
+  trial 9/10: ghost=1 outer=None inner=None sql_state=None
+  trial 10/10: ghost=1 outer=None inner=None sql_state=None
+
+E4b complete. Identify D* from analysis, then set DSTAR and run e4b-transition.
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e4_analyse.py --only e4b
+
+════════════════════════════════════════════════════════════════════
+E4 e4b finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e4_analyse.py

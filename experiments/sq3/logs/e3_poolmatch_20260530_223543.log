@@ -1,0 +1,71 @@
+▶ E3 pool-match re-run (Npgsql Maximum Pool Size=10). Started Sat May 30 10:35:43 PM CEST 2026
+── E3a cross-check at matched pool (both frameworks) ──
+  aspnet conn string:
+Host=postgres;Port=5432;Database=thesisdb;Username=thesisuser;Password=thesispass;Maximum Pool Size=10;Minimum Pool Size=0
+
+E3a cross-check | framework=aspnet | N=10 | cancel_at=6.0s | runs=1
+────────────────────────────────────────────────────────────
+  trial 1/1: ghost_holdtime=54ms wave2_delay=54ms wave2_success=1.0 pool_wait_visible=1
+
+E3a cross-check | framework=webflux | N=10 | cancel_at=6.0s | runs=1
+────────────────────────────────────────────────────────────
+  trial 1/1: ghost_holdtime=4219ms wave2_delay=4220ms wave2_success=1.0 pool_wait_visible=1
+
+── E3c ASP.NET cascade at matched pool (pool=10) ──
+  aspnet conn string:
+Host=postgres;Port=5432;Database=thesisdb;Username=thesisuser;Password=thesispass;Maximum Pool Size=10;Minimum Pool Size=0
+=== aspnet X=25rps (pool=10) ===
+
+E3c sustained | framework=aspnet | X=25.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 749  completed= 674  pool_exhausted=  0 (0.0%)  throughput=22.5rps  p95=19584.4ms
+  window  1 [30.0–60.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=15005.6ms
+  window  2 [60.0–90.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=15002.1ms
+  window  3 [90.0–120.0s]  sent= 749  completed= 674  pool_exhausted=  0 (0.0%)  throughput=22.5rps  p95=15005.2ms
+  window  4 [120.0–150.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=15001.3ms
+  window  5 [150.0–180.0s]  sent= 748  completed= 674  pool_exhausted=  0 (0.0%)  throughput=22.5rps  p95=15002.1ms
+  window  6 [180.0–210.0s]  sent= 749  completed= 674  pool_exhausted=  0 (0.0%)  throughput=22.5rps  p95=15002.1ms
+  window  7 [210.0–240.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=15002.0ms
+  window  8 [240.0–270.0s]  sent= 748  completed= 673  pool_exhausted=  0 (0.0%)  throughput=22.4rps  p95=15001.5ms
+  window  9 [270.0–300.0s]  sent= 650  completed= 575  pool_exhausted=  0 (0.0%)  throughput=19.2rps  p95=15001.3ms
+=== aspnet X=50rps (pool=10) ===
+
+E3c sustained | framework=aspnet | X=50.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=1494  completed=1344  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.3ms
+  window  1 [30.0–60.0s]  sent=1494  completed=1345  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.1ms
+  window  2 [60.0–90.0s]  sent=1493  completed=1343  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.1ms
+  window  3 [90.0–120.0s]  sent=1494  completed=1345  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.1ms
+  window  4 [120.0–150.0s]  sent=1494  completed=1345  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.1ms
+  window  5 [150.0–180.0s]  sent=1493  completed=1343  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.1ms
+  window  6 [180.0–210.0s]  sent=1494  completed=1345  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.1ms
+  window  7 [210.0–240.0s]  sent=1493  completed=1344  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.0ms
+  window  8 [240.0–270.0s]  sent=1494  completed=1344  pool_exhausted=  0 (0.0%)  throughput=44.8rps  p95=15001.1ms
+  window  9 [270.0–300.0s]  sent=1305  completed=1156  pool_exhausted=  0 (0.0%)  throughput=38.5rps  p95=15001.1ms
+=== aspnet X=125rps (pool=10) ===
+
+E3c sustained | framework=aspnet | X=125.0rps | Y=10% | duration=300s | cancel_at=6.0s
+──────────────────────────────────────────────────────────────────────
+  R_max estimate = pool_size / (Y × ghost_holdtime_s)
+               ≈ pool / (0.1 × 4.0)
+  Monitoring 300s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=3712  completed=3340  pool_exhausted=  0 (0.0%)  throughput=111.3rps  p95=15000.9ms
+  window  1 [30.0–60.0s]  sent=3711  completed=3340  pool_exhausted=  0 (0.0%)  throughput=111.3rps  p95=15000.9ms
+  window  2 [60.0–90.0s]  sent=3713  completed=3342  pool_exhausted=  0 (0.0%)  throughput=111.4rps  p95=15000.9ms
+  window  3 [90.0–120.0s]  sent=3709  completed=3338  pool_exhausted=  0 (0.0%)  throughput=111.3rps  p95=15000.8ms
+  window  4 [120.0–150.0s]  sent=3707  completed=3336  pool_exhausted=  0 (0.0%)  throughput=111.2rps  p95=15000.9ms
+  window  5 [150.0–180.0s]  sent=3712  completed=3341  pool_exhausted=  0 (0.0%)  throughput=111.4rps  p95=15000.9ms
+  window  6 [180.0–210.0s]  sent=3708  completed=3337  pool_exhausted=  0 (0.0%)  throughput=111.2rps  p95=15000.8ms
+  window  7 [210.0–240.0s]  sent=3705  completed=3335  pool_exhausted=  0 (0.0%)  throughput=111.2rps  p95=15000.9ms
+  window  8 [240.0–270.0s]  sent=3713  completed=3342  pool_exhausted=  0 (0.0%)  throughput=111.4rps  p95=15000.9ms
+  window  9 [270.0–300.0s]  sent=3256  completed=2885  pool_exhausted=  0 (0.0%)  throughput=96.2rps  p95=15000.9ms
+✓ E3 pool-match re-run complete Sat May 30 10:54:35 PM CEST 2026

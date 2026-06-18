@@ -1,0 +1,62 @@
+Logging to: /home/tudor/dev/request-cancellation-research/experiments/sq3/logs/e4a_20260527_173718.log
+Started at: Wed May 27 05:37:18 PM CEST 2026
+
+▶ E4a — log audit anchor (ghost write visibility)
+── ASP.NET ──
+threadpool min_worker=1 max_worker=200 logical_cpus=1
+yield_interval_ms=100
+aspnet ready
+
+E4a log audit | framework=aspnet | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 2/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 3/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 4/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 5/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 6/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 7/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 8/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 9/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 10/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 11/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 12/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 13/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 14/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 15/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 16/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 17/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 18/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 19/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 20/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+── WebFlux ──
+
+E4a log audit | framework=webflux | runs=20
+────────────────────────────────────────────────────────────
+  trial 1/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 2/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 3/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 4/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 5/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 6/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 7/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 8/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 9/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 10/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 11/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 12/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 13/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 14/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 15/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 16/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 17/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 18/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 19/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+  trial 20/20: detected=0 propagated=0 log_success=0 ghost_write=0 outer=None inner=None
+
+E4a complete. Analyse:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e4_analyse.py --only e4a
+
+════════════════════════════════════════════════════════════════════
+E4 e4a finished. Full synthesis:
+  conda activate thesis-stats && python /home/tudor/dev/request-cancellation-research/tests/sq3/e4_analyse.py

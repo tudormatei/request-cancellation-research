@@ -1,0 +1,101 @@
+▶ E3c WebFlux FRESH-POOL diagnostic (restart before each X). Started Sun May 31 01:27:23 AM CEST 2026
+  Isolates within-cell behaviour from cross-cell ghost accumulation.
+── restart webflux (fresh pool) ──
+=== webflux X=0.5rps Y=0.8 cancel_at=0.5 (FRESH pool) ===
+
+E3c tuned_fresh | framework=webflux | X=0.5rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  15  ok=   1  failed=   2 (66.7%) [503=0 500=0 to=2]  thru_ok=0.0rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30530.6ms
+  window  2 [60.0–90.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent=  15  ok=   0  failed=   3 (100.0%) [503=0 500=0 to=3]  thru_ok=0.0rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent=  13  ok=   0  failed=   1 (100.0%) [503=0 500=0 to=1]  thru_ok=0.0rps  p95=30502.5ms
+── restart webflux (fresh pool) ──
+=== webflux X=1rps Y=0.8 cancel_at=0.5 (FRESH pool) ===
+
+E3c tuned_fresh | framework=webflux | X=1.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  30  ok=   1  failed=   5 (83.3%) [503=0 500=0 to=5]  thru_ok=0.0rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+  window  2 [60.0–90.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+  window  4 [120.0–150.0s]  sent=  30  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.2ms
+  window  5 [150.0–180.0s]  sent=  25  ok=   0  failed=   1 (100.0%) [503=0 500=0 to=1]  thru_ok=0.0rps  p95=30531.1ms
+── restart webflux (fresh pool) ──
+=== webflux X=2rps Y=0.8 cancel_at=0.5 (FRESH pool) ===
+
+E3c tuned_fresh | framework=webflux | X=2.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  60  ok=   4  failed=   8 (66.7%) [503=0 500=0 to=8]  thru_ok=0.1rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent=  60  ok=   8  failed=   4 (33.3%) [503=0 500=0 to=4]  thru_ok=0.3rps  p95=30531.4ms
+  window  2 [60.0–90.0s]  sent=  60  ok=   5  failed=   7 (58.3%) [503=0 500=0 to=7]  thru_ok=0.2rps  p95=30531.1ms
+  window  3 [90.0–120.0s]  sent=  60  ok=   4  failed=   8 (66.7%) [503=0 500=0 to=8]  thru_ok=0.1rps  p95=30531.3ms
+  window  4 [120.0–150.0s]  sent=  60  ok=   7  failed=   5 (41.7%) [503=0 500=0 to=5]  thru_ok=0.2rps  p95=30531.3ms
+  window  5 [150.0–180.0s]  sent=  51  ok=   3  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.1rps  p95=19596.6ms
+── restart webflux (fresh pool) ──
+=== webflux X=3rps Y=0.8 cancel_at=0.5 (FRESH pool) ===
+
+E3c tuned_fresh | framework=webflux | X=3.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent=  90  ok=   6  failed=  12 (66.7%) [503=0 500=0 to=12]  thru_ok=0.2rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent=  90  ok=   8  failed=  10 (55.6%) [503=0 500=0 to=10]  thru_ok=0.3rps  p95=30531.2ms
+  window  2 [60.0–90.0s]  sent=  90  ok=  16  failed=   2 (11.1%) [503=0 500=0 to=2]  thru_ok=0.5rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent=  90  ok=   8  failed=  10 (55.6%) [503=0 500=0 to=10]  thru_ok=0.3rps  p95=30531.3ms
+  window  4 [120.0–150.0s]  sent=  90  ok=   3  failed=  15 (83.3%) [503=0 500=0 to=15]  thru_ok=0.1rps  p95=30531.3ms
+  window  5 [150.0–180.0s]  sent=  78  ok=   4  failed=   2 (33.3%) [503=0 500=0 to=2]  thru_ok=0.1rps  p95=30531.3ms
+── restart webflux (fresh pool) ──
+=== webflux X=4rps Y=0.8 cancel_at=0.5 (FRESH pool) ===
+
+E3c tuned_fresh | framework=webflux | X=4.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 120  ok=  10  failed=  14 (58.3%) [503=0 500=0 to=14]  thru_ok=0.3rps  p95=30531.2ms
+  window  1 [30.0–60.0s]  sent= 120  ok=  12  failed=  12 (50.0%) [503=0 500=0 to=12]  thru_ok=0.4rps  p95=30531.2ms
+  window  2 [60.0–90.0s]  sent= 120  ok=  16  failed=   8 (33.3%) [503=0 500=0 to=8]  thru_ok=0.5rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent= 120  ok=  21  failed=   3 (12.5%) [503=0 500=0 to=3]  thru_ok=0.7rps  p95=30508.4ms
+  window  4 [120.0–150.0s]  sent= 120  ok=  23  failed=   1 (4.2%) [503=0 500=0 to=1]  thru_ok=0.8rps  p95=26830.8ms
+  window  5 [150.0–180.0s]  sent= 112  ok=  16  failed=   0 (0.0%) [503=0 500=0 to=0]  thru_ok=0.5rps  p95=18109.0ms
+── restart webflux (fresh pool) ──
+=== webflux X=5rps Y=0.8 cancel_at=0.5 (FRESH pool) ===
+
+E3c tuned_fresh | framework=webflux | X=5.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 150  ok=   8  failed=  22 (73.3%) [503=0 500=0 to=22]  thru_ok=0.3rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.1ms
+  window  2 [60.0–90.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.3ms
+  window  4 [120.0–150.0s]  sent= 150  ok=   6  failed=  24 (80.0%) [503=0 500=0 to=24]  thru_ok=0.2rps  p95=30531.3ms
+  window  5 [150.0–180.0s]  sent= 125  ok=   2  failed=   3 (60.0%) [503=0 500=0 to=3]  thru_ok=0.1rps  p95=30531.2ms
+── restart webflux (fresh pool) ──
+=== webflux X=6rps Y=0.8 cancel_at=0.5 (FRESH pool) ===
+
+E3c tuned_fresh | framework=webflux | X=6.0rps | Y=80% | duration=180s | cancel_at=0.5s
+──────────────────────────────────────────────────────────────────────
+  WebFlux ghost_holdtime ≈ 9.5s (query runs to completion)
+  Monitoring 180s in 30s windows …
+
+  window  0 [0.0–30.0s]  sent= 180  ok=  10  failed=  26 (72.2%) [503=0 500=0 to=26]  thru_ok=0.3rps  p95=30531.3ms
+  window  1 [30.0–60.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  2 [60.0–90.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.2ms
+  window  3 [90.0–120.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.3ms
+  window  4 [120.0–150.0s]  sent= 180  ok=   0  failed=  36 (100.0%) [503=0 500=0 to=36]  thru_ok=0.0rps  p95=30531.3ms
+  window  5 [150.0–180.0s]  sent= 150  ok=   0  failed=   6 (100.0%) [503=0 500=0 to=6]  thru_ok=0.0rps  p95=30531.3ms
+✓ E3c WebFlux fresh-pool diagnostic complete Sun May 31 01:52:24 AM CEST 2026
