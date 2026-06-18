@@ -4,19 +4,19 @@ Bachelor's thesis (Computer Science, University of Twente) by **Tudor Alexandru 
 
 ## What this studies
 
-When a client disconnects mid-request (closed tab, navigation, lost connection), does the server stop working — or does it keep burning CPU and database resources for a response nobody will receive?
+When a client disconnects mid-request (closed tab, navigation, lost connection), does the server stop working, or does it keep burning CPU and database resources for a response nobody will receive?
 
 This project empirically compares how three backend frameworks detect, propagate, and act on client-disconnect signals, and quantifies the cost when they don't.
 
 **Main research question:** How do the request cancellation architectures of web application frameworks differ in their ability to detect, propagate, and terminate a client request, concerning reliability, resource utilization, and system state correctness?
 
-- **RQ1 — Detection:** How quickly and reliably does each framework detect a client disconnect under load?
-- **RQ2 — Propagation:** How does the cancellation signal propagate through system layers (application code, database, outbound services) under each framework's idiomatic implementation?
-- **RQ3 — Consequences:** What are the behavioral consequences of incomplete cancellation propagation, in terms of resource occupancy and system state?
+- **RQ1 (Detection):** How quickly and reliably does each framework detect a client disconnect under load?
+- **RQ2 (Propagation):** How does the cancellation signal propagate through system layers (application code, database, outbound services) under each framework's idiomatic implementation?
+- **RQ3 (Consequences):** What are the behavioral consequences of incomplete cancellation propagation, in terms of resource occupancy and system state?
 
 ## Taxonomy
 
-Frameworks are classified by **cancellation signal source** — the route a disconnect takes to reach running application code — not by their concurrency model (those are orthogonal). This yields three mutually exclusive architectures:
+Frameworks are classified by **cancellation signal source** (the route a disconnect takes to reach running application code), not by their concurrency model (those are orthogonal). This yields three mutually exclusive architectures:
 
 | Architecture | Signal source | Detection | Propagation | Representative |
 |---|---|---|---|---|
@@ -34,7 +34,7 @@ A disconnect either reaches application code or not (passive vs. the rest); when
 | ASP.NET Core | Cooperative | Quantitative subject |
 | Spring WebFlux | Reactive | Quantitative subject |
 
-The quantitative comparison (ASP.NET vs. WebFlux) crosses a C#/Java language boundary — an acknowledged confound, mitigated by using language-independent metrics (proportions, dimensionless ratios) wherever possible, and a load-dependence argument where raw latencies are reported (a language-speed offset is constant across load and cannot explain load-dependent trends).
+The quantitative comparison (ASP.NET vs. WebFlux) crosses a C#/Java language boundary, an acknowledged confound, mitigated by using language-independent metrics (proportions, dimensionless ratios) wherever possible, and a load-dependence argument where raw latencies are reported (a language-speed offset is constant across load and cannot explain load-dependent trends).
 
 ## Repository layout
 
@@ -69,8 +69,8 @@ Cancellation is induced, not simulated: the client embeds its planned disconnect
 ## Key findings
 
 - **Detection (RQ1):** Reactive detection is load-invariant. Cooperative detection matches it when a worker thread is free (~1 ms), falls to a slow branch (≈2·`K`) under saturation, and beyond a predictable cliff `N_safe ≈ 5499 · (C/K)^0.880` becomes unreliable. Passive detects nothing, by specification.
-- **Propagation (RQ2):** Both cooperative and reactive architectures propagate across connection-close and in-band (gRPC) abort. Only cooperative propagates across *out-of-band* abort (PostgreSQL `CancelRequest`) — this is a structural limitation of reactive pipelined/backpressured drivers (R2DBC), not an implementation defect. Cooperative cancellation is a *completion event* (verifiable: the query has actually stopped); reactive cancellation is a *notification* decoupled from I/O state (not verifiable from the application).
-- **Consequences (RQ3):** Incomplete cancellation costs resource-occupancy time following Little's law (`X_max = P / E[S]`), independent of database specifics — it generalizes to any bounded pool. Data-state consistency is governed by the **transaction boundary**, not the cancellation architecture: a single write produces a ghost-write under reactive (always) and conditionally under cooperative; an un-transacted multi-step write is left torn under both; wrapping it in a transaction makes both roll back safely. Spring MVC, by never reacting to the disconnect, is the only architecture that always leaves consistent data — honoring cancellation without a transaction is worse for integrity than ignoring it.
+- **Propagation (RQ2):** Both cooperative and reactive architectures propagate across connection-close and in-band (gRPC) abort. Only cooperative propagates across *out-of-band* abort (PostgreSQL `CancelRequest`); this is a structural limitation of reactive pipelined/backpressured drivers (R2DBC), not an implementation defect. Cooperative cancellation is a *completion event* (verifiable: the query has actually stopped); reactive cancellation is a *notification* decoupled from I/O state (not verifiable from the application).
+- **Consequences (RQ3):** Incomplete cancellation costs resource-occupancy time following Little's law (`X_max = P / E[S]`), independent of database specifics; it generalizes to any bounded pool. Data-state consistency is governed by the **transaction boundary**, not the cancellation architecture: a single write produces a ghost-write under reactive (always) and conditionally under cooperative; an un-transacted multi-step write is left torn under both; wrapping it in a transaction makes both roll back safely. Spring MVC, by never reacting to the disconnect, is the only architecture that always leaves consistent data; honoring cancellation without a transaction is worse for integrity than ignoring it.
 
 ## Running the experiments
 
